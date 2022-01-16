@@ -1,6 +1,7 @@
 # Steno Dictionaries
 An alternate set of dictionaries for Plover theory.
  - [plover-base.json](#plover-basejson)
+ - [rh-numpad.json](#rh-numpadjson)
  - [plover-uk.json](#plover-ukjson)
 
 ## plover-base.json
