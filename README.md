@@ -30,8 +30,52 @@ Proper nouns are always written with the number key on the first stroke. Everyth
 
 > I'm not sure if this is a good idea; it feels rather clunky, and I've only been trying this out for a few days so this may change.
 
+#### Movement keys
+This dictionary contains arrow key movements and a few selecting movements. By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
+
+By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
+
+To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. I don't know how this works on Macs, but my understanding is the something else has to be used that's not `Ctrl`.
+
+#### Commands and keyboard shortcuts
+Many of the commands from main.json have stayed the same.
+ - `KPA` → capitalize the next word
+ - `KPA*` → capitalize the next word and supress the next space
+ - `HRO*ER` → uncapitalize the next word
+
+Retroactive commands have also been added.
+ - `KA*PD` → capitalize the last word
+ - `HRO*ERD` → uncapitalize the last word
+
+Common keyboard keys have also carried over from main.json.
+ - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
+ - `#R-R` → `Shift+Enter`
+ - `PW-FP` → backspace one character
+ - `PW*FP` → backspace one word (`Ctrl+Backspace`; this will have to be changed on Macs)
+ - `TKHRE` → delete one character
+ - `TKHR*E` → delete one word (`Ctrl+Delete`; this will have be changed on Macs)
+ - `TA*B` → `Tab`
+ - `#TAB` → `Shift+Tab`
+
+#### Punctuation
+ - `H-F` → `?` question mark
+ - `KW-PL` → `?` shape can be thought of rising inflection as if asking a question
+ - `TP-BG` → `!` shape can be thought of as falling inflection when exclaiming
+ - `TP-PL` → `.` period
+ - `P-P` → `.` period with no space on either side (when writing decimals)
+ - `KW-BG` → `,` comma
+ - `KW-GS` → `"` opening quotation mark
+ - `KW*GS` → `"` closing quotation mark
+ - `PREPB` → `(` opening parenthesis
+ - `PR*EPB` → `)` closing parenthesis
+ - `TPR-BGT` → `{` opening French bracket
+ - `TPR*BGT` → `}` closing French bracket
+ - `PWR-BGT` → `[` opening bracket
+ - `PWR*BGT` → `]` closing bracket
+ - `TR*PL` → `™` trademark symbol attached on the left
+
 #### Right hand number pad
-> The conventional number system will not work with this dictionary. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}` where)
+> The conventional number system will not work with this dictionary. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
 
 With this system, pressing the number key will turn `-FRPBLG` into a keypad of sorts. The bottom three keys are 1, 2, and 3 (from left to right) while the top three keys are 7, 8, 9 and chording two keys in a column will get 4, 5, and 6 (from left to right). If the `E` key is used in the stroke, 0 will be appended to whatever digit is being chorded. The `U` key will append a 00 on the digit, and `EU` will append a 000 on the digit.
 
@@ -49,7 +93,7 @@ Examples:
  - `PW*FPLT/KR*FPLT/*EFPLT` → B.C.E.
  - `AFPLT/P-FPLT/P-FPLT/HR-FPLT/EFPLT` → a.p.p.l.e.
 
-> Planning on using `-RBGS` for fingerspelling with hyphens (stitching) but this requires the plover-stitching plugin
+> Planning on using `-RBGS` for fingerspelling with hyphens (stitching) but this requires the plover-stitching plugin.
 
 #### Phonetics and orthography
 There are only a few changes:
@@ -113,8 +157,9 @@ Examples:
  - `ED/EUGS` → edition (as opposed to `E/TKEUGS`)
  - `HR*ET/*ER` → leather
  - `ALD/*ER` → alder
+ - `KEUT/KWREU` → kitty (as opposed to `KEU/TEU`)
 
-> `*ER` is used quite frequently with this rule.
+> Whenever `KWREU` can be used, always default to that instead (like in the "kitty").
 
 If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
 
@@ -172,8 +217,9 @@ Here are some examples of how not to break up a word:
  - `-LT` for the "-let" suffix
     - `A/PHAOU/-LT` → amulet
     - `STAR/-LT` → starlet
-
-...many, many more things...
+ - `EUFT/EUBG` and `ST-BG` are preferred for "-istic"
+    - `RAEL/EUFT/EUBG` → realistic
+    - `A/TPHA/KROPB/ST-BG` → anachronistic
 
 ## plover-uk.json
-Coming soon.
+Soon™
