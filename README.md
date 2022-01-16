@@ -221,7 +221,7 @@ Here are some examples of how not to break up a word:
     - "Normal" splitting method works in this scenario
     - Instead use `TPRAPB/KHAOEUS` or `TPRAPB/KHAOEUZ`
 
-#### Prefixes and suffixess
+#### Prefixes and suffixes
  - Since we cannot double consonants, `KWREU` is default for adding "-y"
     - `KEUT/KWREU` → kitty
     - `STOR/KWREU` → story
