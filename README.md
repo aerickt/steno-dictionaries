@@ -70,8 +70,8 @@ Common keyboard keys have also carried over from main.json.
  - `KW-BG` → `,` comma
  - `KW-GS` → `"` opening quotation mark
  - `KW*GS` → `"` closing quotation mark
- - `KH-FG` → ``` opening backtick
- - `KH*FG` → ``` closing backtick
+ - `KH-FG` → `` ` `` opening backtick
+ - `KH*FG` → `` ` `` closing backtick
  - `PREPB` → `(` opening parenthesis
  - `PR*EPB` → `)` closing parenthesis
  - `TPR-BGT` → `{` opening French bracket
