@@ -100,16 +100,9 @@ For writing every single keyboard shortcut possible, I recommend [Emily's modifi
 For symbols beyond these where you might require different spacing and capitalization, I recommend [Emily's symbols dictionary](https://github.com/EPLHREU/emily-symbols).
 
 #### Right hand number pad
-> The conventional number system will not work with this dictionary. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
+> The conventional number system does not work in plover-base.json. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
 
-With this system, pressing the number key will turn `-FRPBLG` into a keypad of sorts. The bottom three keys are 1, 2, and 3 (from left to right) while the top three keys are 7, 8, 9 and chording two keys in a column will get 4, 5, and 6 (from left to right). If the `E` key is used in the stroke, 0 will be appended to whatever digit is being chorded. The `U` key will append a 00 on the digit, and `EU` will append a 000 on the digit.
-
-Examples:
- - `#-G/#-R/-FR/#-R/#-PB/#-L` → 314159
- - `#EB` → 20
- - `#UPB`→ 500
-
-> I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
+plover-base.json has this system by default. See [rh-numpad.json](rh-numpadjson).
 
 #### Fingerspelling
 In addition to normal fingerspelling with `*`, using `-FPLT` of `*` will put a period after the letter. `*FPLT` will capitalize the word.
@@ -245,6 +238,17 @@ Here are some examples of how not to break up a word:
  - `EUFT/EUBG` and `ST-BG` are preferred for "-istic"
     - `RAEL/EUFT/EUBG` → realistic
     - `A/TPHA/KROPB/ST-BG` → anachronistic
+
+## rh-numpad.json
+
+> I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
+
+With this system, pressing the number key will turn `-FRPBLG` into a keypad of sorts. The bottom three keys are 1, 2, and 3 (from left to right) while the top three keys are 7, 8, 9 and chording two keys in a column will get 4, 5, and 6 (from left to right). If the `E` key is used in the stroke, 0 will be appended to whatever digit is being chorded. The `U` key will append a 00 on the digit, and `EU` will append a 000 on the digit.
+
+Examples:
+ - `#-G/#-R/-FR/#-R/#-PB/#-L` → 314159
+ - `#EB` → 20
+ - `#UPB`→ 500
 
 ## plover-uk.json
 Soon™
