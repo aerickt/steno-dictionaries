@@ -155,6 +155,9 @@ These would not be valid ways of breaking up a word:
  - `KAOEB/ORD` (keyboard) ❌
  - `HRAPT/OP` (laptop) ❌
 
+It is also important that each stroke is not responsible for too many consonants:
+ - `AS/TROPB/PHER` instead of `A/STROPB/PHER` (astronomer)
+
 However, some words will not be able to be broken up like this such as words starting with vowels. These are handled exactly the same, except that it is acceptable for the first stroke to begin with a vowel. I still categorize this under the "normal" splitting method.
 
 Examples:
