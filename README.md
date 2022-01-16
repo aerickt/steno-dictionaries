@@ -25,6 +25,10 @@ Proper nouns are always written with the number key on the first stroke. Everyth
  - `#A/HREU/SA` → Alyssa
  - `#PWOB` → Bob
  - `#PAOE/TER` → Peter
+ - `#AP/-L` → Apple
+ - `#AUS/TRAEUL/KWRA` → Australia
+
+> I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
 
 > Unfortunately, entries using the number key will not be displayed as I have above, but rather with numbers. So viewing the dictionary you would see `350ER/TER` instead of `#PAOE/TER`.
 
@@ -66,8 +70,8 @@ Common keyboard keys have also carried over from main.json.
  - `KW-BG` → `,` comma
  - `KW-GS` → `"` opening quotation mark
  - `KW*GS` → `"` closing quotation mark
- - `KH-FG` → `\`` opening backtick
- - `KH*FG` → `\`` closing backtick
+ - `KH-FG` → ``` opening backtick
+ - `KH*FG` → ``` closing backtick
  - `PREPB` → `(` opening parenthesis
  - `PR*EPB` → `)` closing parenthesis
  - `TPR-BGT` → `{` opening French bracket
@@ -91,7 +95,7 @@ Examples:
  - `#EB` → 20
  - `#UPB`→ 500
 
-> I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs. This makes it much easier to use and decreases hesitation as to which finger to use to hit the number key.
+> I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
 
 #### Fingerspelling with periods
 In addition to normal fingerspelling, using `-FPLT` of `*` will put a period after the letter. `*FPLT` will capitalize the word.
