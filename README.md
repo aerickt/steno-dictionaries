@@ -1,7 +1,7 @@
 # Steno Dictionaries
 An alternate set of dictionaries for Plover theory.
- - [plover-base.json](#plover-base.json)
- - [plover-uk.json](#plover-uk.json)
+ - [plover-base.json](#plover-basejson)
+ - [plover-uk.json](#plover-ukjson)
 
 ## plover-base.json
 This dictionary is intended to replace Plover's main.json that comes by default. It's not intended to be as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
@@ -13,16 +13,16 @@ Using a textbook such as Learn Plover! should work just fine with this dictionar
 > This dictionary is still work in progress with only about 12k entries at time of this writing.
 
 ### About this dictionary
- - [Compound Words](#Compound words)
- - [Proper nouns](#Proper nouns)
- - [Movement keys](#Movement keys)
- - [Commands and keyboard shortcuts](#Commands and keyboard shortcuts)
+ - [Compound words](#Compound-words)
+ - [Proper nouns](#Proper-nouns)
+ - [Movement keys](#Movement-keys)
+ - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
  - [Punctuation](#Punctuation)
- - [Right hand number pad](#Right hand number pad)
+ - [Right hand number pad](#Right-hand-number-pad)
  - [Fingerspelling](#Fingerspelling)
- - [Phonetics and orthography](#Phonetics and orthography)
- - [Breaking up multisyllable words](#Breaking up multisyllable words)
- - [Prefixes and suffixes](#Prefixes and suffixes)
+ - [Phonetics and orthography](#Phonetics-and-orthography)
+ - [Breaking up multisyllable words](#Breaking-up multisyllable-words)
+ - [Prefixes and suffixes](#Prefixes-and-suffixes)
 
 #### Compound words
 Compound words are always written with the asterisk on the first stroke of the second word. For example, to write the word "storybooks" would be as `STOR/KWREU/PWAO*BG/-S`.
