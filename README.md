@@ -66,13 +66,20 @@ Common keyboard keys have also carried over from main.json.
  - `KW-BG` → `,` comma
  - `KW-GS` → `"` opening quotation mark
  - `KW*GS` → `"` closing quotation mark
+ - `KH-FG` → `\`` opening backtick
+ - `KH*FG` → `\`` closing backtick
  - `PREPB` → `(` opening parenthesis
  - `PR*EPB` → `)` closing parenthesis
  - `TPR-BGT` → `{` opening French bracket
  - `TPR*BGT` → `}` closing French bracket
  - `PWR-BGT` → `[` opening bracket
  - `PWR*BGT` → `]` closing bracket
- - `TR*PL` → `™` trademark symbol attached on the left
+ - `KHR-PB` → `:` colon with no spacing
+ - `STPH-FPLT` → `:` regular colon with a space on the right
+ - `STPH*FPLT` → `;` regular semicolon with a space on the right
+ - `TR*PL` → `™` trademark symbol with a space on the right
+
+For symbols beyond these where you might require different spacing and capitalization, I recommend [Emily's symbols dictionary](https://github.com/EPLHREU/emily-symbols).
 
 #### Right hand number pad
 > The conventional number system will not work with this dictionary. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
