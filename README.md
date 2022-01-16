@@ -169,6 +169,10 @@ Examples:
  - `HRERPB/*ER` → learner
  - `KOP/KWREU` → copy
 
+This method is preferred over writing phonetically with the "normal" method. Take the following examples:
+ - `A/TOPL/EUBG` → atomic
+    - `A/TO/PHEUBG` could technically work, but the `TO` stroke is problematic and can lead to conflicts
+
 Some words will also be able be stroked using suffix strokes, even if whatever was previously stroked is is not a word. This may be because some strokes would be too short and would cause word boundary issues.
 
 Examples:
