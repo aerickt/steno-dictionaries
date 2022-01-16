@@ -21,7 +21,7 @@ Using a textbook such as Learn Plover! should work just fine with this dictionar
  - [Right hand number pad](#Right-hand-number-pad)
  - [Fingerspelling](#Fingerspelling)
  - [Phonetics and orthography](#Phonetics-and-orthography)
- - [Breaking up multisyllable words](#Breaking-up multisyllable-words)
+ - [Breaking up multisyllable words](#Breaking-up-multisyllable-words)
  - [Prefixes and suffixes](#Prefixes-and-suffixes)
 
 #### Compound words
