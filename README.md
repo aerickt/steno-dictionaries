@@ -221,7 +221,7 @@ Here are some examples of how not to break up a word:
     - Instead use `TPRAPB/KHAOEUS` or `TPRAPB/KHAOEUZ`
 
 #### Prefixes and suffixes
- - Since we cannot double consonants, `KWREU` is default for adding "-y"
+ - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
     - `KEUT/KWREU` → kitty
     - `STOR/KWREU` → story
  - `OER` is always used for "-ory" suffix
@@ -244,6 +244,9 @@ Here are some examples of how not to break up a word:
  - `EUFT/EUBG` and `ST-BG` are preferred for "-istic"
     - `RAEL/EUFT/EUBG` → realistic
     - `A/TPHA/KROPB/ST-BG` → anachronistic
+ - `SH-PBS` is the "-ishness" suffix
+    - `TPAOL/SH-PBS` foolishness
+    - `PWHRU/SH-PBS` → bluishness
 
 ## rh-numpad.json
 
