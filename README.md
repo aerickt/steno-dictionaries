@@ -52,7 +52,7 @@ This dictionary contains arrow key movements and a few selecting movements. By p
 
 By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
 
-To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. I don't know how this works on Macs, but my understanding is the something else has to be used that's not `Ctrl`.
+To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
 
 #### Commands and keyboard shortcuts
 Many of the commands from main.json have stayed the same.
@@ -68,9 +68,9 @@ Common keyboard keys have also carried over from main.json.
  - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
  - `#R-R` → `Shift+Enter`
  - `PW-FP` → backspace one character
- - `PW*FP` → backspace one word (`Ctrl+Backspace`; this will have to be changed on Macs)
+ - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
  - `TKHRE` → delete one character
- - `TKHR*E` → delete one word (`Ctrl+Delete`; this will have be changed on Macs)
+ - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
  - `TA*B` → `Tab`
  - `#TAB` → `Shift+Tab`
 
@@ -221,7 +221,7 @@ Here are some examples of how not to break up a word:
     - Instead use `TPRAPB/KHAOEUS` or `TPRAPB/KHAOEUZ`
 
 #### Prefixes and suffixes
- - Since we cannot double consonants, `KWREU` is default for adding "-y"
+ - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
     - `KEUT/KWREU` → kitty
     - `STOR/KWREU` → story
  - `OER` is always used for "-ory" suffix
@@ -244,6 +244,9 @@ Here are some examples of how not to break up a word:
  - `EUFT/EUBG` and `ST-BG` are preferred for "-istic"
     - `RAEL/EUFT/EUBG` → realistic
     - `A/TPHA/KROPB/ST-BG` → anachronistic
+ - `SH-PBS` is the "-ishness" suffix
+    - `TPAOL/SH-PBS` foolishness
+    - `PWHRU/SH-PBS` → bluishness
 
 ## rh-numpad.json
 
