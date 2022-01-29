@@ -11,7 +11,7 @@ While the majority of Plover theory have been left untouched, there are several 
 
 Using a textbook such as Learn Plover! should work just fine with this dictionary, as long as one also reads this documentation.
 
-> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 22k entries at time of this writing. 
+> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 23k entries at time of this writing. 
 
 ### About this dictionary
  - [Compound words](#Compound-words)
