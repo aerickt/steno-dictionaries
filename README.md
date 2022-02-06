@@ -247,6 +247,12 @@ Here are some examples of how not to break up a word:
  - `SH-PBS` is the "-ishness" suffix
     - `TPAOL/SH-PBS` foolishness
     - `PWHRU/SH-PBS` → bluishness
+ - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
+    - Usually `HREU` can also work as these are explicitly defined in the dictionary
+        - For example, `TKE/PHO/TKPWRAF/EUBG/HREU` → demographically (in the dictionary)
+        - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
+        - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
+
 
 ## rh-numpad.json
 
