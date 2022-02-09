@@ -11,7 +11,7 @@ While the majority of Plover theory have been left untouched, there are several 
 
 Using a textbook such as Learn Plover! should work just fine with this dictionary, as long as one also reads this documentation.
 
-> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 23k entries at time of this writing. 
+> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 30k entries at time of this writing.
 
 ### About this dictionary
  - [Compound words](#Compound-words)
@@ -23,6 +23,7 @@ Using a textbook such as Learn Plover! should work just fine with this dictionar
  - [Fingerspelling](#Fingerspelling)
  - [Phonetics and orthography](#Phonetics-and-orthography)
  - [Breaking up multisyllable words](#Breaking-up-multisyllable-words)
+ - [Exceptions to syllable breaks](#Exceptions-to-syllable-breaks)
  - [Prefixes and suffixes](#Prefixes-and-suffixes)
 
 #### Compound words
@@ -170,8 +171,8 @@ Examples:
  - `KOP/KWREU` → copy
 
 This method is sometimes preferred over writing phonetically with the "normal" method. Take the following examples:
- - `A/TOPL/EUBG` → atomic
-    - `A/TO/PHEUBG` could technically work, but the `TO` stroke is problematic and can lead to conflicts
+ - ~~`A/TOPL/EUBG` → atomic~~
+    - ~~`A/TO/PHEUBG` could technically work, but the `TO` stroke can lead to conflicts, it isn't preferred or used~~
 > TODO: document this better, more examples when suffixes are preferred
 
 Some words will also be able be stroked using suffix strokes, even if whatever was previously stroked is is not a word. This may be because some strokes would be too short and would cause word boundary issues.
@@ -219,6 +220,19 @@ Here are some examples of how not to break up a word:
  - `TPRAFRPB/AOEUZ` (franchise) ❌
     - "Normal" splitting method works in this scenario
     - Instead use `TPRAPB/KHAOEUS` or `TPRAPB/KHAOEUZ`
+
+#### Exceptions to syllable breaks
+
+The first stroke of a word cannot start with the following for word boundary issues:
+ - `KO`
+ - `PWU`
+
+Instead carry the first stroke far enough so that there is a consonant on the right hand
+ - E.g. `KOL/KWREBGT` → collect, `KOR/KWREBGT` → correct
+
+If there are two vowels next to each other in the word, but the first stroke is a prefix stroke, there is no need to use the `KWR` starter on the next stroke:
+ - `KOE/OR/TKEU/TPHAEUT` → coordinate
+ - `PRE/EPLT` → preempts
 
 #### Prefixes and suffixes
  - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
