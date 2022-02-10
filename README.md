@@ -142,7 +142,9 @@ There are only a few changes:
 #### Breaking up multisyllable words
 main.json relies on a lot of dropping unstressed vowels in order to break up words which is also used in this dictionary. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`. This dictionary also includes some entries where unstressed vowels haven't been dropped, but it is recommended to not use these as they may not be complete.
 
-If it is still ambiguous as to where a syllable break starts (even if unstressed vowels have been dropped) then the rule is to carry each syllable as far as possible so that every stroke can start with a consonant. Consonants are also never doubled (`TKPWHROR/REU` (glory) would not be valid). I refer to this as the "normal" splitting method.
+If it is still ambiguous as to where a syllable break starts (even if unstressed vowels have been dropped) then the rule is to carry each syllable as far as possible so that every stroke can start with a consonant.
+
+Syllables should be split in a way that consonants are not doubled and that every stroke that's not an affix begins with a consonant. I call this the "normal" splitting method.
 
 Examples:
  - `TPOE/TPHE/TEUBG` → phonetic
@@ -230,9 +232,13 @@ The first stroke of a word cannot start with the following for word boundary iss
 Instead carry the first stroke far enough so that there is a consonant on the right hand
  - E.g. `KOL/KWREBGT` → collect, `KOR/KWREBGT` → correct
 
-If there are two vowels next to each other in the word, but the first stroke is a prefix stroke, there is no need to use the `KWR` starter on the next stroke:
+If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
- - `PRE/EPLT` → preempts
+ - `PRE/EPLT` → preempt
+
+Consonants can also be doubled if the previous stroke is a prefix and whatever follows is a valid word on its own:
+ - `TKEUS/SOFLS` → dissolves
+ - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
 #### Prefixes and suffixes
  - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
