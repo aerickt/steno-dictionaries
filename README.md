@@ -203,13 +203,6 @@ Examples:
  - `PHEUR/KWROR` → mirror (can't double the R, and `PHEU` is "my")
  - `ES/KWRAEU` → essay (can't double the S, and `E` is too short by itself).
 
-This `KWR` linker is also used if the "normal" splitting method will result in word boundary errors as well as if prefixes and suffixes cannot be used.
-
-Examples:
- - `KOL/KWREBGT` → collect
-    - The "normal" splitting method would use `KO/HREBGT`, but `KO` is the brief for "could" and `HREBGT` is the brief for "elect"
-        - "collect" vs "could elect"
-
 In general, every word in the dictionary will have at least one of these ways to break up a word. You may use whichever method makes the most sense for a given word
 
 However, I would recommend using anything other than the "normal" method to break up words as the others are not available for all words.
@@ -230,9 +223,12 @@ Here are some examples of how not to break up a word:
 The first stroke of a word cannot start with the following for word boundary issues:
  - `KO`
  - `PWU`
+ - `TKO`
 
 Instead carry the first stroke far enough so that there is a consonant on the right hand
- - E.g. `KOL/KWREBGT` → collect, `KOR/KWREBGT` → correct
+ - E.g.
+    - `KOL/KWREBGT` → collect, `KOR/KWREBGT` → correct
+    - `TKOBG/KWRAOU/-PLT` → document
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
