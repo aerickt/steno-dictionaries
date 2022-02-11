@@ -138,6 +138,8 @@ There are only a few changes:
         - `HREBG/KHUR` → lecture
         - `KAP/KHUR` → capture
         - `PHA/KHUR` → mature
+ - `TK*EU` (the "di-"prefix) is always used for the `TKEU` sound as `TKEU` is the phrase "did I"
+    - "Direct" can be stroked as `TKAOEU/REBGT` (phonetic) or `TK*EU/REBGT` (phonetic/orthographic)
 
 #### Breaking up multisyllable words
 main.json relies on a lot of dropping unstressed vowels in order to break up words which is also used in this dictionary. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`. This dictionary also includes some entries where unstressed vowels haven't been dropped, but it is recommended to not use these as they may not be complete.
