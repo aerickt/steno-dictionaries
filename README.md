@@ -229,6 +229,8 @@ Instead carry the first stroke far enough so that there is a consonant on the ri
  - E.g.
     - `KOL/KWREBGT` → collect, `KOR/KWREBGT` → correct
     - `TKOBG/KWRAOU/-PLT` → document
+ - Of course, if the following stroke is a suffix, there is no need to use `KWR`
+    - `TKOD/*ERG` → doddering
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
