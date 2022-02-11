@@ -138,7 +138,7 @@ There are only a few changes:
         - `HREBG/KHUR` → lecture
         - `KAP/KHUR` → capture
         - `PHA/KHUR` → mature
- - `TK*EU` (the "di-"prefix) is always used for the `TKEU` sound as `TKEU` is the phrase "did I"
+ - `TK*EU` (the "di-"prefix) is always used for the initial `TKEU` sound as `TKEU` is the phrase "did I"
     - "Direct" can be stroked as `TKAOEU/REBGT` (phonetic) or `TK*EU/REBGT` (phonetic/orthographic)
 
 #### Breaking up multisyllable words
