@@ -230,6 +230,7 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `KO`
  - `PWU`
  - `TKO`
+ - `TKU`
 
 Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
  - `KOL/KWREBGT` → collect
