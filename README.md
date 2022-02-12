@@ -238,6 +238,7 @@ If the first stroke of an outline is a prefix, there is no need to use the `KWR`
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
  - `PRE/EPLT` → preempt
  - `TK*EU/AOE/HREBG/TREUBG` - dielectric
+ - `TKEUS/AEUBL` → disable
 
 Consonants can also be doubled if the previous stroke is a prefix and the strokes that follow form a valid word on their own:
  - `TKEUS/SOFLS` → dissolves
@@ -247,7 +248,7 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
  - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
     - `KEUT/KWREU` → kitty
     - `STOR/KWREU` → story
- - `OER` is always used for the "-ory" sound but not by itself
+ - `OER` is used for the "-ory" sound but not by itself
     - `SA/TEUS/TPABG/TOER` → satisfactory
     - `TPABG/TOER` → factory
  - `O*R/KWREU` can still be used for the "-ory" suffix
