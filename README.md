@@ -25,12 +25,11 @@ While the majority of Plover theory have been left untouched, there are several 
  - [Prefixes and suffixes](#Prefixes-and-suffixes)
 
 #### Compound words
-Compound words are always written with the asterisk on the first stroke of the second word. For example, to write the word "storybooks" would be as `STOR/KWREU/PWAO*BG/-S`.
-
-Examples:
+Compound words are always written with the asterisk on the first stroke of the second word.
  - `KAOE/PWAO*RD` → keyboard
  - `TEGT/PWAO*BG` → textbook
  - `PHOUS/PA*D` → mousepad
+ - `STOR/KWREU/PWAO*BG/-S` → storybooks
 
 #### Proper nouns
 Proper nouns are always written with the number key on the first stroke. Everything else is written with the same rules.
@@ -39,6 +38,7 @@ Proper nouns are always written with the number key on the first stroke. Everyth
  - `#PAOE/TER` → Peter
  - `#AP/-L` → Apple
  - `#AUS/TRAEUL/KWRA` → Australia
+ - `HART/PHAPB` → Hartman
 
 > I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
 
@@ -149,9 +149,7 @@ main.json relies a lot on dropping unstressed vowels in order to break up words.
 
 This dictionary tries to follow this principle, but also includes some entries where unstressed vowels haven't been dropped. It is recommended to not rely on these entries entirely as it is slower to use more strokes and these entries may not be complete.
 
-If it is still ambiguous as to where a syllable break starts (even if unstressed vowels have been dropped) then the rule is to carry each syllable as far as possible so that every stroke can start with a consonant.
-
-Syllables should be split in a way that consonants are not doubled and that every stroke that's not an affix begins with a consonant. I'll refer to this as the "normal" splitting method.
+When determining where a word break occurs, splitting the word by syllables will generally work. Consonants should not be shared across strokes, and every stroke apart from affixes and the first stroke should not start with a vowel.
 
 "Normal" splitting method:
  - `TPOE/TPHE/TEUBG` → phonetic
@@ -159,20 +157,14 @@ Syllables should be split in a way that consonants are not doubled and that ever
  - `KAL/KAOU/HRAEU/TOR` → calculator
  - `RE/KOG/TPHEUGS` → recognition
  - `ABG/TEUF` → active
-
-Invalid ways to break up a word
- - `RAPBD/OPL` (random) ❌
- - `KAOEB/ORD` (keyboard) ❌
- - `HRAPT/OP` (laptop) ❌
-
-However, some words will not be able to be broken up like this such as words starting with vowels. These are handled exactly the same, except that it is acceptable for the first stroke to begin with a vowel.
+ - `AD/HAOE/SEUF` → adesive
 
 "Normal" splitting with first stroke starting with a vowel:
  - `EUPL/POR/TAPBT` → important
  - `OE/PWAEU` → obey
  - `ABG/SES` → access
 
-It is also important to use prefixes and suffixes whenever possible to break up words. Many entries containing prefixes and suffixes exist in the dictionary. However, given the nature of how Plover handles suffixes, writing words using these strokes that aren't defined in the dictionary will not show up when using the lookup tool.
+It is also important to use prefixes and suffixes whenever possible.
 
 Using suffixes:
  - `HRAOBG/SKWRUP` → lookup
@@ -199,7 +191,11 @@ If there are two vowels next to each other that have to be represented in two st
  - `AOEU/KWROE/HREU` → aioli
  - `PAOE/KWRA/TPHOE` → piano
 
-`KWR` is can also be used to start a stroke. This can be preferred if a word break using the "normal" method can result in word boundary issues.
+Depending on pronuncation, `W` can also begin a consecutive vowel stroke:
+ - `AL/TRAOU/WEUS/TEUBG` → altruistic
+ - `KOPB/TKAOU/WEUT` → conduit
+
+`KWR` can also be used to start a stroke if all consonants have been taken in the previous stroke. This can be preferred if a word break using the "normal" method can result in word boundary issues.
 
 `KWR` as a starter:
  - `ER/KWROR` → error
@@ -223,6 +219,8 @@ Other invalid examples of splitting a word:
     - Instead use `EBG/SAOED`
  - `TPRAFRPB/AOEUZ` (franchise) ❌
     - Normal method is sufficient `TPRAPB/KHAOEUZ` or `TPRAPB/KHAOEUS`
+ - `PWET/KWRER` (better) ❌
+    - Instead use `PWE/TER` or `PWET/*ER`
 
 #### Exceptions to syllable breaks
 
@@ -231,6 +229,8 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `PWU`
  - `TKO`
  - `TKU`
+ - `E`
+ - `PHEU`
 
 Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
  - `KOL/KWREBGT` → collect
@@ -238,6 +238,9 @@ Instead carry the first stroke far enough so that there is a consonant on the ri
  - `PWUZ/KWRARD` → buzzard
  - `PWUT/*ER` → butter
  - `TKOBG/KWRAOU/-PLT` → document
+ - `TKUL/KWRARD` → dullard
+ - `#PHEUR/KWRAPB/TKA` → Miranda
+ - `ES/PERBL/KWREU` → especially
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
