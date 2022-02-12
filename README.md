@@ -125,7 +125,7 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
  - `-P` can be used by itself to end syllables with a p sound
     - `HEL/-P` → help
  - `OR` is used for the "or" sound
-    - `OER` is only used in briefs
+    - `OER` is only used in briefs and suffix sounds
  - `KWR` is used in certain diphthongs such as:
     - `SREUD/KWROE` → video
     - `AEUR/KWRA` → area
@@ -180,32 +180,38 @@ Using suffixes:
  - `KOP/KWREU` → copy
  - `TPOE/TPHE/TEUBG/A*L/KWREU` → phonetically
 
-Some words can also be stroked using an ending suffix stroke, even if whatever was previously stroked is is not a word. This may be because some strokes would be too short and would cause word boundary issues.
+Some words can also be stroked using suffixes, even if whatever was previously written is not a word. This may be because some strokes would be too short and would cause word boundary issues.
 
 Suffixes on root "words":
  - `UT/*ER` → utter (as opposed to `U/TER`)
- - `ED/EUGS` → edition (as opposed to `E/TKEUGS`)
+ - `ED/KWREUGS` → edition (as opposed to `E/TKEUGS`)
  - `HR*ET/*ER` → leather
  - `ALD/*ER` → alder
  - `KEUT/KWREU` → kitty (as opposed to `KEU/TEU`)
- - `A/TOPL/EUBG` → atomic
- - `TPOE/TPHET/EUBG` → phonetic
+ - `A/TOPL/KWREUBG` → atomic
+ - `TPOE/TPHET/KWREUBG` → phonetic
+
+> Note that the suffixes "-ic" and "-ition" differ from main.json. See [Prefixes and suffixes](#Prefixes-and-suffixes) for a more complete list of suffixes.
 
 If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
 
-`KWR` a linker between vowels:
+`KWR` as a linker between vowels:
  - `AOEU/KWROE/HREU` → aioli
  - `PAOE/KWRA/TPHOE` → piano
 
-`KWR` is also used to start a stroke if the stroke:
- - is not a prefix or suffix
- - is not the first stroke
- - has a word break earlier would make the previous stroke too short
+`KWR` is can also be used to start a stroke. This can be preferred if a word break using the "normal" method can result in word boundary issues.
 
- `KWR` as a starter:
+`KWR` as a starter:
  - `ER/KWROR` → error
+    - Normal method: `E/ROR`
  - `PHEUR/KWROR` → mirror
+    - Normal method: `PHEU/ROR`
  - `ES/KWRAEU` → essay
+    - Normal method: `E/SAEU`
+
+In the above examples, the normal method would split each word in a way that is less natural and can run into conflicts.
+
+> While doubling the R consonant would be more natural, I wanted to reduce the ambiguity that comes with doubling consonants between strokes as found in main.json. Thus, doubling a consonant is used very rarely in this dictionary.
 
 In general, every word in the dictionary will have at least one of these ways to break up a word. Generally, the "normal" method and using suffixes is preferred, followed by suffixes on non-words and finally `KWR` as a linker.
 
@@ -280,7 +286,6 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
         - For example, `TKE/PHO/TKPWRAF/EUBG/HREU` → demographically (in the dictionary)
         - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
         - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
-
 
 ## rh-numpad.json
 
