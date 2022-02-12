@@ -122,120 +122,124 @@ Examples
 > Note: stroking `-FPLT` does not leave a trailing period.
 
 #### Phonetics and orthography
- - `*PL` is always used as the -mp cluster (never `-FRP`)
- - `-P` by itself can be used to "add on" Ps
+The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from the multisyllable words chapters). The list includes changes made as well as any rules or tips not necessarily mentioned in any main learning resources for stock Plover.
+ - `*PL` is used as the -mp cluster intsead of `-FRP`
+ - `-P` can be used by itself to end syllables with a p sound
     - `HEL/-P` → help
-    - This rule is used very rarely, and is not guaranteed to be consistent
- - "or" sound is always used with `OR`
-    - `OER` is never used to represent this phonetically
+ - `OR` is used for the "or" sound
+    - `OER` is only used in briefs
  - `KWR` is used in certain diphthongs such as:
     - `SREUD/KWROE` → video
     - `AEUR/KWRA` → area
     - `EUPB/SOPL/TPHEU/KWRA` → insomnia
-    - `AOE/KWRAL/TEU` → reality
+    - `RAOE/KWRAL/TEU` → reality
     - Essentially, if the vowel can be approximated with "Y", it is used
-    - This is the same as Plover's main.json, but I still figure it's worth mentioning
  - `KHUR` is always used for the "chur" sound
     - In main.json, there are many inconsistent ways to write a word such as "culture"
         - `KUL/KHAOUR`, `KUL/TAOUR`, `KUL/KHUR`, `KUL/TUR`, etc
-    - In this dictionary, culture is written as `KUL/KHUR`
+    - In this dictionary, culture is written only as `KUL/KHUR`
     - Other examples:
         - `HREBG/KHUR` → lecture
         - `KAP/KHUR` → capture
         - `PHA/KHUR` → mature
- - `TK*EU` (the "di-"prefix) is always used for the initial `TKEU` sound as `TKEU` is the phrase "did I"
-    - "Direct" can be stroked as `TKAOEU/REBGT` (phonetic) or `TK*EU/REBGT` (phonetic/orthographic)
+ - `TK*EU` is always used for the initial `TKEU` sound when starting a word
+    - `TK*EU/REBGT` → direct
+    - `TK*EU/HREU/SKWREPBT` → diligents
 
 #### Breaking up multisyllable words
-main.json relies on a lot of dropping unstressed vowels in order to break up words which is also used in this dictionary. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`. This dictionary also includes some entries where unstressed vowels haven't been dropped, but it is recommended to not use these as they may not be complete.
+main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`.
+
+This dictionary tries to follow this principle, but also includes some entries where unstressed vowels haven't been dropped. It is recommended to not rely on these entries entirely as it is slower to use more strokes and these entries may not be complete.
 
 If it is still ambiguous as to where a syllable break starts (even if unstressed vowels have been dropped) then the rule is to carry each syllable as far as possible so that every stroke can start with a consonant.
 
-Syllables should be split in a way that consonants are not doubled and that every stroke that's not an affix begins with a consonant. I call this the "normal" splitting method.
+Syllables should be split in a way that consonants are not doubled and that every stroke that's not an affix begins with a consonant. I'll refer to this as the "normal" splitting method.
 
-Examples:
+"Normal" splitting method:
  - `TPOE/TPHE/TEUBG` → phonetic
  - `PEUBG/KHUR` → picture
  - `KAL/KAOU/HRAEU/TOR` → calculator
  - `RE/KOG/TPHEUGS` → recognition
  - `ABG/TEUF` → active
 
-These would not be valid ways of breaking up a word:
+Invalid ways to break up a word
  - `RAPBD/OPL` (random) ❌
  - `KAOEB/ORD` (keyboard) ❌
  - `HRAPT/OP` (laptop) ❌
 
-However, some words will not be able to be broken up like this such as words starting with vowels. These are handled exactly the same, except that it is acceptable for the first stroke to begin with a vowel. I still categorize this under the "normal" splitting method.
+However, some words will not be able to be broken up like this such as words starting with vowels. These are handled exactly the same, except that it is acceptable for the first stroke to begin with a vowel.
 
-Examples:
+"Normal" splitting with first stroke starting with a vowel:
  - `EUPL/POR/TAPBT` → important
  - `OE/PWAEU` → obey
  - `ABG/SES` → access
 
 It is also important to use prefixes and suffixes whenever possible to break up words. Many entries containing prefixes and suffixes exist in the dictionary. However, given the nature of how Plover handles suffixes, writing words using these strokes that aren't defined in the dictionary will not show up when using the lookup tool.
 
-Examples:
+Using suffixes:
  - `HRAOBG/SKWRUP` → lookup
  - `HRERPB/*ER` → learner
  - `KOP/KWREU` → copy
+ - `TPOE/TPHE/TEUBG/A*L/KWREU` → phonetically
 
-Some words will also be able be stroked using suffix strokes, even if whatever was previously stroked is is not a word. This may be because some strokes would be too short and would cause word boundary issues.
+Some words can also be stroked using an ending suffix stroke, even if whatever was previously stroked is is not a word. This may be because some strokes would be too short and would cause word boundary issues.
 
-Examples:
+Suffixes on root "words":
  - `UT/*ER` → utter (as opposed to `U/TER`)
  - `ED/EUGS` → edition (as opposed to `E/TKEUGS`)
  - `HR*ET/*ER` → leather
  - `ALD/*ER` → alder
  - `KEUT/KWREU` → kitty (as opposed to `KEU/TEU`)
- - `A/TOPL/EUBG` → atomic (in `A/TO/MEUBG` the `TO` stroke may run into word boundary issues)
+ - `A/TOPL/EUBG` → atomic
+ - `TPOE/TPHET/EUBG` → phonetic
 
 If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
 
-Examples:
+`KWR` a linker between vowels:
  - `AOEU/KWROE/HREU` → aioli
  - `PAOE/KWRA/TPHOE` → piano
 
-If there is no other way to break up a word so that every non-prefix, non-suffix, and non-starting stroke begins with a vowel, `KWR` is used instead as a linker.
+`KWR` is also used to start a stroke if the stroke:
+ - is not a prefix or suffix
+ - is not the first stroke
+ - has a word break earlier would make the previous stroke too short
 
-Examples:
+ `KWR` as a starter:
  - `ER/KWROR` → error
- - `PHEUR/KWROR` → mirror (can't double the R, and `PHEU` is "my")
- - `ES/KWRAEU` → essay (can't double the S, and `E` is too short by itself).
+ - `PHEUR/KWROR` → mirror
+ - `ES/KWRAEU` → essay
 
-In general, every word in the dictionary will have at least one of these ways to break up a word. You may use whichever method makes the most sense for a given word
+In general, every word in the dictionary will have at least one of these ways to break up a word. Generally, the "normal" method and using suffixes is preferred, followed by suffixes on non-words and finally `KWR` as a linker.
 
-However, I would recommend using anything other than the "normal" method to break up words as the others are not available for all words.
-
-Here are some examples of how not to break up a word:
+Other invalid examples of splitting a word:
  - `TERPL/KWRAOEUT` (termite) ❌
-    - It is not necessary to use `KWR` as the "normal" method works just fine
-    - Instead use `TER/PHAOEUT`
+    - Use normal method, `TER/PHAOEUT`
  - `EBGS/SAOED` (exceed) ❌
     - `-BGS` already contains the "ks" sound, and the S in the second stroke repeats a consonant
-    - Instead use `EBG/SAOED` or `EBGS/KWRAOED`
+    - Instead use `EBG/SAOED`
  - `TPRAFRPB/AOEUZ` (franchise) ❌
-    - "Normal" splitting method works in this scenario
-    - Instead use `TPRAPB/KHAOEUS` or `TPRAPB/KHAOEUZ`
+    - Normal method is sufficient `TPRAPB/KHAOEUZ` or `TPRAPB/KHAOEUS`
 
 #### Exceptions to syllable breaks
 
-The first stroke of a word cannot start with the following for word boundary issues:
+Sometimes a stroke should not begin with a certain chord as it is a common brief and would lead to word boundary issues. The following chords should not be used as strokes to start an outline.
  - `KO`
  - `PWU`
  - `TKO`
 
-Instead carry the first stroke far enough so that there is a consonant on the right hand
- - E.g.
-    - `KOL/KWREBGT` → collect, `KOR/KWREBGT` → correct
-    - `TKOBG/KWRAOU/-PLT` → document
- - Of course, if the following stroke is a suffix, there is no need to use `KWR`
-    - `TKOD/*ERG` → doddering
+Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
+ - `KOL/KWREBGT` → collect
+ - `KOR/KWREBGT` → correct
+ - `PWUZ/KWRARD` → buzzard
+ - `PWUT/*ER` → butter
+ - `TKOBG/KWRAOU/-PLT` → document
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
  - `PRE/EPLT` → preempt
+ - `TK*EU/AOE/HREBG/TREUBG` - dielectric
 
-Consonants can also be doubled if the previous stroke is a prefix and whatever follows is a valid word on its own:
+Consonants can also be doubled if the previous stroke is a prefix and the strokes that follow form a valid word on their own:
  - `TKEUS/SOFLS` → dissolves
  - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
@@ -243,27 +247,31 @@ Consonants can also be doubled if the previous stroke is a prefix and whatever f
  - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
     - `KEUT/KWREU` → kitty
     - `STOR/KWREU` → story
- - `OER` is always used for "-ory" suffix
-    - `SA/TEUS/TPABGT/OER` → satisfactory
- - `-PB` is the "-en" suffix
+ - `OER` is always used for the "-ory" sound but not by itself
+    - `SA/TEUS/TPABG/TOER` → satisfactory
+    - `TPABG/TOER` → factory
+ - `O*R/KWREU` can still be used for the "-ory" suffix
+    - `AUTD/O*R/KWREU` → auditory
+ - `-PB` → "-en" suffix
     - `HRAOEUT/-PB` → lighten
     - `SOFT/-PB` → soften
- - `-PBT` is the "-ent" suffix
+ - `-PBT` → "-ent" suffix
     - `A/STREUPBG/-PBT` → astringent
     - `STAOUD/-PBT` → student
     - `AOE/TPEURB/-PBT` → efficient
- - `-PLT` is the "-ment" suffix
+ - `-PLT` → "-ment" suffix
  - Words ending in "-ous" and "-us" always use `KWRUS` or some variation
     - `STAOU/PEPB/TKUS` → stupendous
     - `RAOEUT/KWRUS` → righteous
     - `KHAOEUT/KHUS` → righteous
- - `-LT` for the "-let" suffix
+ - `-LT` → "-let" suffix
     - `A/PHAOU/-LT` → amulet
     - `STAR/-LT` → starlet
- - `EUFT/EUBG` and `ST-BG` are preferred for "-istic"
+ - `-L` → "-le" suffix
+ - `EUFT/EUBG` and `ST-BG` → "-istic"
     - `RAEL/EUFT/EUBG` → realistic
     - `A/TPHA/KROPB/ST-BG` → anachronistic
- - `SH-PBS` is the "-ishness" suffix
+ - `SH-PBS` → "-ishness" suffix
     - `TPAOL/SH-PBS` foolishness
     - `PWHRU/SH-PBS` → bluishness
  - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
