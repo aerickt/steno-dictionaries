@@ -120,7 +120,7 @@ Examples
 > Note: stroking `-FPLT` does not leave a trailing period.
 
 #### Phonetics and orthography
-The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from the multisyllable words chapters). The list includes changes made as well as any rules or tips not necessarily mentioned in any main learning resources for stock Plover.
+The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from word breaks as well as suffixes and prefixes). The following list includes changes I've made as well as any rules or tips not necessarily mentioned in any main learning resources for stock Plover.
  - `*PL` is used as the -mp cluster intsead of `-FRP`
  - `-P` can be used by itself to end syllables with a p sound
     - `HEL/-P` → help
