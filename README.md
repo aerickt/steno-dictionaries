@@ -46,8 +46,6 @@ Proper nouns are always written with the number key on the first stroke. Everyth
 
 > Unfortunately, entries using the number key will not be displayed as I have above, but rather with numbers. So viewing the dictionary you would see `350ER/TER` instead of `#PAOE/TER`.
 
-> I'm not sure if this is a good idea; it feels rather clunky, and I've only been trying this out for a few days so this may change.
-
 #### Movement keys
 This dictionary contains arrow key movements and a few selecting movements. By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
 
@@ -107,16 +105,23 @@ For symbols beyond these where you might require different spacing and capitaliz
 plover-base.json has this system by default. See [rh-numpad.json](rh-numpadjson).
 
 #### Fingerspelling
-In addition to normal fingerspelling with `*`, using `-FPLT` of `*` will put a period after the letter. `*FPLT` will capitalize the word.
+In addition to normal fingerspelling with `*`, using `-FPLT` of `*` will put a period after the letter. `*FPLT` will capitalize the word. `-RBGS` is used for stitching (requires `plover-stitching` plugin).
 
 Examples:
  - `PW*FPLT/KR*FPLT/*EFPLT` → B.C.E.
  - `AFPLT/P-FPLT/P-FPLT/HR-FPLT/EFPLT` → a.p.p.l.e.
+ - `PW*RBGS/KR*RBGS/*ERBGS` → B-C-E
+ - `ARBGS/P-RBGS/P-RBGS/HR-RBGS/ERBGS` → a-p-p-l-e
 
-> Planning on using `-RBGS` for fingerspelling with hyphens (stitching) but this requires the plover-stitching plugin.
+Stroking `-FPLT` and `-RBGS` n times will stitch the n words with periods and hyphens retroactively.
+
+Examples
+ - `AP/-L/-FPLT` → a.p.p.l.e
+ - `PHEU/TPHAEUPL/S/#TOD/-RBGS/-RBGS/-RBGS/-RBGS` → M-y n-a-m-e i-s T-o-d-d
+
+> Note: stroking `-FPLT` does not leave a trailing period.
 
 #### Phonetics and orthography
-There are only a few changes:
  - `*PL` is always used as the -mp cluster (never `-FRP`)
  - `-P` by itself can be used to "add on" Ps
     - `HEL/-P` → help
@@ -174,11 +179,6 @@ Examples:
  - `HRERPB/*ER` → learner
  - `KOP/KWREU` → copy
 
-This method is sometimes preferred over writing phonetically with the "normal" method. Take the following examples:
- - ~~`A/TOPL/EUBG` → atomic~~
-    - ~~`A/TO/PHEUBG` could technically work, but the `TO` stroke can lead to conflicts, it isn't preferred or used~~
-> TODO: document this better, more examples when suffixes are preferred
-
 Some words will also be able be stroked using suffix strokes, even if whatever was previously stroked is is not a word. This may be because some strokes would be too short and would cause word boundary issues.
 
 Examples:
@@ -187,8 +187,7 @@ Examples:
  - `HR*ET/*ER` → leather
  - `ALD/*ER` → alder
  - `KEUT/KWREU` → kitty (as opposed to `KEU/TEU`)
-
-> Whenever `KWREU` can be used, always default to that instead (like in the "kitty").
+ - `A/TOPL/EUBG` → atomic (in `A/TO/MEUBG` the `TO` stroke may run into word boundary issues)
 
 If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
 
