@@ -7,11 +7,9 @@ My personal steno dictionaries for Plover theory.
 ## plover-base.json
 This dictionary is intended to replace Plover's main.json that comes by default. It's not intended to be as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
 
-While the majority of Plover theory have been left untouched, there are several additions to the underlying theory that make this a little problematic if one were to switch to this dictionary after being accustomed to main.json. With that said, there are still many similarities and many briefs that have been kept in this dictionary.
+While the majority of Plover theory have been left untouched, there are several additions to the underlying theory that make this a little problematic if one were to switch to this dictionary after being accustomed to main.json.
 
-Using a textbook such as Learn Plover! should work just fine with this dictionary, as long as one also reads this documentation.
-
-> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 30k entries at time of this writing.
+> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 32k entries at time of this writing.
 
 ### About this dictionary
  - [Compound words](#Compound-words)
@@ -253,14 +251,14 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
     - `TPABG/TOER` → factory
  - `O*R/KWREU` can still be used for the "-ory" suffix
     - `AUTD/O*R/KWREU` → auditory
- - `-PB` → "-en" suffix
-    - `HRAOEUT/-PB` → lighten
-    - `SOFT/-PB` → soften
- - `-PBT` → "-ent" suffix
-    - `A/STREUPBG/-PBT` → astringent
-    - `STAOUD/-PBT` → student
-    - `AOE/TPEURB/-PBT` → efficient
- - `-PLT` → "-ment" suffix
+ - `KWREPB` → "-en"
+    - `HRAOEUT/KWREPB` → lighten
+    - `SOFT/KWREPB` → soften
+ - `KWREPBT` → "-ent"
+    - `A/STREUPBG/KWREPBT` → astringent
+    - `STAOUD/KWREPBT` → student
+    - `AOE/TPEURB/KWREPBT` → efficient
+ - `-PLT` → "-ment"
  - Words ending in "-ous" and "-us" always use `KWRUS` or some variation
     - `STAOU/PEPB/TKUS` → stupendous
     - `RAOEUT/KWRUS` → righteous
@@ -269,8 +267,10 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
     - `A/PHAOU/-LT` → amulet
     - `STAR/-LT` → starlet
  - `-L` → "-le" suffix
- - `EUFT/EUBG` and `ST-BG` → "-istic"
-    - `RAEL/EUFT/EUBG` → realistic
+ - `KWREUFT` → "-ist"
+ - `KWREUBG` → "-ic"
+ - `KWREUFT/KWREUBG` and `ST-BG` → "-istic"
+    - `RAEL/KWREUFT/KWREUBG` → realistic
     - `A/TPHA/KROPB/ST-BG` → anachronistic
  - `SH-PBS` → "-ishness" suffix
     - `TPAOL/SH-PBS` foolishness
