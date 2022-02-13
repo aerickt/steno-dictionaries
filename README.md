@@ -143,6 +143,12 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
  - `TK*EU` is always used for the initial `TKEU` sound when starting a word
     - `TK*EU/REBGT` → direct
     - `TK*EU/HREU/SKWREPBT` → diligents
+ - `EU` is used for long I when it is spelled with an "I" or a "Y"
+    - `AR/PE/SKWREU/KWROE` → arpegg**i**o
+    - `KUFRB/KWREU` → curvy
+    - `KRUFT/KWREU/HREU` → crustily
+
+> Note: this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
 
 #### Breaking up multisyllable words
 main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`.
@@ -184,6 +190,9 @@ Suffixes on root "words":
  - `TPOE/TPHET/KWREUBG` → phonetic
 
 > Note that the suffixes "-ic" and "-ition" differ from main.json. See [Prefixes and suffixes](#Prefixes-and-suffixes) for a more complete list of suffixes.
+
+Similarly, prefixes can also be used even if they don't make sense orthographically.
+ - `AOE/KHRAOE/SEU/KWRAS/TEUBG` → ecclesiastic
 
 If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
 
