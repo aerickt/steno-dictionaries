@@ -235,6 +235,18 @@ Other invalid examples of splitting a word:
  - `PWET/KWRER` (better) ❌
     - Instead use `PWE/TER` or `PWET/*ER`
 
+Other notes:
+ - Words beginning with "ex" can be written with `EBGS` or some form of `EBG/S`
+    - For a word such as exile, the X sound is made up of k and s. Doubling the S would not be permitted, so it is written as `EBG/SAOEUL` or `EBG/SAO*EUL` if it is pronounced like a Z
+    - A word such as "excellence" can be written as `EBGS/SE/HREPBS` with the second stroke representing the second syllable, and therefore requiring an initial S (this is not repeating the S sound, but is instead an entirely new sound)
+    - Other examples:
+        - `EBG/SE/KRAEUT` → execrate
+        - `EBG/SE/KAOUGS` → execution
+        - `EBG/S*EU/SKWREPBS` exigence
+        - `EBG/S*ULT` → exult
+        - `EBGS/SES` → excess
+        - `EBG/SES` → excess
+
 #### Exceptions to syllable breaks
 
 Sometimes a stroke should not begin with a certain chord as it is a common brief and would lead to word boundary issues. The following chords should not be used as strokes to start an outline.
