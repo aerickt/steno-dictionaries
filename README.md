@@ -150,6 +150,10 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
 
 > Note: this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
 
+ - `-RBL` → "shl" sound
+    - `TK*EU/TPE/REPB/-RBL` → differential
+    - `TPAOEU/TPHAPB/-RBL` → financial
+
 #### Breaking up multisyllable words
 main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`.
 
