@@ -24,10 +24,12 @@ Many of the commands from main.json have stayed the same.
  - `KPA` → capitalize the next word
  - `KPA*` → capitalize the next word and supress the next space
  - `HRO*ER` → uncapitalize the next word
+ - `TK-LS` → supress the next space
 
 Retroactive commands have also been added.
  - `KA*PD` → capitalize the last word
  - `HRO*ERD` → uncapitalize the last word
+ - `TK-FPS` → remove the last space
 
 Common keyboard keys have also carried over from main.json.
  - `R-R` → enter/return (capitalization of next word depends on previous punctuation)

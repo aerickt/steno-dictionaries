@@ -24,6 +24,7 @@
 "TKHR*E": "{#Control(Delete)}{^}",
 "TKHRE": "{#Delete}{^}",
 "TKUPT": "{PLOVER:ADD_TRANSLATION}",
+"TK-FPS": "{*!}",
 "TPEFBG": "{#Escape}",
 "TA*B": "{^}{#Tab}{^}",
 "KPA": "{}{-|}",
