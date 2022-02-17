@@ -1,8 +1,45 @@
 # Steno Dictionaries
 My personal steno dictionaries for Plover theory.
+ - [commands.json](#commandsjson)
  - [plover-base.json](#plover-basejson)
- - [rh-numpad.json](#rh-numpadjson)
  - [plover-uk.json](#plover-ukjson)
+ - [rh-numpad.json](#rh-numpadjson)
+
+## commands.json
+This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
+
+### Dictionary contents
+ - [Movement keys](#Movement-keys)
+ - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
+
+#### Movement keys
+By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
+
+By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
+
+To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
+
+#### Commands and keyboard shortcuts
+Many of the commands from main.json have stayed the same.
+ - `KPA` → capitalize the next word
+ - `KPA*` → capitalize the next word and supress the next space
+ - `HRO*ER` → uncapitalize the next word
+
+Retroactive commands have also been added.
+ - `KA*PD` → capitalize the last word
+ - `HRO*ERD` → uncapitalize the last word
+
+Common keyboard keys have also carried over from main.json.
+ - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
+ - `#R-R` → `Shift+Enter`
+ - `PW-FP` → backspace one character
+ - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
+ - `TKHRE` → delete one character
+ - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
+ - `TA*B` → `Tab`
+ - `#TAB` → `Shift+Tab`
+
+For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
 
 ## plover-base.json
 This dictionary is intended to replace Plover's main.json that comes by default. It's not intended to be as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
@@ -11,7 +48,7 @@ While the majority of Plover theory have been left untouched, there are several 
 
 > While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 32k entries at time of this writing.
 
-### About this dictionary
+### Dictionary contents
  - [Compound words](#Compound-words)
  - [Proper nouns](#Proper-nouns)
  - [Movement keys](#Movement-keys)
@@ -44,34 +81,9 @@ Proper nouns are always written with the number key on the first stroke. Everyth
 
 > Unfortunately, entries using the number key will not be displayed as I have above, but rather with numbers. So viewing the dictionary you would see `350ER/TER` instead of `#PAOE/TER`.
 
-#### Movement keys
-This dictionary contains arrow key movements and a few selecting movements. By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
+#### Movement keys, keyboard shortcuts, commands
 
-By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
-
-To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
-
-#### Commands and keyboard shortcuts
-Many of the commands from main.json have stayed the same.
- - `KPA` → capitalize the next word
- - `KPA*` → capitalize the next word and supress the next space
- - `HRO*ER` → uncapitalize the next word
-
-Retroactive commands have also been added.
- - `KA*PD` → capitalize the last word
- - `HRO*ERD` → uncapitalize the last word
-
-Common keyboard keys have also carried over from main.json.
- - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
- - `#R-R` → `Shift+Enter`
- - `PW-FP` → backspace one character
- - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
- - `TKHRE` → delete one character
- - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
- - `TA*B` → `Tab`
- - `#TAB` → `Shift+Tab`
-
-For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
+See [commands.json](#commandsjson) as plover-base.json contains this dictionary by default.
 
 #### Punctuation
  - `H-F` → `?` question mark
