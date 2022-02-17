@@ -51,8 +51,7 @@ While the majority of Plover theory have been left untouched, there are several 
 ### Dictionary contents
  - [Compound words](#Compound-words)
  - [Proper nouns](#Proper-nouns)
- - [Movement keys](#Movement-keys)
- - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
+ - [Movement keys, keyboard shortcuts, commands](#movement-keys-keyboard-shortcuts-commands)
  - [Punctuation](#Punctuation)
  - [Right hand number pad](#Right-hand-number-pad)
  - [Fingerspelling](#Fingerspelling)
@@ -82,7 +81,6 @@ Proper nouns are always written with the number key on the first stroke. Everyth
 > Unfortunately, entries using the number key will not be displayed as I have above, but rather with numbers. So viewing the dictionary you would see `350ER/TER` instead of `#PAOE/TER`.
 
 #### Movement keys, keyboard shortcuts, commands
-
 See [commands.json](#commandsjson) as plover-base.json contains this dictionary by default.
 
 #### Punctuation
