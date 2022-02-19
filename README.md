@@ -1,5 +1,5 @@
 # Steno Dictionaries
-My personal steno dictionaries for Plover theory.
+My personal steno dictionaries.
  - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
  - [plover-base.json](#plover-basejson)
