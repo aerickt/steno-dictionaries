@@ -4,7 +4,7 @@ My personal steno dictionaries for Plover theory.
  - [movement.modal](#movementmodal)
  - [plover-base.json](#plover-basejson)
  - [plover-uk.json](#plover-ukjson)
- - [raw.py](#raw-py)
+ - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
 
 ## commands.json
