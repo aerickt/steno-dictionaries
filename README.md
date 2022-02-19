@@ -51,7 +51,7 @@ Once the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dicti
 
 Examples:
  - `STPH-G/-G/-G/-G` → arrow key to the right 4 times
- - `STPH*R/-R/-R` → select 3 characters to the left
+ - `STPH*R/*R/*R` → select 3 characters to the left
  - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
 ## plover-base.json
