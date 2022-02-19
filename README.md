@@ -1,6 +1,7 @@
 # Steno Dictionaries
 My personal steno dictionaries for Plover theory.
  - [commands.json](#commandsjson)
+ - [movement.modal](#movementmodal)
  - [plover-base.json](#plover-basejson)
  - [plover-uk.json](#plover-ukjson)
  - [rh-numpad.json](#rh-numpadjson)
@@ -42,6 +43,16 @@ Common keyboard keys have also carried over from main.json.
  - `#TAB` → `Shift+Tab`
 
 For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
+
+## movement.modal
+This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
+
+Once the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dictionary) has been installed from the plugins manager and the plugin has been enabled, add the dictionary above commands.json. Whenever a movement key has been stroked, the `STPH` cluster on the left hand will no longer have to be pressed when stroking successive movement strokes.
+
+Examples:
+ - `STPH-G/-G/-G/-G` → arrow key to the right 4 times
+ - `STPH*R/-R/-R` → select 3 characters to the left
+ - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
 ## plover-base.json
 This dictionary is intended to replace Plover's main.json that comes by default. It's not intended to be as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
