@@ -1,0 +1,52 @@
+{
+    "exclude_entry": false,
+    "exit_on_mismatch": true,
+    "exit_on_match": false,
+    "ignore_folding": true,
+
+    "entry": {
+        "STPH*FR": "{#Shift(Home)}{^}",
+        "STPH*FBL": "{#Shift(Page_Down)}{^}",
+        "STPH*R": "{#Shift(Left)}{^}",
+        "STPH*RPG": "{#Shift(Page_Up)}{^}",
+        "STPH*RB": "{#Control_L(Shift(Left))}{^}",
+        "STPH*P": "{#Shift(Up)}{^}",
+        "STPH*B": "{#Shift(Down)}{^}",
+        "STPH*BG": "{#Control_L(Shift(Right))}{^}",
+        "STPH*LG": "{#Shift(End)}{^}",
+        "STPH*G": "{#Shift(Right)}{^}",
+        "STPH-FR": "{#Home}{^}",
+        "STPH-FBL": "{#Page_Down}{^}",
+        "STPH-R": "{#Left}{^}",
+        "STPH-RPG": "{#Page_Up}{^}",
+        "STPH-RB": "{#Control_L(Left)}{^}",
+        "STPH-P": "{#Up}{^}",
+        "STPH-B": "{#Down}{^}",
+        "STPH-BG": "{#Control_L(Right)}{^}",
+        "STPH-LG": "{#End}{^}",
+        "STPH-G": "{#Right}{^}"
+    },
+
+    "dict": {
+        "*FR": "{#Shift(Home)}{^}",
+        "*FBL": "{#Shift(Page_Down)}{^}",
+        "*R": "{#Shift(Left)}{^}",
+        "*RPG": "{#Shift(Page_Up)}{^}",
+        "*RB": "{#Control_L(Shift(Left))}{^}",
+        "*P": "{#Shift(Up)}{^}",
+        "*B": "{#Shift(Down)}{^}",
+        "*BG": "{#Control_L(Shift(Right))}{^}",
+        "*LG": "{#Shift(End)}{^}",
+        "*G": "{#Shift(Right)}{^}",
+        "-FR": "{#Home}{^}",
+        "-FBL": "{#Page_Down}{^}",
+        "-R": "{#Left}{^}",
+        "-RPG": "{#Page_Up}{^}",
+        "-RB": "{#Control_L(Left)}{^}",
+        "-P": "{#Up}{^}",
+        "-B": "{#Down}{^}",
+        "-BG": "{#Control_L(Right)}{^}",
+        "-LG": "{#End}{^}",
+        "-G": "{#Right}{^}"
+    }
+}
