@@ -48,7 +48,9 @@ For writing every single keyboard shortcut possible, I recommend [Emily's modifi
 ## movement.modal
 This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
 
-Once the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dictionary) has been installed from the plugins manager and the plugin has been enabled, add the dictionary above commands.json. Whenever a movement key has been stroked, the `STPH` cluster on the left hand will no longer have to be pressed when stroking successive movement strokes.
+After the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dictionary) has been installed from the plugins manager, ensure Plover has been restarted and the plugin is enabled (configure → plugins). Next add the dictionary above whichever dictionary contains the default movement strokes.
+
+Using this dictionary for movement keys is exactly the same as those in [commands.json](#Movement-keys), however every successive movement stroke after the first does not need to contain the `STPH` cluster.
 
 Examples:
  - `STPH-G/-G/-G/-G` → arrow key to the right 4 times
@@ -341,9 +343,9 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
         - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
 
 ## raw.py
-This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) will help you write raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
+This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
 
-After both plugins have been installed and Plover has been restarted, add this dictionary to the bottom of the dictionary list (lowest priority), ensuring it is not enabled.
+After both plugins have been installed and Plover has been restarted, this dictionary should be added to the bottom of the dictionary list (lowest priority), ensuring it is **not** enabled.
 
 Next, add the following entries to a dictionary that is higher in priority (e.g. user.json):
 
@@ -360,7 +362,7 @@ Examples:
  - `RA*U/HEU/THR/HOU/RU/TKO*G/TOED/H-F/RA*U` → `` `HEU/THR/HOU/RU/TKO*G/TOED/H-F` ``
  - `#RA*U/AOEUPL/TKO*G/TPAOEUPB/THAUG/SRE/PHUFP/#RA*U` → `AOEUPL/TKO*G/TPAOEUPB/THAUG/SRE/PHUFP`
 
-Thanks to @sammdot who made this dictionary in the first place 😄.
+Thanks to @sammdot who made this dictionary in the first place :D.
 
 ## rh-numpad.json
 
