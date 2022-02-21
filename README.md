@@ -341,6 +341,18 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
         - For example, `TKE/PHO/TKPWRAF/EUBG/HREU` → demographically (in the dictionary)
         - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
         - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
+ - Words beginning with "for":
+    - Use `TPAUR` by default ("for-" prefix)
+        - `TPAUR/TKPWOE` → forgo
+        - `TPAUR/SAEUBG` → forsake
+        - `TPAUR/TAOU/WEU/TUS` → fortuitous
+        - `TPAUR/PHAOU/HRAEUT` → formulate
+    - If a compount word begins with "fore", use `TPOER` and asterisk the second word
+        - `TPOER/H*ED` → forehead
+        - `TPOER/TPHO*/HREPBLG` → foreknowledge
+    - If other consonants on the right will be included in a stroke, use `TPOR`
+        - `TPORPL/HRAEUT` → formulate
+        - `TPORT/KWREU` → forty
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
