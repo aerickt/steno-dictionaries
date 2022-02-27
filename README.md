@@ -62,7 +62,7 @@ This dictionary is intended to replace Plover's main.json that comes by default.
 
 While the majority of Plover theory have been left untouched, there are several additions to the underlying theory that make this a little problematic if one were to switch to this dictionary after being accustomed to main.json.
 
-> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 41k entries at time of this writing.
+> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 47k entries at time of this writing.
 
 ### Dictionary contents
  - [Compound words](#Compound-words)
@@ -283,6 +283,7 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `E`
  - `PHEU`
  - `TPU`
+ - `HE`
 
 Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
  - `KOL/KWREBGT` → collect
