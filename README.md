@@ -264,7 +264,6 @@ Other invalid examples of splitting a word:
 Other notes:
  - Words beginning with "ex" can be written with `EBGS` or some form of `EBG/S`
     - For a word such as exile, the X sound is made up of k and s. Doubling the S would not be permitted, so it is written as `EBG/SAOEUL` or `EBG/SAO*EUL` if it is pronounced like a Z
-    - A word such as "excellence" can be written as `EBGS/SE/HREPBS` with the second stroke representing the second syllable, and therefore requiring an initial S (this is not repeating the S sound, but is instead an entirely new sound)
     - Other examples:
         - `EBG/SE/KRAEUT` → execrate
         - `EBG/SE/KAOUGS` → execution
