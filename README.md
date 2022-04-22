@@ -62,7 +62,9 @@ This dictionary is intended to replace Plover's main.json that comes by default.
 
 While the majority of Plover theory have been left untouched, there are several additions to the underlying theory that make this a little problematic if one were to switch to this dictionary after being accustomed to main.json.
 
-> While I believe this dictionary follows more rigorous rules (especially syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any misstrokes or bad entries, please let me know as soon as possible so I can fix them. It is also still work in progress with only about 47k entries at time of this writing.
+> While I believe this dictionary follows more rigorous rules (especially with regard to syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any bad entries, please let me know!
+
+> There are currently 60k entries, but I added most of these alphabetically from a word list. I stopped at L, so there are still a few relatively common words that may not be in the dictionary (on average I add about 5 entries everyday in my casual use).
 
 ### Dictionary contents
  - [Compound words](#Compound-words)
@@ -173,8 +175,8 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
     - `AR/PE/SKWREU/KWROE` → arpegg**i**o
     - `KUFRB/KWREU` → curvy
     - `KRUFT/KWREU/HREU` → crustily
-
-> Note: this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
+    - > There are a lot of words that just *feel* wrong to use `EU` instead of `AOE` based on my experience using main.json. I haven't been able to figure out what causes this, so I've resorted to include both `EU` and `AOE` in these cases where it's ambiguous to me. However, if it's spelled with an I and has a long I sound, I can guarantee that `EU` can be used.
+    - > Note: this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
 
  - `-RBL` → "shl" sound
     - `TK*EU/TPE/REPB/-RBL` → differential
