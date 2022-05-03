@@ -64,7 +64,7 @@ While the majority of Plover theory have been left untouched, there are several 
 
 > While I believe this dictionary follows more rigorous rules (especially with regard to syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any bad entries, please let me know!
 
-> There are currently 60k entries, but I added most of these alphabetically from a word list. I stopped at L, so there are still a few relatively common words that may not be in the dictionary (on average I add about 5 entries everyday in my casual use).
+> There are currently 62k entries, but I added most of these alphabetically from a word list. I stopped at L, so there are still a few relatively common words that may not be in the dictionary (on average I add about 5 entries everyday in my casual use).
 
 ### Dictionary contents
  - [Compound words](#Compound-words)
@@ -340,6 +340,8 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
  - `SH-PBS` → "-ishness" suffix
     - `TPAOL/SH-PBS` foolishness
     - `PWHRU/SH-PBS` → bluishness
+ - `SH*EUP` → "-ship" suffix
+    - `TPREPBD/SH*EUP` → friendship
  - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
     - Usually `HREU` can also work as these are explicitly defined in the dictionary
         - For example, `TKE/PHO/TKPWRAF/EUBG/HREU` → demographically (in the dictionary)
