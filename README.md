@@ -58,13 +58,15 @@ Examples:
  - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
 ## plover-base.json
-This dictionary is intended to replace Plover's main.json that comes by default. It's not intended to be as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
+This dictionary is intended to replace Plover's `main.json` that comes by default. It's not intended to be as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
 
 While the majority of Plover theory have been left untouched, there are several additions to the underlying theory that make this a little problematic if one were to switch to this dictionary after being accustomed to main.json.
 
 > While I believe this dictionary follows more rigorous rules (especially with regard to syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any bad entries, please let me know!
 
-> There are currently 62k entries, but I added most of these alphabetically from a word list. I stopped at L, so there are still a few relatively common words that may not be in the dictionary (on average I add about 5 entries everyday in my casual use).
+> There are currently 64k entries, but I added most of these alphabetically from a word list. I stopped at L, so there are still a few relatively common words that may not be in the dictionary (on average I add about 5 entries everyday in my casual use).
+
+I've written a little bit about my motivations for creating a new dictionary over on my [website](https://aerick.ca/steno/dictionary-building) if you'd like a summary of this project.
 
 ### Dictionary contents
  - [Compound words](#Compound-words)
