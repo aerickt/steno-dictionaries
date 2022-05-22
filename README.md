@@ -87,6 +87,8 @@ Compound words are always written with the asterisk on the first stroke of the s
  - `PHOUS/PA*D` → mousepad
  - `STOR/KWREU/PWAO*BG/-S` → storybooks
 
+> This rule is more relaxed with proper nouns
+
 #### Proper nouns
 Proper nouns are always written with the number key on the first stroke. Everything else is written with the same rules.
  - `#A/HREU/SA` → Alyssa
@@ -361,6 +363,22 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
     - If other consonants on the right will be included in a stroke, use `TPOR`
         - `TPORPL/HRAEUT` → formulate
         - `TPORT/KWREU` → forty
+
+#### Conflict resolution
+
+If two homophones must be resolved using asterisk, there are a few aspects of each word that will decide which word gets precedence.
+ - If there are repeat letters in a word, that will use asterisk
+       - `#HART/PHAPB` → Hartman
+       - `#HART/PHA*PB` → Hartmann
+ - If two words differ in a vowel, (especially with Y or I), the asterisk will go to the word that doesn't match the vowel as spelt
+       - `#HREUPB` → Lin
+       - `#HR*EUPB` → Lynn
+ - "kr" gets precedence over "chr" and "cr" in `KR-` as it matches the keys more
+       - `#KREUS/TEU` → Kristy
+       - `#KR*EUS/TEU` → Christy
+ - "x" and "ks" gets precedence over "kshun" in" `-BGS`
+       - `TRABGS` → tracks
+       - `TRA*BGS` → traction
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
