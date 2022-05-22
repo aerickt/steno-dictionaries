@@ -368,17 +368,17 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
 
 If two homophones must be resolved using asterisk, there are a few aspects of each word that will decide which word gets precedence.
  - If there are repeat letters in a word, that will use asterisk
-       - `#HART/PHAPB` → Hartman
-       - `#HART/PHA*PB` → Hartmann
+   - `#HART/PHAPB` → Hartman
+   - `#HART/PHA*PB` → Hartmann
  - If two words differ in a vowel, (especially with Y or I), the asterisk will go to the word that doesn't match the vowel as spelt
-       - `#HREUPB` → Lin
-       - `#HR*EUPB` → Lynn
+   - `#HREUPB` → Lin
+   - `#HR*EUPB` → Lynn
  - "kr" gets precedence over "chr" and "cr" in `KR-` as it matches the keys more
-       - `#KREUS/TEU` → Kristy
-       - `#KR*EUS/TEU` → Christy
+   - `#KREUS/TEU` → Kristy
+   - `#KR*EUS/TEU` → Christy
  - "x" and "ks" gets precedence over "kshun" in" `-BGS`
-       - `TRABGS` → tracks
-       - `TRA*BGS` → traction
+   - `TRABGS` → tracks
+   - `TRA*BGS` → traction
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
