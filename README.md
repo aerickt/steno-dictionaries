@@ -79,6 +79,7 @@ I've written a little bit about my motivations for creating a new dictionary ove
  - [Breaking up multisyllable words](#Breaking-up-multisyllable-words)
  - [Exceptions to syllable breaks](#Exceptions-to-syllable-breaks)
  - [Prefixes and suffixes](#Prefixes-and-suffixes)
+ - [Conflict resolution](#Conflict-resolution)
 
 #### Compound words
 Compound words are always written with the asterisk on the first stroke of the second word.
