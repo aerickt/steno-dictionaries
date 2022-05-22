@@ -286,7 +286,6 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `TKO`
  - `TKU`
  - `E`
- - `PHEU`
  - `TPU`
  - `HE`
  - `HO`
@@ -298,8 +297,8 @@ Instead carry the first stroke far enough so that there is a consonant on the ri
  - `PWUT/*ER` → butter
  - `TKOBG/KWRAOU/-PLT` → document
  - `TKUL/KWRARD` → dullard
- - `#PHEUR/KWRAPB/TKA` → Miranda
  - `ES/PERBL/KWREU` → especially
+ - `HOR/O*R` → horror
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
