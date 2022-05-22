@@ -164,6 +164,9 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
     - `AEUR/KWRA` → area
     - `EUPB/SOPL/TPHEU/KWRA` → insomnia
     - `RAOE/KWRAL/TEU` → reality
+    - `#PHAR/KWROE` → Mario
+    - `HAUP/KWRA` → haupia
+       - You may find entries such as `HAU/PEU/KWRA` → haupia; these are not recommended as they may be incomplete
     - Essentially, if the vowel can be approximated with "Y", it is used
  - `KHUR` is always used for the "chur" sound
     - In main.json, there are many inconsistent ways to write a word such as "culture"
