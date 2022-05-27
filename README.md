@@ -241,34 +241,32 @@ Suffixes on root "words":
  - `ALD/*ER` → alder
  - `KEUT/KWREU` → kitty (as opposed to `KEU/TEU`)
  - `A/TOPL/KWREUBG` → atomic
- - `TPOE/TPHET/KWREUBG` → phonetic
 
 > Note that the suffixes "-ic" and "-ition" differ from main.json. See [Prefixes and suffixes](#Prefixes-and-suffixes) for a more complete list of suffixes.
 
-Similarly, prefixes can also be used even if they don't make sense orthographically.
+Prefixes should also be used in a similar manner.
  - `AOE/KHRAOE/SEU/KWRAS/TEUBG` → ecclesiastic
+    - Since `AOE` is the "e-" prefix, it is used instead of `AOEBG/HRAOE/...`
 
 If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
 
 `KWR` as a linker between vowels:
  - `AOEU/KWROE/HREU` → aioli
- - `PAOE/KWRA/TPHOE` → piano
+ - `PEU/KWRA/TPHOE` → piano
 
 Depending on pronuncation, `W` can also begin a consecutive vowel stroke:
  - `AL/TRAOU/WEUS/TEUBG` → altruistic
  - `KOPB/TKAOU/WEUT` → conduit
 
-`KWR` can also be used to start a stroke if all consonants have been taken in the previous stroke. This can be preferred if a word break using the "normal" method can result in word boundary issues.
-
-`KWR` as a starter:
- - `ER/KWROR` → error
+`KWR` or suffixes can also be used to end words where it's desirable to not use the "normal" splitting method. This can be preferred if a word break would normally result in conflicts
+ - `ER/*OR` → error
     - Normal method: `E/ROR`
- - `PHEUR/KWROR` → mirror
+ - `PHEUR/*OR` → mirror
     - Normal method: `PHEU/ROR`
  - `ES/KWRAEU` → essay
     - Normal method: `E/SAEU`
 
-In the above examples, the normal method would split each word in a way that is less natural and can run into conflicts.
+In the above examples, the normal method would split each word in a way could run into conflicts.
 
 > While doubling the R consonant would be more natural, I wanted to reduce the ambiguity that comes with doubling consonants between strokes as found in main.json. Thus, doubling a consonant is used very rarely in this dictionary.
 
