@@ -271,7 +271,7 @@ Other invalid examples of splitting a word:
  - `PWET/KWRER` (better) ❌
     - Instead use `PWE/TER` or `PWET/*ER`
 
-> There may still be entries that seem to contradict the basic syllable splitting rules; I'd recommend not using these as these are only remenants of main.json style syllable splitting that I am accustomed to.
+> There may still be entries that seem to contradict the basic syllable splitting rules; I'd recommend not using these as they are only remenants of main.json style syllable splitting that I am accustomed to.
 
 Other notes:
  - Words beginning with "ex" can be written with `EBGS` or some form of `EBG/S`
