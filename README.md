@@ -339,7 +339,7 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
  - Words ending in "-ous" and "-us" always use `KWRUS` or some variation
     - `STAOU/PEPB/TKUS` → stupendous
     - `RAOEUT/KWRUS` → righteous
-    - `KHAOEUT/KHUS` → righteous
+    - `RAOEUT/KHUS` → righteous
  - `-LT` → "-let" suffix
     - `A/PHAOU/-LT` → amulet
     - `STAR/-LT` → starlet
@@ -356,7 +356,7 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
     - `TPREPBD/SH*EUP` → friendship
  - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
     - Usually `HREU` can also work as these are explicitly defined in the dictionary
-        - For example, `TKE/PHO/TKPWRAF/EUBG/HREU` → demographically (in the dictionary)
+        - For example, `TKE/PHO/TKPWRAF/KWREUBG/HREU` → demographically (in the dictionary)
         - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
         - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
  - Words beginning with "for":
