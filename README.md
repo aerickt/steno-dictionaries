@@ -202,15 +202,22 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
 #### Breaking up multisyllable words
 main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`. This dictionary prioritizes entries that do not drop unstressed vowels for writing out (though many briefer entries use this principle).
 
-When determining where a word break occurs, splitting the word by syllables will generally work. Consonants should not be shared across strokes, and every stroke apart from affixes and the first stroke should not start with a vowel.
+In order to split a word into multiple strokes, the following rules should be used:
+ - Consonants should not be doubled across strokes
+    - e.g., `PHE/PHOR/RAOEUZ` would not be correct as it doubles the R
+ - Strokes after the initial one should not begin with a vowel
+    - e.g., `PHEPL/OR/AOEUZ` is incorrect, the last two strokes begin with vowels
+
+There are, of course, exceptions to these rules which are covered later. I will refer to this style as the "normal" splitting method.
 
 "Normal" splitting method:
+ - `PHE/PHO/RAOEUZ` → memorize
  - `TPOE/TPHE/TEUBG` → phonetic
  - `PEUBG/KHUR` → picture
  - `KAL/KAOU/HRAEU/TOR` → calculator
  - `RE/KOG/TPHEUGS` → recognition
  - `ABG/TEUF` → active
- - `AD/HAOE/SEUF` → adesive
+ - `AD/HAOE/SEUF` → adhesive
 
 "Normal" splitting with first stroke starting with a vowel:
  - `EUPL/POR/TAPBT` → important
@@ -220,7 +227,7 @@ When determining where a word break occurs, splitting the word by syllables will
 It is also important to use prefixes and suffixes whenever possible.
 
 Using suffixes:
- - `HRAOBG/SKWRUP` → lookup
+ - `HRAOBG/KWRUP` → lookup
  - `HRERPB/*ER` → learner
  - `KOP/KWREU` → copy
  - `TPOE/TPHE/TEUBG/A*L/KWREU` → phonetically
