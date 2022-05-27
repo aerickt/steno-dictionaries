@@ -271,6 +271,8 @@ Other invalid examples of splitting a word:
  - `PWET/KWRER` (better) ❌
     - Instead use `PWE/TER` or `PWET/*ER`
 
+> There may still be entries that seem to contradict the basic syllable splitting rules; I'd recommend not using these as these are only remenants of main.json style syllable splitting that I am accustomed to.
+
 Other notes:
  - Words beginning with "ex" can be written with `EBGS` or some form of `EBG/S`
     - For a word such as exile, the X sound is made up of k and s. Doubling the S would not be permitted, so it is written as `EBG/SAOEUL` or `EBG/SAO*EUL` if it is pronounced like a Z
@@ -289,10 +291,13 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `PWU`
  - `TKO`
  - `TKU`
- - `E`
  - `TPU`
  - `HE`
  - `HO`
+ - `O`
+ - `E`
+ - `U`
+ - `EU`
 
 Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
  - `KOL/KWREBGT` → collect
