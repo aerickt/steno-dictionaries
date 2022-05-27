@@ -194,16 +194,13 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
     - `KUFRB/KWREU` → curvy
     - `KRUFT/KWREU/HREU` → crustily
     - > There are a lot of words that just *feel* wrong to use `EU` instead of `AOE` based on my experience using main.json. I haven't been able to figure out what causes this, so I've resorted to include both `EU` and `AOE` in these cases where it's ambiguous to me. However, if it's spelled with an I and has a long I sound, I can guarantee that `EU` can be used.
-    - > Note: this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
-
+    - > this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
  - `-RBL` → "shl" sound
     - `TK*EU/TPE/REPB/-RBL` → differential
     - `TPAOEU/TPHAPB/-RBL` → financial
 
 #### Breaking up multisyllable words
-main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`.
-
-This dictionary tries to follow this principle, but also includes some entries where unstressed vowels haven't been dropped. It is recommended to not rely on these entries entirely as it is slower to use more strokes and these entries may not be complete.
+main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`. This dictionary prioritizes entries that do not drop unstressed vowels for writing out (though many briefer entries use this principle).
 
 When determining where a word break occurs, splitting the word by syllables will generally work. Consonants should not be shared across strokes, and every stroke apart from affixes and the first stroke should not start with a vowel.
 
