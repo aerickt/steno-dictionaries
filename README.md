@@ -155,8 +155,18 @@ Examples
 #### Phonetics and orthography
 The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from word breaks as well as suffixes and prefixes). The following list includes changes I've made as well as any rules or tips not necessarily mentioned in any main learning resources for stock Plover.
  - `*PL` is used as the -mp cluster intsead of `-FRP`
- - `-P` can be used by itself to end syllables with a p sound
-    - `HEL/-P` → help
+ - Ending syllables that fall out of steno order
+    - `-P` ends syllables with a p sound
+       - `HEL/-P` → help
+    - `-L` ends syllables with an l
+       - `STRAPBG/-L` → strangle
+    - `-PL` ends syllables with m
+       - `HEL/-PL` → helm
+    - Any other ending sounds use asterisk
+       - `PHUL/*FP` → mulch
+       - `TKEL/*F` → delve
+       - `HREUPL/*F` → lymph
+       - Briefer outlines also exist that use inversions or compound clusters
  - `OR` is used for the "or" sound
     - `OER` is only used in briefs and suffix sounds
  - `KWR` is used in certain diphthongs such as:
