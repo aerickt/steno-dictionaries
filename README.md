@@ -64,7 +64,7 @@ While the majority of Plover theory have been left untouched, there are several 
 
 > While I believe this dictionary follows more rigorous rules (especially with regard to syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any bad entries, please let me know!
 
-> There are currently 64k entries, but I added most of these alphabetically from a word list. I stopped at M, so there are still a few relatively common words that may not be in the dictionary (on average I will add about 5 entries everyday in my casual use).
+> I'm currently at 70,000 entries. I started with a word list of the most common 3000 English words and later went through a more complete word list alphabetically up until the letter L. I have stopped moving alphabetically through the word list and I am only adding entries randomly at this point.
 
 I've written a little bit about my motivations for creating a new dictionary over on my [website](https://aerick.ca/steno/dictionary-building) if you'd like a summary of this project.
 
