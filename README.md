@@ -6,6 +6,7 @@ My personal steno dictionaries.
  - [plover-uk.json](#plover-ukjson)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
+ - [uni-number-reversals.json](#uni-number-reversalsjson)
 
 ## commands.json
 This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
@@ -432,6 +433,14 @@ Examples:
  - `#-G/#-R/-FR/#-R/#-PB/#-L` → 314159
  - `#EB` → 20
  - `#UPB`→ 500
+
+## uni-number-reversals.json
+
+This dictionary allows you to write reversals with `U` instead of `EU` which would be impossible using thumber keys on The Uni. This is a supplemental dictionary for the standard number system that comes with `main.json`; it is not compatible with [rh-numpad.json](#rh-numpadjson).
+
+Examples:
+ - `#AOU` → 05
+ - `#STPU` → 321
 
 ## plover-uk.json
 Soon™
