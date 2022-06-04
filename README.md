@@ -315,7 +315,6 @@ Instead carry the first stroke far enough so that there is a consonant on the ri
  - `TKOBG/KWRAOU/-PLT` → document
  - `TKUL/KWRARD` → dullard
  - `ES/PERBL/KWREU` → especially
- - `HOR/O*R` → horror
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
