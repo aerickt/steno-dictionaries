@@ -301,7 +301,6 @@ Other notes:
 
 Sometimes a stroke should not begin with a certain chord as it is a common brief and would lead to word boundary issues. The following chords should not be used as strokes to start an outline.
  - `KO`
- - `TKU`
  - `TPU`
  - `O`
  - `E`
@@ -311,8 +310,7 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
 Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
  - `KOL/KWREBGT` → collect
  - `KOR/KWREBGT` → correct
- - `TKUL/KWRARD` → dullard
- - `ES/PERBL/KWREU` → especially
+ - `EBG/KWRO/TPHO/PHEUBG` → economic
 
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
