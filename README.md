@@ -300,8 +300,7 @@ Other notes:
 #### Exceptions to syllable breaks
 
 Sometimes a stroke should not begin with a certain chord as it is a common brief and would lead to word boundary issues. The following chords should not be used as strokes to start an outline.
- - `KO`
- - `TPU`
+ - `KO``
  - `O`
  - `E`
  - `U`
