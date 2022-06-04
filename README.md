@@ -304,7 +304,6 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `TKO`
  - `TKU`
  - `TPU`
- - `HO`
  - `O`
  - `E`
  - `U`
