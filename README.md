@@ -208,6 +208,8 @@ In order to split a word into multiple strokes, the following rules should be us
     - e.g., `PHE/PHOR/RAOEUZ` would not be correct as it doubles the R
  - Strokes after the initial one should not begin with a vowel
     - e.g., `PHEPL/OR/AOEUZ` is incorrect, the last two strokes begin with vowels
+    - Apart from suffix strokes which are special
+      - e.g., `AER` → "-ary"
 
 There are, of course, exceptions to these rules which are covered later. I will refer to this style as the "normal" splitting method.
 
@@ -225,27 +227,37 @@ There are, of course, exceptions to these rules which are covered later. I will 
  - `OE/PWAEU` → obey
  - `ABG/SES` → access
 
-It is also important to use prefixes and suffixes whenever possible.
+It is also important to use prefixes and suffixes whenever possible. Some words cannot be split "normally" as they can be constructed using these special strokes.
 
-Using suffixes:
- - `HRAOBG/KWRUP` → lookup
+The following examples can only be written using suffix strokes:
  - `HRERPB/*ER` → learner
  - `KOP/KWREU` → copy
- - `TPOE/TPHE/TEUBG/A*L/KWREU` → phonetically
+ - `TOG/-L` → toggle
+ - `KEUT/KWREU` → kitty
 
-Some words can also be stroked using suffixes, even if whatever was previously written is not a word. This may be because some strokes would be too short and would cause word boundary issues.
+However sometimes for a given word, it may not be clear that a suffix can be used. For example, the word "copy" is not related to the word "cop" in terms of its modern definitions but it is still written using the "-y" suffix.
 
-Suffixes on root "words":
- - `UT/*ER` → utter (as opposed to `U/TER`)
- - `ED/KWREUGS` → edition (as opposed to `E/TKEUGS`)
+This suffix stroke along with a few others are special in that they can be used in words where the previously written translation wasn't necessarily a word or related to the intended word.
+
+These suffixes can be used universally:
+ - `KWREU` → "-y"
+ - `*ER` → "-er"
+ - `-L` → "-l"
+
+The following are examples of using these suffixes in this manner:
+ - `TPAOUR/KWREU` → fury
+ - `PWUR/KWREU` → bury
+ - `TPOEPB/KWREU` → phoney
  - `HR*ET/*ER` → leather
- - `ALD/*ER` → alder
- - `KEUT/KWREU` → kitty (as opposed to `KEU/TEU`)
- - `A/TOPL/KWREUBG` → atomic
+ - `KOR/KWREU/KWRAPBD/*ER` → coriander
+ - `TPA*UT/*ER` → father
+ - `EBG/SA*PL/-L` → example
+ - `OBS/TABG/-L` → obstacle
+ - `*UPBG/-L` → uncle
 
-> Note that the suffixes "-ic" and "-ition" differ from main.json. See [Prefixes and suffixes](#Prefixes-and-suffixes) for a more complete list of suffixes.
+> Note: this rule is unfortunately not currently consistent as it is only a recent addition. Use this rule whenever it is more natural than "normal" splitting but keep in mind the dictionary is not complete with these entries. In these cases, feel free to add your own.
 
-Prefixes should also be used in a similar manner.
+Prefixes should also be used in this manner.
  - `AOE/KHRAOE/SEU/KWRAS/TEUBG` → ecclesiastic
     - Since `AOE` is the "e-" prefix, it is used instead of `AOEBG/HRAOE/...`
 
@@ -259,30 +271,20 @@ Depending on pronuncation, `W` can also begin a consecutive vowel stroke:
  - `AL/TRAOU/WEUS/TEUBG` → altruistic
  - `KOPB/TKAOU/WEUT` → conduit
 
-`KWR` or suffixes can also be used to end words where it's desirable to not use the "normal" splitting method. This can be preferred if a word break would normally result in conflicts
- - `ER/*OR` → error
-    - Normal method: `E/ROR`
- - `PHEUR/*OR` → mirror
-    - Normal method: `PHEU/ROR`
- - `ES/KWRAEU` → essay
-    - Normal method: `E/SAEU`
-
-In the above examples, the normal method would split each word in a way could run into conflicts.
-
-> While doubling the R consonant would be more natural, I wanted to reduce the ambiguity that comes with doubling consonants between strokes as found in main.json. Thus, doubling a consonant is used very rarely in this dictionary.
-
-In general, every word in the dictionary will have at least one of these ways to break up a word. Generally, the "normal" method and using suffixes is preferred, followed by suffixes on non-words and finally `KWR` as a linker.
+In general, every word in the dictionary will have at least one of these ways to break up a word. Special suffixes are first preferred if they feel more natural than "normal" splitting, followed by regular suffixes on root words, and finally "normal" splitting which may involve the `KWR` linker.
 
 Other invalid examples of splitting a word:
  - `TERPL/KWRAOEUT` (termite) ❌
-    - Use normal method, `TER/PHAOEUT`
+   - Use normal method, `TER/PHAOEUT`
  - `EBGS/SAOED` (exceed) ❌
-    - `-BGS` already contains the "ks" sound, and the S in the second stroke repeats a consonant
-    - Instead use `EBG/SAOED`
+   - Don't double consonants, instead use `EBG/SAOED`
+   - Instead use `EBG/SAOED` (see below)
  - `TPRAFRPB/AOEUZ` (franchise) ❌
-    - Normal method is sufficient `TPRAPB/KHAOEUZ` or `TPRAPB/KHAOEUS`
+   - Normal method is sufficient: `TPRAPB/KHAOEUS`
  - `PWET/KWRER` (better) ❌
-    - Instead use `PWE/TER` or `PWET/*ER`
+   - Instead use `PWE/TER` or `PWET/*ER`
+ - `TES/TER` (tester) ❌
+   - Use `*ER` suffix: `TEFT/*ER`
 
 > There may still be entries that seem to contradict the basic syllable splitting rules; I'd recommend not using these as they are only remenants of main.json style syllable splitting that I am accustomed to.
 
@@ -300,7 +302,7 @@ Other notes:
 #### Exceptions to syllable breaks
 
 Sometimes a stroke should not begin with a certain chord as it is a common brief and would lead to word boundary issues. The following chords should not be used as strokes to start an outline.
- - `KO``
+ - `KO`
  - `O`
  - `E`
  - `U`
