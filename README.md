@@ -65,7 +65,7 @@ While the majority of Plover theory have been left untouched, there are several 
 
 > While I believe this dictionary follows more rigorous rules (especially with regard to syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any bad entries, please let me know!
 
-> I'm currently at 70,000 entries. I started with a word list of the most common 3000 English words and later went through a more complete word list alphabetically up until the letter L. I have stopped moving alphabetically through the word list and I am only adding entries randomly at this point.
+> I'm currently at 79,000 entries. I started with a word list of the most common 3000 English words and later went through a more complete word list alphabetically up until the letter M. I have stopped moving alphabetically through the word list and I am only adding entries randomly at this point.
 
 I've written a little bit about my motivations for creating a new dictionary over on my [website](https://aerick.ca/steno/dictionary-building) if you'd like a summary of this project.
 
@@ -239,7 +239,7 @@ However sometimes for a given word, it may not be clear that a suffix can be use
 
 This suffix stroke along with a few others are special in that they can be used in words where the previously written translation wasn't necessarily a word or related to the intended word.
 
-These suffixes can be used universally:
+These suffixes should be able to be used universally:
  - `KWREU` → "-y"
  - `*ER` → "-er"
  - `-L` → "-l"
@@ -255,7 +255,9 @@ The following are examples of using these suffixes in this manner:
  - `OBS/TABG/-L` → obstacle
  - `*UPBG/-L` → uncle
 
-> Note: this rule is unfortunately not currently consistent as it is only a recent addition. Use this rule whenever it is more natural than "normal" splitting but keep in mind the dictionary is not complete with these entries. In these cases, feel free to add your own.
+Note: this rule is only a recent addition and it doesn't apply to all words. For example, the word "demography" should be able to be written `TKE/PHOG/RAF/KWREU`, however, there are already a lot of entries for "demography". In particular, if one wishes to use the `KWREU` suffix it would make more sense to use `TKE/PHO/TKPWRAF/KWREU` as `TKE/PHO` is a prefix stroke, and `TKPWRAF` is a word by itself.
+
+These special suffixes can be used when they make more sense than "normal" syllable splitting or using regular affix strokes, but I would not recommend relying on them completely.
 
 Prefixes should also be used in this manner.
  - `AOE/KHRAOE/SEU/KWRAS/TEUBG` → ecclesiastic
