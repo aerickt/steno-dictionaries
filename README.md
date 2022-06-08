@@ -187,6 +187,11 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
         - `HREBG/KHUR` → lecture
         - `KAP/KHUR` → capture
         - `PHA/KHUR` → mature
+ - `TWAL` is used for "ch" sounds found in words like the following that are usually spelled as "-tual":
+    - `SPEU/REU/TWAL` → spiritual
+    - `AOE/SREPB/TWAL` → eventual
+    - `EUPB/TE/HREBG/TWAL` → intellectual
+    - `PHAOU/TWAL` → mutual
  - `TK*EU` is always used for the initial `TKEU` sound when starting a word
     - `TK*EU/REBGT` → direct
     - `TK*EU/HREU/SKWREPBT` → diligents
@@ -377,6 +382,10 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
     - If other consonants on the right will be included in a stroke, use `TPOR`
         - `TPORPL/HRAEUT` → formulate
         - `TPORT/KWREU` → forty
+ - `WAL` → "-ual" suffix
+    - `PHAOUFP/WAL` → mutual
+    - `SEPBS/WAL` → sensual
+    - `EUPB/TE/HREBGT/WAL` → intellectual
 
 #### Conflict resolution
 
