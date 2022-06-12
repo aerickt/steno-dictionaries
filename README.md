@@ -357,9 +357,9 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
  - `-L` → "-le" suffix
  - `KWREUFT` → "-ist"
  - `KWREUBG` → "-ic"
- - `KWREUFT/KWREUBG` and `ST-BG` → "-istic"
-    - `RAEL/KWREUFT/KWREUBG` → realistic
+ - `ST-BG` → "-istic"
     - `A/TPHA/KROPB/ST-BG` → anachronistic
+    - `KWREUS/TEUBG` and `KWREUFT/KWREUBG` will also work, but are usually not explicitly defined
  - `SH-PBS` → "-ishness" suffix
     - `TPAOL/SH-PBS` foolishness
     - `PWHRU/SH-PBS` → bluishness
