@@ -431,8 +431,11 @@ Thanks to @sammdot who made this dictionary in the first place :D.
 
 With this dictionary, pressing the number key will turn `-FRPBLG` into a standard keypad with a chorded middle row. The bottom three keys are 1, 2, and 3 (from left to right) while the top three keys are 7, 8, 9 and chording two keys in a column will get 4, 5, and 6 (from left to right). If the `E` key is used in the stroke, 0 will be appended to whatever digit is being chorded. The `U` key will append a 00 on the digit, and `EU` will append a 000 on the digit.
 
+When holding down left hand `P` with this number pad, numbers will be treated like regular translations and will not glue to one another.
+
 Examples:
  - `#-G/#-R/-FR/#-R/#-PB/#-L` → 314159
+ - `#P-G/#P-R/#P-6R/#P-R/#P-7B/#P-8` → 3 1 4 1 5 9
  - `#EB` → 20
  - `#UPB`→ 500
 
