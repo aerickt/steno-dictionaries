@@ -400,13 +400,11 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
 
-After both plugins have been installed and Plover has been restarted, this dictionary should be added to the bottom of the dictionary list (lowest priority), ensuring it is **not** enabled.
-
-Next, add the following entries to a dictionary that is higher in priority (e.g. user.json):
+After both plugins have been installed and Plover has been restarted, load the dictionary ensuring that it is **not** enabled. Next, add the following entries to a dictionary that is higher in priority (e.g. user.json):
 
 ```
-"#RA*U": "{plover:solo_dict:+Raw.py}",
-"RA*U": "{plover:solo_dict:+Raw.py}{`^}",
+"#RA*U": "{plover:solo_dict:+raw.py}",
+"RA*U": "{plover:solo_dict:+raw.py}{`^}",
 ```
 
 Stroking `#RA*U` will output the raw steno of all the next strokes until `#RA*U` is stroked again.
