@@ -180,14 +180,10 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
        - You may find entries such as `HAU/PEU/KWRA` → haupia; these are not recommended as they may be incomplete
     - Essentially, if the vowel can be approximated with "Y", it is used
  - `KHUR` is always used for the "chur" sound
-    - In main.json, there are many inconsistent ways to write a word such as "culture"
-        - `KUL/KHAOUR`, `KUL/TAOUR`, `KUL/KHUR`, `KUL/TUR`, etc
-    - In this dictionary, culture is written only as `KUL/KHUR`
-    - Other examples:
-        - `HREBG/KHUR` → lecture
-        - `KAP/KHUR` → capture
-        - `PHA/KHUR` → mature
- - `TWAL` is used for "ch" sounds found in words like the following that are usually spelled as "-tual":
+    - `HREBG/KHUR` → lecture
+    - `KAP/KHUR` → capture
+    - `PHA/KHUR` → mature
+ - `TWAL` is used for "chwal" sounds found in words like the following that are usually spelled as "-tual":
     - `SPEU/REU/TWAL` → spiritual
     - `AOE/SREPB/TWAL` → eventual
     - `EUPB/TE/HREBG/TWAL` → intellectual
@@ -195,13 +191,16 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
  - `TK*EU` is always used for the initial `TKEU` sound when starting a word
     - `TK*EU/REBGT` → direct
     - `TK*EU/HREU/SKWREPBT` → diligents
+ - `TP*EU` is used for sounds spelled with "ph" that are pronounced as "F"
+    - `TP*EU/SEUBGS` → physics
+    - `TP*EU/HRO/SO/TP*EU` → philosophy
  - `EU` is used for long I when it is spelled with an "I" or a "Y"
     - `AR/PE/SKWREU/KWROE` → arpegg**i**o
     - `KUFRB/KWREU` → curvy
     - `KRUFT/KWREU/HREU` → crustily
-    - > There are a lot of words that just *feel* wrong to use `EU` instead of `AOE` based on my experience using main.json. I haven't been able to figure out what causes this, so I've resorted to include both `EU` and `AOE` in these cases where it's ambiguous to me. However, if it's spelled with an I and has a long I sound, I can guarantee that `EU` can be used.
+    - > There are a lot of words that just *feel* wrong to use `EU` instead of `AOE` based on my experience using main.json. I haven't been able to figure out what causes this, so I've resorted to include both `EU` and `AOE` in these cases where it's ambiguous to me. However, if it's spelled with an I and has a long I sound, `EU` should be used.
     - > this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
- - `-RBL` → "shl" sound
+ - `-RBL` is used for the "shl" sound
     - `TK*EU/TPE/REPB/-RBL` → differential
     - `TPAOEU/TPHAPB/-RBL` → financial
 
@@ -214,7 +213,7 @@ In order to split a word into multiple strokes, the following rules should be us
  - Strokes after the initial one should not begin with a vowel
     - e.g., `PHEPL/OR/AOEUZ` is incorrect, the last two strokes begin with vowels
     - Apart from suffix strokes which are special
-      - e.g., `AER` → "-ary"
+      - e.g., `KWRAER` → "-ary"
 
 There are, of course, exceptions to these rules which are covered later. I will refer to this style as the "normal" splitting method.
 
@@ -240,31 +239,9 @@ The following examples can only be written using suffix strokes:
  - `TOG/-L` → toggle
  - `KEUT/KWREU` → kitty
 
-However sometimes for a given word, it may not be clear that a suffix can be used. For example, the word "copy" is not related to the word "cop" in terms of its modern definitions but it is still written using the "-y" suffix.
+> NOTE: Even though "copy" is not related to "cop" and "kitty" is not related to "kit", using the `KWREU` suffix stroke is desirable as this leads to fewer word boundary issues.
 
-This suffix stroke along with a few others are special in that they can be used in words where the previously written translation wasn't necessarily a word or related to the intended word.
-
-These suffixes should be able to be used universally:
- - `KWREU` → "-y"
- - `*ER` → "-er"
- - `-L` → "-l"
-
-The following are examples of using these suffixes in this manner:
- - `TPAOUR/KWREU` → fury
- - `PWUR/KWREU` → bury
- - `TPOEPB/KWREU` → phoney
- - `HR*ET/*ER` → leather
- - `KOR/KWREU/KWRAPBD/*ER` → coriander
- - `TPA*UT/*ER` → father
- - `EBG/SA*PL/-L` → example
- - `OBS/TABG/-L` → obstacle
- - `*UPBG/-L` → uncle
-
-Note: this rule is only a recent addition and it doesn't apply to all words. For example, the word "demography" should be able to be written `TKE/PHOG/RAF/KWREU`, however, there are already a lot of entries for "demography". In particular, if one wishes to use the `KWREU` suffix it would make more sense to use `TKE/PHO/TKPWRAF/KWREU` as `TKE/PHO` is a prefix stroke, and `TKPWRAF` is a word by itself.
-
-These special suffixes can be used when they make more sense than "normal" syllable splitting or using regular affix strokes, but I would not recommend relying on them completely.
-
-Prefixes should also be used in this manner.
+Prefixes may also be used in this manner.
  - `AOE/KHRAOE/SEU/KWRAS/TEUBG` → ecclesiastic
     - Since `AOE` is the "e-" prefix, it is used instead of `AOEBG/HRAOE/...`
 
@@ -330,15 +307,29 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
  - `TKEUS/SOFLS` → dissolves
  - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
+When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "fury" would have to be written as `TPAOUR/KWREU` as the R sound changes the sound of the vowel and thus should be kept.
+
+"Normal" syllable splitting would treat the R as a consonant: `TPAOU/REU` which is further away from how "fury" is actually pronounced.
+
+The following are some other examples of words where `-R` should be kept in the initial stroke:
+ - `#HRAEUR/KWREU` → Larry
+ - `#TER/KWREU` → Terry
+ - `TOR/KWRUS` → torus
+ - `TPHROR/KWREUFT` → florist
+
+Many words in the dictionary have entries that either keep the R in the initial stroke or split the word "normally"; it is up to the user to decide whichever one makes more sense. I have only included both types of splitting where I deem it to be ambiguous, but of course this sense of ambiguity differs from person to person. Feel free to add entries using either method to words that are not defined as such.
+
 #### Prefixes and suffixes
  - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
     - `KEUT/KWREU` → kitty
     - `STOR/KWREU` → story
- - `OER` is used for the "-ory" sound but not by itself
+ - `OER` is used for the "-ory" sound
     - `SA/TEUS/TPABG/TOER` → satisfactory
     - `TPABG/TOER` → factory
+    - `TPABGT/KWROER` → factory (using the {^ory} suffix)
  - `O*R/KWREU` can still be used for the "-ory" suffix
-    - `AUTD/O*R/KWREU` → auditory
+    - `AU/TKEU/TOR/KWREU` → auditory
+    - `AU/TKEUT/O*R/KWREU` → auditory (using the {^ory} suffix)
  - `KWREPB` → "-en"
     - `HRAOEUT/KWREPB` → lighten
     - `SOFT/KWREPB` → soften
@@ -393,9 +384,12 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
  - "kr" gets precedence over "chr" and "cr" in `KR-` as it matches the keys more
    - `#KREUS/TEU` → Kristy
    - `#KR*EUS/TEU` → Christy
+       - Also can be written `#KHREUS/TEU`
  - "x" and "ks" gets precedence over "kshun" in" `-BGS`
    - `TRABGS` → tracks
    - `TRA*BGS` → traction
+   - `RE/TPHREBGS` → reflex
+   - `RE/TPHR*EBGS` → reflection
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
