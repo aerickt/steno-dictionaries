@@ -190,7 +190,7 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `SPEU/REUT/WAL` → spiritual
    - `AOE/SREPBT/WAL` → eventual
    - `EUPB/TE/HREBGT/WAL` → intellectual
- - `TK*EU` is always used for the initial `TKEU` sound when starting a word. `TKEU` is reserved for the frays "did I"
+ - `TK*EU` is always used for the initial `TKEU` sound when starting a word. `TKEU` is reserved for the phrase "did I"
    - `TK*EU/REBGT` → direct
    - `TK*EU/HREU/SKWREPBT` → diligent
  - `TP*EU` is used for sounds spelled with "ph" that are pronounced as "F"
@@ -219,10 +219,14 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `A/PHAOU/-LT` → amulet
    - `TAB/-LT` → tablet
    - `SKARLT` → scarlet
- - Although a suffix, `-BL` can also be used as a compound cluster for the "-able" or "-ible" sound
-   - `KRAOU/-BL` → crucible
+ - `-BL` can be used for the "-able" or "-ible" cluster in addition to being a suffix
+   - `KRAOUS/-BL` → crucible
    - `PAEURBL` → parable
    - `A/HROUBL` → allowable
+ - `TEU` can be used for the "-ity" cluster in addition to being a suffix
+   - `SKAEURS/TEU` → scarcity
+   - `STEU` → city
+   - `EUPB/SAPB/TEU` → insanity
 
 #### Orthography
 Orthography has also largely been preserved with a few exceptions.
@@ -232,7 +236,7 @@ Orthography has also largely been preserved with a few exceptions.
    - `WORS` → worse
    - `SU/PORT` → support
    - `PHO/TPHEU/TOR` → monitor
- - Final Z sounds are represented with `-Z` if they are spelt as such or will get around a conflict
+ - Final Z sounds are represented with `-Z` if they are spelt as such or help to get around a conflict
    - `SREUS/-BL` → visible
    - `PHEUS/RABL` → miserable
    - `TPHAOEZ` → knees (`TPHAOES` is niece)
@@ -245,7 +249,7 @@ Orthography has also largely been preserved with a few exceptions.
    - `KPEU` → xi
 
 #### Syllabic splitting
-main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`.
+main.json relies a lot on dropping unstressed vowels in order to break up words which is a bit of a challenge to learn especially for non-native speakers.
 
 For write-outs, this dictionary does not rely as heavily on dropping unstressed vowels, though, this principle is still used for briefer entries.
 
@@ -293,6 +297,8 @@ The following are words that unnecessarily use the `KWR` linker:
 
 #### Exceptions to syllable breaks
 
+##### Starting strokes not to be used
+
 Sometimes a stroke should not begin with a certain chord as it is a common brief and would lead to word boundary issues. The following chords should not be used as strokes to start an outline.
  - `KO`
  - `O`
@@ -305,16 +311,21 @@ Instead carry the first stroke far enough so that there is a consonant on the ri
  - `EBG/KWRO/TPHO/PHEUBG` → economic
  - `KOT/O*PB` → cotton
 
+##### `KWR` linker with prefix strokes
+
 If the first stroke of an outline is a prefix, there is no need to use the `KWR` linker on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
  - `PRE/EPLT` → preempt
  - `TK*EU/AOE/HREBG/TREUBG` - dielectric
  - `TKEUS/AEUBL` → disable
 
-Consonants can also be doubled if the previous stroke is a prefix and the strokes that follow form a valid word on their own:
+##### Consonant doubling with prefixes
+
+Consonants can be doubled if the previous stroke is a prefix and the strokes that follow form a valid word on their own:
  - `TKEUS/SOFLS` → dissolves
  - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
+##### The problem of the vowel/consonant "R"
 When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "carry" would have to be written as `KAEUR/KWREU` as the R sound changes the sound of the vowel and thus should be kept in the first stroke.
 
 If the R was treated as a consonant and the split occurred right before it, the outline would be `KAEU/REU` which does not reflect the pronunciation. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
@@ -408,9 +419,9 @@ For ambiguous situations where it is not clear whether to use suffixes or split 
    - `TPREPBD/SH*EUP` → friendship
  - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
    - Usually `HREU` can also work as these are explicitly defined in the dictionary
-      - For example, `TKE/PHO/TKPWRAF/KWREUBG/HREU` → demographically (in the dictionary)
-      - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
-      - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
+      - For example, `TKE/PHO/TKPWRAF/KWREUBG/HREU` → demographically (defined)
+      - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not defined)
+      - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not defined)
    - If a compount word begins with "fore", use `TPOER` and asterisk the second word
       - `TPOER/H*ED` → forehead
       - `TPOER/TPHO*/HREPBLG` → foreknowledge
