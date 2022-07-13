@@ -76,9 +76,11 @@ I've written a little bit about my motivations for creating a new dictionary ove
  - [Punctuation](#Punctuation)
  - [Right hand number pad](#Right-hand-number-pad)
  - [Fingerspelling](#Fingerspelling)
- - [Phonetics and orthography](#Phonetics-and-orthography)
- - [Breaking up multisyllable words](#Breaking-up-multisyllable-words)
+ - [Phonetics](#Phonetics)
+ - [Orthography](#Orthography)
+ - [Syllabic splitting](#Syllabic-splitting)
  - [Exceptions to syllable breaks](#Exceptions-to-syllable-breaks)
+ - [Using prefixes and suffixes](#Using-prefixes-and-suffixes)
  - [Prefixes and suffixes](#Prefixes-and-suffixes)
  - [Conflict resolution](#Conflict-resolution)
 
@@ -153,101 +155,123 @@ Examples
 
 > Note: stroking `-FPLT` does not leave a trailing period.
 
-#### Phonetics and orthography
+#### Phonetics
 The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from word breaks as well as suffixes and prefixes). The following list includes changes I've made as well as any rules or tips not necessarily mentioned in any main learning resources for stock Plover.
  - `*PL` is used as the -mp cluster intsead of `-FRP`
- - Ending syllables that fall out of steno order
-    - `-P` ends syllables with a p sound
-       - `HEL/-P` → help
-    - `-L` ends syllables with an l
-       - `STRAPBG/-L` → strangle
-    - `-PL` ends syllables with m
-       - `HEL/-PL` → helm
-    - Any other ending sounds use asterisk
-       - `PHUL/*FP` → mulch
-       - `TKEL/*F` → delve
-       - `HREUPL/*F` → lymph
-       - Briefer outlines also exist that use inversions or compound clusters
- - `OR` is used for the "or" sound
-    - `OER` is only used in briefs and suffix sounds
+ - Ending sounds that fall out of steno order can be written using right hand consonant strokes
+   - `HEL/-P` → help
+   - `STRAPBG/-L` → strangle
+   - `HEL/-PL` → helm
+   - For `-F` and `-T`, asterisk is used to prevent conflicts
+     - `TKEL/*F` → delve
+     - `HREUPL/*F` → lymph
+     - `WURS/*T` → wurst
+   - Briefer outlines using compound clusters and inversions are also available and should be preferred
+ - `OR` is used for the "or" sound, never `OER`
  - `KWR` is used in certain diphthongs such as:
-    - `SREUD/KWROE` → video
-    - `AEUR/KWRA` → area
-    - `EUPB/SOPL/TPHEU/KWRA` → insomnia
-    - `RAOE/KWRAL/TEU` → reality
-    - `#PHAR/KWROE` → Mario
-    - `HAUP/KWRA` → haupia
-       - You may find entries such as `HAU/PEU/KWRA` → haupia; these are not recommended as they may be incomplete
-    - Essentially, if the vowel can be approximated with "Y", it is used
+   - `SREUD/KWROE` → video
+   - `AEUR/KWRA` → area
+   - `EUPB/SOPL/TPHEU/KWRA` → insomnia
+   - `RAOE/KWRAL/TEU` → reality
+   - `#PHAR/KWROE` → Mario
+   - `HAUP/KWRA` → haupia
+     - You may find entries such as `HAU/PEU/KWRA` → haupia;
+       - They may be used as fallbacks, but are not recommended as they are longer to write
+   - Essentially, if the vowel can be approximated with "Y", it is used
  - `KHUR` is always used for the "chur" sound
-    - `HREBG/KHUR` → lecture
-    - `KAP/KHUR` → capture
-    - `PHA/KHUR` → mature
+   - `HREBG/KHUR` → lecture
+   - `KAP/KHUR` → capture
+   - `PHA/KHUR` → mature
  - `TWAL` is used for "chwal" sounds found in words like the following that are usually spelled as "-tual":
-    - `SPEU/REU/TWAL` → spiritual
-    - `AOE/SREPB/TWAL` → eventual
-    - `EUPB/TE/HREBG/TWAL` → intellectual
-    - `PHAOU/TWAL` → mutual
- - `TK*EU` is always used for the initial `TKEU` sound when starting a word
-    - `TK*EU/REBGT` → direct
-    - `TK*EU/HREU/SKWREPBT` → diligents
+   - `SPEU/REU/TWAL` → spiritual
+   - `AOE/SREPB/TWAL` → eventual
+   - `EUPB/TE/HREBG/TWAL` → intellectual
+ - Alternatively, `WAL` can be used to represent "-ual" with the T being left to the previous stroke:
+   - `SPEU/REUT/WAL` → spiritual
+   - `AOE/SREPBT/WAL` → eventual
+   - `EUPB/TE/HREBGT/WAL` → intellectual
+ - `TK*EU` is always used for the initial `TKEU` sound when starting a word. `TKEU` is reserved for the frays "did I"
+   - `TK*EU/REBGT` → direct
+   - `TK*EU/HREU/SKWREPBT` → diligent
  - `TP*EU` is used for sounds spelled with "ph" that are pronounced as "F"
-    - `TP*EU/SEUBGS` → physics
-    - `TP*EU/HRO/SO/TP*EU` → philosophy
+   - `TP*EU/SEUBGS` → physics
+   - `TP*EU/HRO/SO/TP*EU` → philosophy
  - `EU` is used for long I when it is spelled with an "I" or a "Y"
-    - `AR/PE/SKWREU/KWROE` → arpegg**i**o
-    - `KUFRB/KWREU` → curvy
-    - `KRUFT/KWREU/HREU` → crustily
-    - > There are a lot of words that just *feel* wrong to use `EU` instead of `AOE` based on my experience using main.json. I haven't been able to figure out what causes this, so I've resorted to include both `EU` and `AOE` in these cases where it's ambiguous to me. However, if it's spelled with an I and has a long I sound, `EU` should be used.
-    - > this pattern is from main.json and its suffixes such as "-y", "-ry", "-ly", etc.
+   - `AR/PE/SKWREU/KWROE` → arpegg**i**o
+   - `KUFRB/KWREU` → curvy
+   - `PEU/KWRA/TPHOE` → piano
  - `-RBL` is used for the "shl" sound
-    - `TK*EU/TPE/REPB/-RBL` → differential
-    - `TPAOEU/TPHAPB/-RBL` → financial
+   - `TK*EU/TPE/REPB/-RBL` → differential
+   - `TPAOEU/TPHAPB/-RBL` → financial
+ - Non-initial "X" can be written using `-BGS` or some variation of `-BG/S`
+   - `EBG/SE/KAOUGS` → execution
+   - `EBG/SEU/SKWREPBS` exigence
+     - Can also be written `EBG/S*EU/SKWREPBS` with `S*` representing "Z"
+   - `EBG/SULT` → exult
+     - Can also be written `EBG/S*ULT` with `S*` representing "Z"
+   - `EBG/SES` → excess
+   - `EBGS/TEPBD` → extend
+ - `-PLT` is used for the "-ment" cluster in addition to be being a suffix
+   - `SE/-PLT` → cement
+   - `KAFP/-PLT` → catchment
+   - `EBGS/PE/REUPLT` → experiment
+ - `-LT` is used for the "-let" cluster in addition to being a suffix
+   - `A/PHAOU/-LT` → amulet
+   - `TAB/-LT` → tablet
+   - `SKARLT` → scarlet
+ - Although a suffix, `-BL` can also be used as a compound cluster for the "-able" or "-ible" sound
+   - `KRAOU/-BL` → crucible
+   - `PAEURBL` → parable
+   - `A/HROUBL` → allowable
 
-#### Breaking up multisyllable words
-main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`. This dictionary prioritizes entries that do not drop unstressed vowels for writing out (though many briefer entries use this principle).
+#### Orthography
+Orthography has also largely been preserved with a few exceptions.
+ - Much like stock Plover theory, short vowels and schwas are represented with the vowel they are spelt with despite their sound
+   - `SKO/HRAR` → scholar
+   - `PWE/TER` → better
+   - `WORS` → worse
+   - `SU/PORT` → support
+   - `PHO/TPHEU/TOR` → monitor
+ - Final Z sounds are represented with `-Z` if they are spelt as such or will get around a conflict
+   - `SREUS/-BL` → visible
+   - `PHEUS/RABL` → miserable
+   - `TPHAOEZ` → knees (`TPHAOES` is niece)
+   - `SAOEZ` → seize
+ - Initial "ph" is represented with `TP*` to differentiate from regular "f"
+   - `TPO*E/TOE` → photo
+   - `TP*EU/HRO/SO/TP*ER` → philosopher
+ - Words starting with "X" are always written with `KP`
+   - `KPAOEU/HRO/TPO*EPB` → xylophone
+   - `KPEU` → xi
 
-In order to split a word into multiple strokes, the following rules should be used:
+#### Syllabic splitting
+main.json relies a lot on dropping unstressed vowels in order to break up words. Words such as "memorize" benefit from a rule like this as the middle syllable is essentially dropped, leaving it unambiguous as to where to break it up: `PHEPL/RAOEUZ`.
+
+For write-outs, this dictionary does not rely as heavily on dropping unstressed vowels, though, this principle is still used for briefer entries.
+
+In order to split a word into multiple strokes syllabically, the following rules should be used:
  - Consonants should not be doubled across strokes
-    - e.g., `PHE/PHOR/RAOEUZ` would not be correct as it doubles the R
+   - e.g., `PHE/PHOR/RAOEUZ` would not be correct as it doubles the R
  - Strokes after the initial one should not begin with a vowel
-    - e.g., `PHEPL/OR/AOEUZ` is incorrect, the last two strokes begin with vowels
-    - Apart from suffix strokes which are special
-      - e.g., `KWRAER` → "-ary"
+   - e.g., `PHEPL/OR/AOEUZ` is incorrect, the last two strokes begin with vowels
+   - Apart from suffix strokes which are special
+     - e.g., `A*R` → "-ar"
 
-There are, of course, exceptions to these rules which are covered later. I will refer to this style as the "normal" splitting method.
+In essence, every stroke should begin with a consonant and represent a different syllable of a word. There are, of course, exceptions to these rules which are covered later.
 
-"Normal" splitting method:
+Examples of using the syllabic splitting method:
  - `PHE/PHO/RAOEUZ` → memorize
- - `TPOE/TPHE/TEUBG` → phonetic
+ - `TPO*E/TPHE/TEUBG` → phonetic
  - `PEUBG/KHUR` → picture
  - `KAL/KAOU/HRAEU/TOR` → calculator
  - `RE/KOG/TPHEUGS` → recognition
  - `ABG/TEUF` → active
  - `AD/HAOE/SEUF` → adhesive
-
-"Normal" splitting with first stroke starting with a vowel:
  - `EUPL/POR/TAPBT` → important
  - `OE/PWAEU` → obey
  - `ABG/SES` → access
 
-It is also important to use prefixes and suffixes whenever possible. Some words cannot be split "normally" as they can be constructed using these special strokes.
-
-The following examples can only be written using suffix strokes:
- - `HRERPB/*ER` → learner
- - `KOP/KWREU` → copy
- - `TOG/-L` → toggle
- - `KEUT/KWREU` → kitty
-
-> NOTE: Even though "copy" is not related to "cop" and "kitty" is not related to "kit", using the `KWREU` suffix stroke is desirable as this leads to fewer word boundary issues.
-
-Prefixes may also be used in this manner.
- - `AOE/KHRAOE/SEU/KWRAS/TEUBG` → ecclesiastic
-    - Since `AOE` is the "e-" prefix, it is used instead of `AOEBG/HRAOE/...`
-
-If there are two vowels next to each other that have to be represented in two strokes, `KWR` is used as a linker between the vowels.
-
-`KWR` as a linker between vowels:
+Sometimes vowels might have to be spread across multiple strokes and it may be impossible to start a stroke with a consonant. If this is the case, use `KWR` as a linker between vowels.
  - `AOEU/KWROE/HREU` → aioli
  - `PEU/KWRA/TPHOE` → piano
 
@@ -255,33 +279,17 @@ Depending on pronuncation, `W` can also begin a consecutive vowel stroke:
  - `AL/TRAOU/WEUS/TEUBG` → altruistic
  - `KOPB/TKAOU/WEUT` → conduit
 
-In general, every word in the dictionary will have at least one of these ways to break up a word. Special suffixes are first preferred if they feel more natural than "normal" splitting, followed by regular suffixes on root words, and finally "normal" splitting which may involve the `KWR` linker.
+When it is ambiguous as to whether `W` or `KWR` is used, there should be options for both. Add alternatives to your dictionary if they make sense to you.
 
-Other invalid examples of splitting a word:
- - `TERPL/KWRAOEUT` (termite) ❌
-   - Use normal method, `TER/PHAOEUT`
- - `EBGS/SAOED` (exceed) ❌
-   - Don't double consonants, instead use `EBG/SAOED`
-   - Instead use `EBG/SAOED` (see below)
- - `TPRAFRPB/AOEUZ` (franchise) ❌
-   - Normal method is sufficient: `TPRAPB/KHAOEUS`
- - `PWET/KWRER` (better) ❌
-   - Instead use `PWE/TER` or `PWET/*ER`
- - `TES/TER` (tester) ❌
-   - Use `*ER` suffix: `TEFT/*ER`
+However, beware of attempting to rely on `KWR` solely as this is not the point of this dictionary. You will have to add many, many entries.
 
-> There may still be entries that seem to contradict the basic syllable splitting rules; I'd recommend not using these as they are only remenants of main.json style syllable splitting that I am accustomed to.
-
-Other notes:
- - Words beginning with "ex" can be written with `EBGS` or some form of `EBG/S`
-    - For a word such as exile, the X sound is made up of k and s. Doubling the S would not be permitted, so it is written as `EBG/SAOEUL` or `EBG/SAO*EUL` if it is pronounced like a Z
-    - Other examples:
-        - `EBG/SE/KRAEUT` → execrate
-        - `EBG/SE/KAOUGS` → execution
-        - `EBG/S*EU/SKWREPBS` exigence
-        - `EBG/S*ULT` → exult
-        - `EBGS/SES` → excess
-        - `EBG/SES` → excess
+The following are words that unnecessarily use the `KWR` linker:
+ - `TPRAFRPB/KWRAOEUZ` (franchise) ❌
+   - `TPRAPB/KHAOEUS` ✔️
+ - `EUPB/SAOUL/KWREUPB`(insulin) ❌
+   - `EUPB/SAOU/HREUPB` ✔️
+ - `HARPS/KWREU/KORD` (harpsichord) ❌
+   - `HARP/SEU/KORD` ✔️
 
 #### Exceptions to syllable breaks
 
@@ -292,12 +300,12 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
  - `U`
  - `EU`
 
-Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means to complete the word.
+Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means (such as `KWR` linker or suffixes) to complete the word.
  - `KOL/KWREBGT` → collect
- - `KOR/KWREBGT` → correct
  - `EBG/KWRO/TPHO/PHEUBG` → economic
+ - `KOT/O*PB` → cotton
 
-If the first stroke of an outline is a prefix, there is no need to use the `KWR` starter on the next stroke:
+If the first stroke of an outline is a prefix, there is no need to use the `KWR` linker on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
  - `PRE/EPLT` → preempt
  - `TK*EU/AOE/HREBG/TREUBG` - dielectric
@@ -307,9 +315,9 @@ Consonants can also be doubled if the previous stroke is a prefix and the stroke
  - `TKEUS/SOFLS` → dissolves
  - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
-When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "fury" would have to be written as `TPAOUR/KWREU` as the R sound changes the sound of the vowel and thus should be kept.
+When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "carry" would have to be written as `KAEUR/KWREU` as the R sound changes the sound of the vowel and thus should be kept in the first stroke.
 
-"Normal" syllable splitting would treat the R as a consonant: `TPAOU/REU` which is further away from how "fury" is actually pronounced.
+If the R was treated as a consonant and the split occurred right before it, the outline would be `KAEU/REU` which does not reflect the pronunciation. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
 
 The following are some other examples of words where `-R` should be kept in the initial stroke:
  - `#HRAEUR/KWREU` → Larry
@@ -317,60 +325,102 @@ The following are some other examples of words where `-R` should be kept in the 
  - `TOR/KWRUS` → torus
  - `TPHROR/KWREUFT` → florist
 
-Many words in the dictionary have entries that either keep the R in the initial stroke or split the word "normally"; it is up to the user to decide whichever one makes more sense. I have only included both types of splitting where I deem it to be ambiguous, but of course this sense of ambiguity differs from person to person. Feel free to add entries using either method to words that are not defined as such.
+An alternative to this would be to split the word before the "R", but treat the previous vowel as a short vowel.
+For example:
+ - `TPHRO/REUFT` → florist
+ - `EBGS/PE/REU/-PLT` → experiment
+
+However, this method is incomplete among entries and may lead to other conflicts and is therefore not recommended.
+
+> For a while this was my preferred method but it proved to be flawed. However, I had already added many entries of this nature to my dictionary which is why they may turn up when using the lookup tool.
+
+#### Using prefixes and suffixes
+
+It is also important to use prefixes and suffixes.
+
+A good rule of thumb to determine whether or not it is appropriate to use suffix strokes is to examine what will be written before the suffix stroke.
+
+For example, it should be apparent that the word "tester" can be broken into the root word "test" and the suffix "-er" and thus should be written `TEFT/*ER` as opposed to `TES/TER`. On the other hand, the word "termite" should be written syllabically since it can't be broken into smaller parts: `TER/PHAOEUT`.
+
+> NOTE: With `KWRAOEUT` being the "-ite" suffix, it is technically possible to write "termite" as `TERPL/KWRAOEUT` but that is against the principles of this dictionary. If it is desirable to you to write in this manner, then this dictionary is probably not for you.
+
+It should be apparent that the following words should be written with suffix strokes as opposed to syllabically:
+ - `HRERPB/*ER` → learner
+   - `*ER` → "-er"
+ - `SE/HREBGT/-BL` → selectable
+   - `-BL` → "-(a|i)ble"
+ - `KUT/-G` → cutting
+   - `-G` → "-ing"
+ - `TPHAOEUF/-S` → knives
+   - `-S` → "-s"
+ - `KAFP/-PLT` → catchment
+   - `-PLT` → "-ment"
+ - `RE/SPOPBD/KWREPBT` → respondent
+   - `KWREPBT` → "-ent"
+ - `TKEUBGS/KWRAEUR/KWREU` → dictionary
+   - `KWRAEUR/KWREU` → "-ary"
+
+On the other hand, the following are words which should be written syllabically:
+ - `STAOUD/KWREPBT` (student) ❌
+   - `STAOU/TKEPBT` ✔️
+ - `WAUT/*ER` (water) ❌
+   - `WAU/TER` ✔️
+ - `SKOL/A*R` (scholar) ❌
+   - `SKO/HRAR` ✔️
+
+For ambiguous situations where it is not clear whether to use suffixes or split a word syllabically, both options should be available to use. And of course, don't be afraid to add your own alternatives.
 
 #### Prefixes and suffixes
  - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
-    - `KEUT/KWREU` → kitty
-    - `STOR/KWREU` → story
+   - `KEUT/KWREU` → kitty
+   - `STOR/KWREU` → story
  - `OER` is used for the "-ory" sound
-    - `SA/TEUS/TPABG/TOER` → satisfactory
-    - `TPABG/TOER` → factory
-    - `TPABGT/KWROER` → factory (using the {^ory} suffix)
+   - `SA/TEUS/TPABG/TOER` → satisfactory
+   - `TPABG/TOER` → factory
+   - `TPABGT/KWROER` → factory (using the {^ory} suffix)
  - `O*R/KWREU` can still be used for the "-ory" suffix
-    - `AU/TKEU/TOR/KWREU` → auditory
-    - `AU/TKEUT/O*R/KWREU` → auditory (using the {^ory} suffix)
+   - `AU/TKEU/TOR/KWREU` → auditory
+   - `AU/TKEUT/O*R/KWREU` → auditory (using the {^ory} suffix)
  - `KWREPB` → "-en"
-    - `HRAOEUT/KWREPB` → lighten
-    - `SOFT/KWREPB` → soften
+   - `HRAOEUT/KWREPB` → lighten
+   - `SOFT/KWREPB` → soften
  - `KWREPBT` → "-ent"
-    - `A/STREUPBG/KWREPBT` → astringent
-    - `STAOUD/KWREPBT` → student
-    - `AOE/TPEURB/KWREPBT` → efficient
+   - `A/STREUPBG/KWREPBT` → astringent
+   - `AOE/TPEURB/KWREPBT` → efficient
  - `-PLT` → "-ment"
  - Words ending in "-ous" and "-us" always use `KWRUS` or some variation
-    - `STAOU/PEPB/TKUS` → stupendous
-    - `RAOEUT/KWRUS` → righteous
-    - `RAOEUT/KHUS` → righteous
+   - `STAOU/PEPB/TKUS` → stupendous
+   - `RAOEUT/KWRUS` → righteous
+   - `RAOEUT/KHUS` → righteous
  - `-LT` → "-let" suffix
-    - `A/PHAOU/-LT` → amulet
-    - `STAR/-LT` → starlet
+   - `A/PHAOU/-LT` → amulet
+   - `STAR/-LT` → starlet
  - `-L` → "-le" suffix
  - `KWREUFT` → "-ist"
  - `KWREUBG` → "-ic"
  - `ST-BG` → "-istic"
-    - `A/TPHA/KROPB/ST-BG` → anachronistic
-    - `KWREUS/TEUBG` and `KWREUFT/KWREUBG` will also work, but are usually not explicitly defined
+   - `A/TPHA/KROPB/ST-BG` → anachronistic
+   - `KWREUS/TEUBG` and `KWREUFT/KWREUBG` will also work, but are usually not explicitly defined
  - `SH-PBS` → "-ishness" suffix
-    - `TPAOL/SH-PBS` foolishness
-    - `PWHRU/SH-PBS` → bluishness
+   - `TPAOL/SH-PBS` foolishness
+   - `PWHRU/SH-PBS` → bluishness
  - `SH*EUP` → "-ship" suffix
-    - `TPREPBD/SH*EUP` → friendship
+   - `TPREPBD/SH*EUP` → friendship
  - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
-    - Usually `HREU` can also work as these are explicitly defined in the dictionary
-        - For example, `TKE/PHO/TKPWRAF/KWREUBG/HREU` → demographically (in the dictionary)
-        - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
-        - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
-    - If a compount word begins with "fore", use `TPOER` and asterisk the second word
-        - `TPOER/H*ED` → forehead
-        - `TPOER/TPHO*/HREPBLG` → foreknowledge
-    - If other consonants on the right will be included in a stroke, use `TPOR`
-        - `TPORPL/HRAEUT` → formulate
-        - `TPORT/KWREU` → forty
+   - Usually `HREU` can also work as these are explicitly defined in the dictionary
+      - For example, `TKE/PHO/TKPWRAF/KWREUBG/HREU` → demographically (in the dictionary)
+      - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not in the dictionary)
+      - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not in the dictionary)
+   - If a compount word begins with "fore", use `TPOER` and asterisk the second word
+      - `TPOER/H*ED` → forehead
+      - `TPOER/TPHO*/HREPBLG` → foreknowledge
+   - If other consonants on the right will be included in a stroke, use `TPOR`
+      - `TPORPL/HRAEUT` → formulate
+      - `TPORT/KWREU` → forty
  - `WAL` → "-ual" suffix
-    - `PHAOUFP/WAL` → mutual
-    - `SEPBS/WAL` → sensual
-    - `EUPB/TE/HREBGT/WAL` → intellectual
+   - `PHAOUFP/WAL` → mutual
+   - `SEPBS/WAL` → sensual
+   - `EUPB/TE/HREBGT/WAL` → intellectual
 
 #### Conflict resolution
 
@@ -384,12 +434,13 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
  - "kr" gets precedence over "chr" and "cr" in `KR-` as it matches the keys more
    - `#KREUS/TEU` → Kristy
    - `#KR*EUS/TEU` → Christy
-       - Also can be written `#KHREUS/TEU`
+     - Also can be written `#KHREUS/TEU`
  - "x" and "ks" gets precedence over "kshun" in" `-BGS`
    - `TRABGS` → tracks
    - `TRA*BGS` → traction
    - `RE/TPHREBGS` → reflex
    - `RE/TPHR*EBGS` → reflection
+> The one exception to this rule is `TKEUBGS` → diction as I want to be able to write "dictionary" as `TKEUBGS/KWRAER`. Seeing "dicks" show up before writing `KWRAER` seems silly.
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
