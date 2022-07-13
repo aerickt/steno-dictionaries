@@ -156,7 +156,7 @@ Examples
 > Note: stroking `-FPLT` does not leave a trailing period.
 
 #### Phonetics
-The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from word breaks as well as suffixes and prefixes). The following list includes changes I've made as well as any rules or tips not necessarily mentioned in any main learning resources for stock Plover.
+The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from word breaks as well as suffixes and prefixes). Although this list is quite long, a lot of these principles are actually part of stock Plover theory which I thought were worth mentioning.
  - `*PL` is used as the -mp cluster intsead of `-FRP`
  - Ending sounds that fall out of steno order can be written using right hand consonant strokes
    - `HEL/-P` → help
@@ -227,6 +227,11 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `SKAEURS/TEU` → scarcity
    - `STEU` → city
    - `EUPB/SAPB/TEU` → insanity
+ - Some variation of `US` is used for the "us" sound whether it is spelled "ous" or "us"
+  - `PHO/TPHO/TO/TPHUS` → monotonous
+  - `STAOU/PEPB/TKUS` → stupendous
+  - `TOR/KWRUS` → torus
+  - `RAOEUT/KHUS` → righteous
 
 #### Orthography
 Orthography has also largely been preserved with a few exceptions.
@@ -382,56 +387,35 @@ On the other hand, the following are words which should be written syllabically:
 For ambiguous situations where it is not clear whether to use suffixes or split a word syllabically, both options should be available to use. And of course, don't be afraid to add your own alternatives.
 
 #### Prefixes and suffixes
- - Since doubling consonants isn't used, `KWREU` is default for adding "-y"
-   - `KEUT/KWREU` → kitty
-   - `STOR/KWREU` → story
- - `OER` is used for the "-ory" sound
-   - `SA/TEUS/TPABG/TOER` → satisfactory
-   - `TPABG/TOER` → factory
-   - `TPABGT/KWROER` → factory (using the {^ory} suffix)
- - `O*R/KWREU` can still be used for the "-ory" suffix
-   - `AU/TKEU/TOR/KWREU` → auditory
-   - `AU/TKEUT/O*R/KWREU` → auditory (using the {^ory} suffix)
- - `KWREPB` → "-en"
-   - `HRAOEUT/KWREPB` → lighten
-   - `SOFT/KWREPB` → soften
- - `KWREPBT` → "-ent"
-   - `A/STREUPBG/KWREPBT` → astringent
-   - `AOE/TPEURB/KWREPBT` → efficient
- - `-PLT` → "-ment"
- - Words ending in "-ous" and "-us" always use `KWRUS` or some variation
-   - `STAOU/PEPB/TKUS` → stupendous
-   - `RAOEUT/KWRUS` → righteous
-   - `RAOEUT/KHUS` → righteous
- - `-LT` → "-let" suffix
-   - `A/PHAOU/-LT` → amulet
-   - `STAR/-LT` → starlet
- - `-L` → "-le" suffix
- - `KWREUFT` → "-ist"
- - `KWREUBG` → "-ic"
- - `ST-BG` → "-istic"
-   - `A/TPHA/KROPB/ST-BG` → anachronistic
-   - `KWREUS/TEUBG` and `KWREUFT/KWREUBG` will also work, but are usually not explicitly defined
- - `SH-PBS` → "-ishness" suffix
-   - `TPAOL/SH-PBS` foolishness
-   - `PWHRU/SH-PBS` → bluishness
- - `SH*EUP` → "-ship" suffix
-   - `TPREPBD/SH*EUP` → friendship
- - `{^ally}` is `A*EL` or `A*L/KWREU` but these are not defined in the dictionary
-   - Usually `HREU` can also work as these are explicitly defined in the dictionary
-      - For example, `TKE/PHO/TKPWRAF/KWREUBG/HREU` → demographically (defined)
-      - `TKE/PHO/TKPWRA/TPEUBG/A*EL` → demographically (not defined)
-      - `TKE/PHO/TKPWRA/TPEUBG/A*L/KWREU` → demographically (not defined)
-   - If a compount word begins with "fore", use `TPOER` and asterisk the second word
-      - `TPOER/H*ED` → forehead
-      - `TPOER/TPHO*/HREPBLG` → foreknowledge
-   - If other consonants on the right will be included in a stroke, use `TPOR`
-      - `TPORPL/HRAEUT` → formulate
-      - `TPORT/KWREU` → forty
- - `WAL` → "-ual" suffix
-   - `PHAOUFP/WAL` → mutual
-   - `SEPBS/WAL` → sensual
-   - `EUPB/TE/HREBGT/WAL` → intellectual
+This is a list of common prefix and suffix strokes. Knowing these should be sufficient for most writing.
+ - `KWREU` → -y
+ - `KWREUPB` → -in
+ - `KWREUBG` → -ic
+ - `KWREUFT` → -ist
+ - In addition to being suffix strokes, the following can be used to split words syllabically with the `KWR` chord representing a diphthong.
+   - `KWREPB` → -en
+     - Syllabically as in `AEUL/KWREPB` → alien
+   - `KWREPBT` → -ent
+     - Syllabically as in `RAOE/SEUP/KWREPBT` → recipient
+   - `KWRAPB` → -an
+     - Syllabically as in `OB/SEUD/KWRAPB` → obsidian
+   - `KWRAPBT` → -ant
+     - Syllabically as in `SRAL/KWRAPBT` → valiant
+   - `KWROPB` → -on
+     - Syllabically as in `OPB/KWROPB` → onion
+ - `*ER` → -er
+ - `A*R` → -ar
+ - `-BL` → -able
+ - `-BLT` → -ability
+ - `-S` → -s
+ - `-Z` → -s
+ - `-G` → -ing
+ - `-PLT` → -ment
+ - `-LT` → -let
+ - `-L` → -le
+ - `ST-BG` → -istic
+ - `SH-PBS` → -ishness
+ - `SH*EUP` → -ship
 
 #### Conflict resolution
 
