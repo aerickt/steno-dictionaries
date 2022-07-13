@@ -59,17 +59,15 @@ Examples:
  - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
 ## plover-base.json
-This dictionary is intended to replace Plover's `main.json` that comes by default. It's not intended to be nearly as extensive (hence **base**) but it should hopefully be more consistent and easier to use, especially as it does not contain any misstrokes.
+This dictionary is intended to replace Plover's `main.json` that comes by default. It has over 100,000 entries and should be sufficient for most everyday writing. It roughly follows Plover theory with a few additions and changes outlined in this page.
 
-While the majority of Plover theory have been left untouched, there are several additions to the underlying theory that make this a little problematic if one were to switch to this dictionary after being accustomed to main.json.
-
-> While I believe this dictionary follows more rigorous rules (especially with regard to syllable splitting) this is still my personal dictionary and is subject to mistakes. If you spot any bad entries, please let me know!
-
-> I'm currently at 79,000 entries. I started with a word list of the most common 3000 English words and later went through a more complete word list alphabetically up until the letter M. I have stopped moving alphabetically through the word list and I am only adding entries randomly at this point.
+> I manually built this dictionary over the course of 6 months on and off. Please let me know if you spot any errors or misleading entries to correct!
 
 I've written a little bit about my motivations for creating a new dictionary over on my [website](https://aerick.ca/steno/dictionary-building) if you'd like a summary of this project.
 
 ### Dictionary contents
+ - [Who should use this dictionary?](#Who-should-use-this-dictionary?)
+ - [Using this dictionary](#Using-this-dictionary)
  - [Compound words](#Compound-words)
  - [Proper nouns](#Proper-nouns)
  - [Movement keys, keyboard shortcuts, commands](#movement-keys-keyboard-shortcuts-commands)
@@ -83,6 +81,51 @@ I've written a little bit about my motivations for creating a new dictionary ove
  - [Using prefixes and suffixes](#Using-prefixes-and-suffixes)
  - [Prefixes and suffixes](#Prefixes-and-suffixes)
  - [Conflict resolution](#Conflict-resolution)
+ - [Beyond writing out](#Beyond-writing-out)
+
+#### Who should use this dictionary?
+
+I believe this dictionary will make it easier for beginners to pick up stenography due to the following reasons I outline below. However, this reference page is the only learning resource specific to this dictionary and thus learning the bulk of the theory will be reading this page or [looking up](#Using-this-dictionary) entries.
+
+I would consider using this dictionary only if you are the type that like to figure things out by themselves as opposed to going through a step by step process that guides you along the way. Furthermore, I would definitely recommend skimming through some of the contents on this page and understanding the main differences this dictionary has with stock Plover theory.
+
+It is also necessary to know the main missing sounds and compound clusters of Plover theory before reading this page. You can learn these from reading Art of Chording or Learn Plover!. I recommend reading the latter up to the end of lesson 3.
+
+#### Using this dictionary
+
+You can download this dictionary by right clicking [here](https://github.com/aerickt/steno-dictionaries/raw/main/plover-base.json) and pressing "save link". Make sure you save the file as json especially on Windows. Afterwards, add it to Plover and disable or remove `main.json`.
+
+Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first.
+
+If it is still unclear to you, feel free to reach out to me, either by opening a GitHub issue on this repo, or contacting me on Discord (I am aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq).
+
+When it comes to looking up entries, the best strategy would be to look at the longest definition as this corresponds to the fully written-out outline.
+
+For example, looking up the word "personality" will result in the following:
+
+```
+PER/SO*PB/A*L/TEU
+PER/SO*PB/A*LT
+PER/SOPB/A*L/TEU
+PER/SOPB/A*LT
+PERPB/A*LT
+PERPBLT
+PERS/TPHAL/TEU
+PERS/TPHALT
+```
+
+The two outlines you should consider as fully written-out would be `PER/SO*PB/A*L/TEU` and `PER/SOPB/A*L/TEU`. The other outlines are briefer or use other techniques that are not utilized when it comes to writing out words.
+
+One more thing to note is that using the lookup tool you will often find words with folded suffix strokes. For example, take the word "recreating":
+```
+"RAOE/KRAOE/KWRAEUGT": "recreating",
+"RAOE/KRAOEGT": "recreating",
+"RE/KRAOE/KWRAEUGT": "recreating",
+"RE/KRAOEGT": "recreating",
+
+```
+
+You do **not** have to fold in the G on these strokes! Even though `RAOE/KRAOE/KWRAEUT/-G` is not defined in the dictionary, it will still work. Same goes for `-S`, `-D`, and `-Z`. Folding is more of an [advance technique](#Folding-suffix-keys) that is discussed more later.
 
 #### Compound words
 Compound words are always written with the asterisk on the first stroke of the second word.
@@ -211,13 +254,14 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
      - Can also be written `EBG/S*ULT` with `S*` representing "Z"
    - `EBG/SES` → excess
    - `EBGS/TEPBD` → extend
+   - `EBGS` cannot be used universally due to syllabic splitting constraints (see [Syllabic splitting](#Syllabic-splitting))
  - `-PLT` is used for the "-ment" cluster in addition to be being a suffix
    - `SE/-PLT` → cement
    - `KAFP/-PLT` → catchment
    - `EBGS/PE/REUPLT` → experiment
  - `-LT` is used for the "-let" cluster in addition to being a suffix
-   - `A/PHAOU/-LT` → amulet
-   - `TAB/-LT` → tablet
+   - `A/PHAOULT` → amulet
+   - `KHEUBG/-LT` → chiclet
    - `SKARLT` → scarlet
  - `-BL` can be used for the "-able" or "-ible" cluster in addition to being a suffix
    - `KRAOUS/-BL` → crucible
@@ -228,10 +272,10 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `STEU` → city
    - `EUPB/SAPB/TEU` → insanity
  - Some variation of `US` is used for the "us" sound whether it is spelled "ous" or "us"
-  - `PHO/TPHO/TO/TPHUS` → monotonous
-  - `STAOU/PEPB/TKUS` → stupendous
-  - `TOR/KWRUS` → torus
-  - `RAOEUT/KHUS` → righteous
+   - `PHO/TPHO/TO/TPHUS` → monotonous
+   - `STAOU/PEPB/TKUS` → stupendous
+   - `TOR/KWRUS` → torus
+   - `RAOEUT/KHUS` → righteous
 
 #### Orthography
 Orthography has also largely been preserved with a few exceptions.
@@ -252,6 +296,13 @@ Orthography has also largely been preserved with a few exceptions.
  - Words starting with "X" are always written with `KP`
    - `KPAOEU/HRO/TPO*EPB` → xylophone
    - `KPEU` → xi
+ - Words beginning with "Y" use `KWR`
+   - `KWREP` → yep
+   - `KWRERPB` → yearn
+   - Other words drop `KWR`
+     - `AOU/TPO*R/KWRA` → euphoria
+     - `AOUS` → use
+     - `UR/KWREUPB` → urine
 
 #### Syllabic splitting
 main.json relies a lot on dropping unstressed vowels in order to break up words which is a bit of a challenge to learn especially for non-native speakers.
@@ -290,7 +341,7 @@ Depending on pronuncation, `W` can also begin a consecutive vowel stroke:
 
 When it is ambiguous as to whether `W` or `KWR` is used, there should be options for both. Add alternatives to your dictionary if they make sense to you.
 
-However, beware of attempting to rely on `KWR` solely as this is not the point of this dictionary. You will have to add many, many entries.
+However, beware of attempting to rely on `KWR` solely as this is not the point of this dictionary. You will have to add many entries if you tend to rely on `KWR` excessively.
 
 The following are words that unnecessarily use the `KWR` linker:
  - `TPRAFRPB/KWRAOEUZ` (franchise) ❌
@@ -314,7 +365,7 @@ Sometimes a stroke should not begin with a certain chord as it is a common brief
 Instead carry the first stroke far enough so that there is a consonant on the right hand and use other means (such as `KWR` linker or suffixes) to complete the word.
  - `KOL/KWREBGT` → collect
  - `EBG/KWRO/TPHO/PHEUBG` → economic
- - `KOT/O*PB` → cotton
+ - `KOT/KWROPB` → cotton
 
 ##### `KWR` linker with prefix strokes
 
@@ -331,9 +382,9 @@ Consonants can be doubled if the previous stroke is a prefix and the strokes tha
  - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
 ##### The problem of the vowel/consonant "R"
-When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "carry" would have to be written as `KAEUR/KWREU` as the R sound changes the sound of the vowel and thus should be kept in the first stroke.
+When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "carry" would have to be written as `KAEUR/KWREU` as the R changes the sound of the vowel and thus should be kept in the first stroke.
 
-If the R was treated as a consonant and the split occurred right before it, the outline would be `KAEU/REU` which does not reflect the pronunciation. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
+If the R was treated as a consonant it was instead split as "ca|rry", the outline could only be `KAEU/REU` or `KA/REU`  which are not completely accurate to the pronunciatoin. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
 
 The following are some other examples of words where `-R` should be kept in the initial stroke:
  - `#HRAEUR/KWREU` → Larry
@@ -349,6 +400,33 @@ For example:
 However, this method is incomplete among entries and may lead to other conflicts and is therefore not recommended.
 
 > For a while this was my preferred method but it proved to be flawed. However, I had already added many entries of this nature to my dictionary which is why they may turn up when using the lookup tool.
+
+This method is, however, used to resolve a few conflicts; see [Conflict resolution](#Conflict-resolution).
+
+##### Situations that benefit from dropping unstressed vowels
+As previously mentioned in [phonetics](#Phonetics), `TEU` can be used to represent -ity even if not used as a suffix. This is very much a situation that is actually dropping an unstressed vowel in disguise. Consider the two outlines of writing "felicity":
+ - `TPE/HREUS/TEU`
+ - `TPE/HREU/SEU/TEU`
+
+You'll notice that in the first outline, the second "i" was dropped as it is unstressed. The second outline is not recommended as it uses an extra stroke, making it slower to write.
+
+Furthermore, entries with strokes that take the shape of `EU/TEU` are not necessarily complete as I may have been too tired or lazy when trying to add these in. Thus, try to not use an extra stroke when it comes to `TEU`.
+
+Other examples of when to drop an "i" in such a manner:
+ - `EBGS/TRE/PHEU/TEU` → extremity
+   - Can instead be `EBGS/TREPL/TEU`
+ - `EUPB/TPEU/TPHEU/TEU` → infinity
+   - Can instead be `EUPB/TPEUPB/TEU`
+ - `SEPB/SEU/TEUF` → sensitive
+   - Can instead be `SEPBS/TEUF`
+
+Another situation where you should really drop a vowel is where you'll see a word end with -ly.
+ - `HAUT/KWREU/HREU` → haughtily
+   - Can instead be `HAUT/HREU` ("i" is dropped)
+ - `TRAO*UT/-FL/KWREU` → truthfully
+   - Can instead be `TRAO*UT/TPHREU` (second "u" is dropped)
+ - `PER/SO*PB/A*L/KWREU` → personally
+   - Can instead be `PER/SO*PB/HREU` ("a" is dropped)
 
 #### Using prefixes and suffixes
 
@@ -376,7 +454,7 @@ It should be apparent that the following words should be written with suffix str
  - `TKEUBGS/KWRAEUR/KWREU` → dictionary
    - `KWRAEUR/KWREU` → "-ary"
 
-On the other hand, the following are words which should be written syllabically:
+On the other hand, the following are examples of when using suffixes is unnecessary:
  - `STAOUD/KWREPBT` (student) ❌
    - `STAOU/TKEPBT` ✔️
  - `WAUT/*ER` (water) ❌
@@ -389,30 +467,40 @@ For ambiguous situations where it is not clear whether to use suffixes or split 
 #### Prefixes and suffixes
 This is a list of common prefix and suffix strokes. Knowing these should be sufficient for most writing.
  - `KWREU` → -y
+   - `KRAEUZ/KWREU` → crazy
+ - `KWREUF` → -ive
+   - `KRAOE/KWRAEUT/KWREUF` → creative
+ - `KWREUFPL` → -ism
+   - `PHAG/TPHET/KWREUFPL` → magnetism
  - `KWREUPB` → -in
+   - `PHRUG/KWREUPB` → plugin
  - `KWREUBG` → -ic
+   - `AOEU/KWROPB/KWREUBG` → ionic
  - `KWREUFT` → -ist
- - In addition to being suffix strokes, the following can be used to split words syllabically with the `KWR` chord representing a diphthong.
-   - `KWREPB` → -en
-     - Syllabically as in `AEUL/KWREPB` → alien
-   - `KWREPBT` → -ent
-     - Syllabically as in `RAOE/SEUP/KWREPBT` → recipient
+   - `ART/KWREUFT` → artist
+ - In addition to being suffix strokes, the following can be used to split words syllabically with the `KWR` chord representing a diphthong. Use `KWR*` if the "I" variant of the suffix is needed on a translation that isn't already in the dictionary.
+   - `KWROPB` → -on
+     - Syllabically as in `OPB/KWROPB` → onion
    - `KWRAPB` → -an
      - Syllabically as in `OB/SEUD/KWRAPB` → obsidian
    - `KWRAPBT` → -ant
      - Syllabically as in `SRAL/KWRAPBT` → valiant
-   - `KWROPB` → -on
-     - Syllabically as in `OPB/KWROPB` → onion
- - `*ER` → -er
+   - `KWREPB` → -en
+     - Syllabically as in `AEUL/KWREPB` → alien
+   - `KWREPBT` → -ent
+     - Syllabically as in `RAOE/SEUP/KWREPBT` → recipient
  - `A*R` → -ar
+ - `A*L` → -al
+ - `O*R` → -or
+ - `*ER` → -er
+ - `-PLT` → -ment
  - `-BL` → -able
  - `-BLT` → -ability
+ - `-L` → -le
+ - `-LT` → -let
+ - `-G` → -ing
  - `-S` → -s
  - `-Z` → -s
- - `-G` → -ing
- - `-PLT` → -ment
- - `-LT` → -let
- - `-L` → -le
  - `ST-BG` → -istic
  - `SH-PBS` → -ishness
  - `SH*EUP` → -ship
@@ -436,6 +524,82 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
    - `RE/TPHREBGS` → reflex
    - `RE/TPHR*EBGS` → reflection
 > The one exception to this rule is `TKEUBGS` → diction as I want to be able to write "dictionary" as `TKEUBGS/KWRAER`. Seeing "dicks" show up before writing `KWRAER` seems silly.
+ - For conflicts with words ending "i" vs "y", use `EU` and `KWREU` respectively
+   - `#TE/REU` → Terri
+   - `#TER/KWREU` → Terry
+   - `#SAPL/KWREU` → Sammy
+   - `#SA/PHEU` → Sammi
+
+#### Beyond writing out
+It's no secret that writing out syllabically can be quite slow. Here are a few techniques you can find in the dictionary that will help you write a bit shorter.
+
+##### Dropping unstressed vowels
+I have kind of already illustrated this technique in [Situations that benefit from dropping unstressed vowels](#Situations-that-benefit-from-dropping unstressed-vowels). Figuring out stress can be a bit of a challenge within a word and I unfortunately do not have any tips at this moment, apart from showing a few examples.
+ - `PHEPL/RAOEUZ` → memorize ("o" is dropped)
+ - `TPOFRPB/TPHAT` → fortunate ("u" is dropped)
+ - `KPHAPBD` → command ("o" is dropped and remaining word is fit into one stroke)
+ - `KPHAOUPB/KAEUT` → communicate (both the "o" and the "i" are dropped)
+ - `STKAOEUR` → desire ("e" is dropped, and `STK` serves as "ds" using an inversion)
+ - `STKPAOER` → disappear ("i" and first "a" are both dropped, `STK` serving as "ds" using an inversion)
+ - `RUFR` → rougher ("e" is dropped, `-FR` representing the "fer" sound)
+ - `TKEUFRPBT` → different (both "e"'s are dropped, remaining consonants fit into single stroke)
+
+##### Using shorter prefixes and suffixes
+Most prefixes and suffixes are simple to determine. For example, `PHE/TKPWA` is the mega- prefix. However, you can save a stroke by using `PH*EG` instead. Use the lookup tool to find shorter prefixes if they exist
+
+A few examples are listed below:
+ - `PHEU/HREU` → milli-
+   - `PH*EUL` can instead be used
+ - `KEU/HROE` → kilo-
+   - `K*EUL` can instead be used
+ - `RE/TROE` → retro-
+   - `RERT` can instead be used
+
+Suffixes can also be shortened similarly like I have shown in [Situations that benefit from dropping unstressed vowels](#Situations-that-benefit-from-dropping unstressed-vowels).
+
+A few other special suffixes are worth mentioning, however.
+
+The canonical way of writing "dictionary" is `TKEUBGS/KWRAEUR/KWREU` with `KWRAEUR/KWREU` representing the -ary suffix. `KWRAER` serves as a shorter alternative as seen in the following examples:
+ - `TKO/KAOU/-PLT/KWRAER` → documentary
+ - `TKEUS/PEPBS/KWRAER` → dispensary
+ - `SREUGS/KWRAER` → visionary
+
+-ory can also be shortened from `O*R/KWREU` to `KWROER`:
+ - `TPABGT/O*R/KWREU` → factory
+   - Can instead be `TPABGT/KWROER`
+ - `PRE/EPLT/O*R/KWREU` → preemptory
+   - Can instead be `PRE/EPLT/KWROER`
+ - `STA/KHAOUT/O*R/KWREU` → statutory
+   - Can instead be `STA/KHAOUT/KWROER`
+
+`AER` and `OER` are also special in that they are not just parts of suffixes, but can represent the sounds of  -ary and -ory when combined with other consonants.
+
+ - `EUPB/SREPB/TOER` → inventory
+ - `OB/HREU/TKPWA/TOER` → obligatory
+ - `UPB/TPHE/SE/SAER` → unnecessary
+ - `ES/KHAOU/WAER` → estuary
+
+##### Folding and stacking sounds on ending strokes
+Ending consonants on the right hand can be combined with ending strokes to fit more sounds into one stroke. For example, `-T` can be used to represent -ity conjunction with other chords:
+ - `PRAOEU/KWRORT` → priority
+ - `SAOEPB/KWRORT` → seniority
+ - `EUPB/SAPBT` → insanity
+ - `PHOE/HRAERT` → molarity
+
+`-L` can be used in a similar manner to represent -al or -ly:
+ - `EBGS/TERPBL` → external
+ - `EUPL/PHORL` → immoral
+ - `EUPL/PEURBL` → impishly
+ - `RAOE/SPEBG/TEUFL` → respectively
+
+`-R` can be used to represent an ending R sound:
+ - `SOFT/KWRERPB` → softener
+ - `OERPB` → owner
+ - `KHRAOERPB` → cleaner
+ - `TKAOEURPB` → diner
+
+##### Folding suffix keys
+Folding suffix keys can come with unintended conflicts (for example, `SPEUGT` for "spitting" vs "spigot") but it is an easy way to reduce how many strokes you use. That said, hitting `-G`, `-S`, `-D`, or `-Z` separately is already quite fast. Folding these keys often requires more finger contortions. Do not feel obliged to fold suffix keys, despite the dictionary containing these entries.
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
