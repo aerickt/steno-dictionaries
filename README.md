@@ -12,10 +12,12 @@ My personal steno dictionaries.
 This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
 
 ### Dictionary contents
+
  - [Movement keys](#Movement-keys)
  - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
 
 #### Movement keys
+
 By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
 
 By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
@@ -23,6 +25,7 @@ By pressing `STPH*` instead, the shift modifier is used together with the moveme
 To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
 
 #### Commands and keyboard shortcuts
+
 Many of the commands from main.json have stayed the same.
  - `KPA` → capitalize the next word
  - `KPA*` → capitalize the next word and supress the next space
@@ -59,6 +62,7 @@ Examples:
  - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
 ## plover-base.json
+
 This dictionary is intended to replace Plover's `main.json` that comes by default. It has over 100,000 entries and should be sufficient for most everyday writing. It roughly follows Plover theory with a few additions and changes outlined in this page.
 
 > I manually built this dictionary over the course of 6 months on and off. Please let me know if you spot any errors or misleading entries to correct!
@@ -66,7 +70,9 @@ This dictionary is intended to replace Plover's `main.json` that comes by defaul
 I've written a little bit about my motivations for creating a new dictionary over on my [website](https://aerick.ca/steno/dictionary-building) if you'd like a summary of this project.
 
 ### Dictionary contents
+
  - [Who should use this dictionary?](#Who-should-use-this-dictionary?)
+ - [Main changes and advantages](#main-changes-and-advantages)
  - [Using this dictionary](#Using-this-dictionary)
  - [Compound words](#Compound-words)
  - [Proper nouns](#Proper-nouns)
@@ -90,6 +96,32 @@ I believe this dictionary will make it easier for beginners to pick up stenograp
 I would consider using this dictionary only if you are the type that like to figure things out by themselves as opposed to going through a step by step process that guides you along the way. Furthermore, I would definitely recommend skimming through some of the contents on this page and understanding the main differences this dictionary has with stock Plover theory.
 
 It is also necessary to know the main missing sounds and compound clusters of Plover theory before reading this page. You can learn these from reading Art of Chording or Learn Plover!. I recommend reading the latter up to the end of lesson 3.
+
+#### Main changes and advantages
+
+##### Consistent syllabic write-outs
+
+When it comes to writing out, main.json sometimes prefers using prefixes and suffixes, sometimes splits with syllables, and is also sometimes right hand greedy. Furthermore, most write-out entries drop unstressed vowels.
+
+This dictionary eliminates the ambiguity by having a consistent and predictable method of writing out syllabically (with some exceptions) without having to determine stress within a word.
+
+##### Free of misstrokes
+
+The default Plover dictionary came from Mirabai Knight's own personal dictionary several years ago. As such, main.json is full of misstrokes. When writing at speed, a stenographer may accidentally miss a key, or press a wrong key in a specific outline regularly. To help combat this, they add these "wrong" outlines to their dictionary to still output the intended translation. It works as a kind of passive autocorrection.
+
+Although helpful to those already comfortable with theory, it is detrimental to beginners who may have trouble determining what is the correct outline. Hobbyist stenographers will especially learn by looking up words in the dictionary. Having a dictionary where all the entries are correct is extremely important.
+
+##### Fewer inconsistencies
+
+In addition to being full of misstrokes, main.json also has many inconsistent rules that work for some words, but not for others. Especially when it comes to breaking up a word into multiple strokes, main.json just doesn't have a consistent method. Looking up a word will result in a multitude of ways to write a word. Leaving it up to the user to decide how to break up a word would be fine on its own if the dictionary contained every single method. However, that is just not the case with many of these alternative word breaks missing.
+
+In this dictionary, write-outs adhere to splitting rules a lot more closely. Write-outs for one word will resemble write-outs for other similar words and there are often no more than a few entries for writing out.
+
+##### More consistent prefixes and suffixes
+
+Prefixes in this dictionary will generally be working in the background, so to speak. They are not entries one will have to memorize, but rather come as a result of the syllabic splitting method. For example, "endanger" would be written out as `EPB/TKAEUPB/SKWRER`. It is not necessary to know that `EPB` is actually a prefix stroke in order to write this word.
+
+Suffixes, however, do need to be slightly more unique as they have to be differentiated from normal words. The majority of suffixes that are necessary to know to write most words, however, are fairly regular and form "families" of outlines that are similar to one another. See [prefixes and suffixes](#prefixes-and-suffixes) for examples.
 
 #### Using this dictionary
 
@@ -128,6 +160,7 @@ One more thing to note is that using the lookup tool you will often find words w
 You do **not** have to fold in the G on these strokes! Even though `RAOE/KRAOE/KWRAEUT/-G` is not defined in the dictionary, it will still work. Same goes for `-S`, `-D`, and `-Z`. Folding is more of an [advance technique](#Folding-suffix-keys) that is discussed more later.
 
 #### Compound words
+
 Compound words are always written with the asterisk on the first stroke of the second word.
  - `KAOE/PWAO*RD` → keyboard
  - `TEGT/PWAO*BG` → textbook
@@ -137,6 +170,7 @@ Compound words are always written with the asterisk on the first stroke of the s
 > This rule is more relaxed with proper nouns
 
 #### Proper nouns
+
 Proper nouns are always written with the number key on the first stroke. Everything else is written with the same rules.
  - `#A/HREU/SA` → Alyssa
  - `#PWOB` → Bob
@@ -150,9 +184,11 @@ Proper nouns are always written with the number key on the first stroke. Everyth
 > Unfortunately, entries using the number key will not be displayed as I have above, but rather with numbers. So viewing the dictionary you would see `350ER/TER` instead of `#PAOE/TER`.
 
 #### Movement keys, keyboard shortcuts, commands
+
 See [commands.json](#commandsjson) as plover-base.json contains this dictionary by default.
 
 #### Punctuation
+
  - `H-F` → `?` question mark
  - `KW-PL` → `?` shape can be thought of rising inflection as if asking a question
  - `TP-BG` → `!` shape can be thought of as falling inflection when exclaiming
@@ -177,11 +213,13 @@ See [commands.json](#commandsjson) as plover-base.json contains this dictionary 
 For symbols beyond these where you might require different spacing and capitalization, I recommend [Emily's symbols dictionary](https://github.com/EPLHREU/emily-symbols).
 
 #### Right hand number pad
+
 > The conventional number system does not work in plover-base.json. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
 
 plover-base.json has this system by default. See [rh-numpad.json](rh-numpadjson).
 
 #### Fingerspelling
+
 In addition to normal fingerspelling with `*`, using `-FPLT` of `*` will put a period after the letter. `*FPLT` will capitalize the word. `-RBGS` is used for stitching (requires `plover-stitching` plugin).
 
 Examples:
@@ -199,6 +237,7 @@ Examples
 > Note: stroking `-FPLT` does not leave a trailing period.
 
 #### Phonetics
+
 The main principles of Plover theory have been left unchanged and Learn Plover! or Art of Chording are fully compatible with this dictionary (apart from word breaks as well as suffixes and prefixes). Although this list is quite long, a lot of these principles are actually part of stock Plover theory which I thought were worth mentioning.
  - `*PL` is used as the -mp cluster intsead of `-FRP`
  - Ending sounds that fall out of steno order can be written using right hand consonant strokes
@@ -278,6 +317,7 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `RAOEUT/KHUS` → righteous
 
 #### Orthography
+
 Orthography has also largely been preserved with a few exceptions.
  - Much like stock Plover theory, short vowels and schwas are represented with the vowel they are spelt with despite their sound
    - `SKO/HRAR` → scholar
@@ -305,6 +345,7 @@ Orthography has also largely been preserved with a few exceptions.
      - `UR/KWREUPB` → urine
 
 #### Syllabic splitting
+
 main.json relies a lot on dropping unstressed vowels in order to break up words which is a bit of a challenge to learn especially for non-native speakers.
 
 For write-outs, this dictionary does not rely as heavily on dropping unstressed vowels, though, this principle is still used for briefer entries.
@@ -341,7 +382,7 @@ Depending on pronuncation, `W` can also begin a consecutive vowel stroke:
 
 When it is ambiguous as to whether `W` or `KWR` is used, there should be options for both. Add alternatives to your dictionary if they make sense to you.
 
-However, beware of attempting to rely on `KWR` solely as this is not the point of this dictionary. You will have to add many entries if you tend to rely on `KWR` excessively.
+However, beware of attempting to rely too heavily linker chords it is not the point of this dictionary to utilize them universally.
 
 The following are words that unnecessarily use the `KWR` linker:
  - `TPRAFRPB/KWRAOEUZ` (franchise) ❌
@@ -350,6 +391,8 @@ The following are words that unnecessarily use the `KWR` linker:
    - `EUPB/SAOU/HREUPB` ✔️
  - `HARPS/KWREU/KORD` (harpsichord) ❌
    - `HARP/SEU/KORD` ✔️
+ - `TKPWAL/KWROPB` (gallon) ❌
+   - `TKPWA/HROPB` ✔️
 
 #### Exceptions to syllable breaks
 
@@ -369,7 +412,7 @@ Instead carry the first stroke far enough so that there is a consonant on the ri
 
 ##### `KWR` linker with prefix strokes
 
-If the first stroke of an outline is a prefix, there is no need to use the `KWR` linker on the next stroke:
+If the first stroke of an outline is a prefix, there is no need to use a linker chord such as `KWR` on the next stroke:
  - `KOE/OR/TKEU/TPHAEUT` → coordinate
  - `PRE/EPLT` → preempt
  - `TK*EU/AOE/HREBG/TREUBG` - dielectric
@@ -381,7 +424,10 @@ Consonants can be doubled if the previous stroke is a prefix and the strokes tha
  - `TKEUS/SOFLS` → dissolves
  - `TKEUS/SEU/PHEU/HRAR` → dissimilar
 
+> Of course, if it makes sense to you to disregard this exception then feel free to add entries such as `TK*EU/SEU/PHEU/HRAR` → dissimilar to your dictionary.
+
 ##### The problem of the vowel/consonant "R"
+
 When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "carry" would have to be written as `KAEUR/KWREU` as the R changes the sound of the vowel and thus should be kept in the first stroke.
 
 If the R was treated as a consonant it was instead split as "ca|rry", the outline could only be `KAEU/REU` or `KA/REU`  which are not completely accurate to the pronunciatoin. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
@@ -404,6 +450,7 @@ However, this method is incomplete among entries and may lead to other conflicts
 This method is, however, used to resolve a few conflicts; see [Conflict resolution](#Conflict-resolution).
 
 ##### Situations that benefit from dropping unstressed vowels
+
 As previously mentioned in [phonetics](#Phonetics), `TEU` can be used to represent -ity even if not used as a suffix. This is very much a situation that is actually dropping an unstressed vowel in disguise. Consider the two outlines of writing "felicity":
  - `TPE/HREUS/TEU`
  - `TPE/HREU/SEU/TEU`
@@ -438,11 +485,11 @@ For example, it should be apparent that the word "tester" can be broken into the
 
 > NOTE: With `KWRAOEUT` being the "-ite" suffix, it is technically possible to write "termite" as `TERPL/KWRAOEUT` but that is against the principles of this dictionary. If it is desirable to you to write in this manner, then this dictionary is probably not for you.
 
-It should be apparent that the following words should be written with suffix strokes as opposed to syllabically:
+It should be apparent that the following words are to be written with suffix strokes as opposed to syllabically:
  - `HRERPB/*ER` → learner
    - `*ER` → "-er"
  - `SE/HREBGT/-BL` → selectable
-   - `-BL` → "-(a|i)ble"
+   - `-BL` → "-able"
  - `KUT/-G` → cutting
    - `-G` → "-ing"
  - `TPHAOEUF/-S` → knives
@@ -454,7 +501,7 @@ It should be apparent that the following words should be written with suffix str
  - `TKEUBGS/KWRAEUR/KWREU` → dictionary
    - `KWRAEUR/KWREU` → "-ary"
 
-On the other hand, the following are examples of when using suffixes is unnecessary:
+On the other hand, the following are examples of incorrect suffix usage:
  - `STAOUD/KWREPBT` (student) ❌
    - `STAOU/TKEPBT` ✔️
  - `WAUT/*ER` (water) ❌
@@ -465,7 +512,39 @@ On the other hand, the following are examples of when using suffixes is unnecess
 For ambiguous situations where it is not clear whether to use suffixes or split a word syllabically, both options should be available to use. And of course, don't be afraid to add your own alternatives.
 
 #### Prefixes and suffixes
-This is a list of common prefix and suffix strokes. Knowing these should be sufficient for most writing.
+
+As previously mentioned, prefix strokes are not outlines that need to be memorized. They come naturally when splitting syllabically. However, there are a few exceptions that are less predictable as they are a result of resolving a conflict.
+
+Common prefix strokes that are less predictable:
+ - `TK*EU` → di-
+ - `PW*EU` → bi-
+ - `TR*EU` → tri-
+ - `AUPB` → on-
+ - `AUF` → off-
+
+Prefix strokes that are more predictable include "ex-", "super-", and "hetero-". These are all written `EBGS`, `SAOU/PER`, and `HE/TER/KWROE`, respectively which should be fairly simple as they all follow the same splitting principles as regular words.
+
+> There are alternatives as well.
+
+However, if it is needed to write these as regular words as opposed to prefixes, simply asterisk the last stroke.
+
+For example, `SAOU/PER/TPHA/TWRAL` would output "supernatural" while `SAOU/P*ER/TPHA/TWRAL` would output "super natural".
+
+As you write more and more using this dictionary, you will encounter many situations where you intended a word instead of a prefix stroke to be written. When this happens, take note of the prefix and remember the usage of asterisk to prevent this in future.
+
+When this does happen, it may be quicker to [retroactively toggle asterisk](https://github.com/openstenoproject/plover/wiki/Dictionary-Format#toggle-asterisk) using `#*` instead of deleting the whole word and starting over.
+
+For example, consider the attempt to write "super awesome":
+
+`SAOU/PER/AU/SOPL`
+
+Instead of deleting everything and starting over, an alternative would be to backspace two strokes, write `#*` and continue with "awesome":
+
+`SAOU/PER/AU/SOPL/*/*/#*/AU/SOPL` (9 strokes)
+
+`SAOU/PER/AU/SOPL/*/*/*/*/SAOU/P*ER/AU/SOPL` (12 strokes)
+
+Common suffix strokes:
  - `KWREU` → -y
    - `KRAEUZ/KWREU` → crazy
  - `KWREUF` → -ive
@@ -507,6 +586,7 @@ This is a list of common prefix and suffix strokes. Knowing these should be suff
  - `SH*EUP` → -ship
 
 #### Conflict resolution
+
 If two homophones must be resolved using asterisk, there are a few aspects of each word that will decide which word gets precedence.
  - If there are repeat letters in a word, that will use asterisk
    - `#HART/PHAPB` → Hartman
@@ -531,9 +611,11 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
    - `#SA/PHEU` → Sammi
 
 #### Beyond writing out
+
 It's no secret that writing out syllabically can be quite slow. Here are a few techniques you can find in the dictionary that will help you write a bit shorter.
 
 ##### Dropping unstressed vowels
+
 I have kind of already illustrated this technique in [Situations that benefit from dropping unstressed vowels](#situations-that-benefit-from-dropping-unstressed-vowels). Figuring out stress can be a bit of a challenge within a word and I unfortunately do not have any tips at this moment, apart from showing a few examples.
  - `PHEPL/RAOEUZ` → memorize ("o" is dropped)
  - `T*EPL/RAEUR/KWREU` → temporary ("o" is dropped)
@@ -547,6 +629,7 @@ I have kind of already illustrated this technique in [Situations that benefit fr
  - `EBGS/PERPLT` → experiment ("i" is dropped)
 
 ##### Using shorter prefixes and suffixes
+
 Most prefixes and suffixes are simple to determine. For example, `PHE/TKPWA` is the mega- prefix. However, you can save a stroke by using `PH*EG` instead. Use the lookup tool to find shorter prefixes if they exist
 
 A few examples are listed below:
@@ -582,6 +665,7 @@ The canonical way of writing "dictionary" is `TKEUBGS/KWRAEUR/KWREU` with `KWRAE
  - `ES/KHAOU/WAER` → estuary
 
 ##### Folding and stacking sounds on ending strokes
+
 Ending consonants on the right hand can be combined with ending strokes to fit more sounds into one stroke. For example, `-T` can be used to represent -ity conjunction with other chords:
  - `PRAOEU/KWRORT` → priority
  - `SAOEPB/KWRORT` → seniority
@@ -601,9 +685,11 @@ Ending consonants on the right hand can be combined with ending strokes to fit m
  - `TKAOEURPB` → diner
 
 ##### Folding suffix keys
+
 Folding suffix keys can come with unintended conflicts (for example, `SPEUGT` for "spitting" vs "spigot") but it is an easy way to reduce how many strokes you use. That said, hitting `-G`, `-S`, `-D`, or `-Z` separately is already quite fast. Folding these keys often requires more finger contortions. Do not feel obliged to fold suffix keys, despite the dictionary containing these entries.
 
 ##### Examples of short entries that I might use
+
 The following words are a few examples of some of using two or more techniques above to form short entries. They should demonstrate how you can write shorter without having to memorize a bunch of briefs or suffix strokes.
  - `T*EPL/RAERL` → temporarily
    - Dropping the unstressed "o", using the "AER" compound cluster, and folding a `-L` to represent "-ly"
