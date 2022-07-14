@@ -491,6 +491,7 @@ This is a list of common prefix and suffix strokes. Knowing these should be suff
      - Syllabically as in `RAOE/SEUP/KWREPBT` → recipient
  - `A*R` → -ar
  - `A*L` → -al
+ - `AEUGS` → -ation
  - `O*R` → -or
  - `*ER` → -er
  - `-PLT` → -ment
@@ -506,7 +507,6 @@ This is a list of common prefix and suffix strokes. Knowing these should be suff
  - `SH*EUP` → -ship
 
 #### Conflict resolution
-
 If two homophones must be resolved using asterisk, there are a few aspects of each word that will decide which word gets precedence.
  - If there are repeat letters in a word, that will use asterisk
    - `#HART/PHAPB` → Hartman
@@ -523,7 +523,7 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
    - `TRA*BGS` → traction
    - `RE/TPHREBGS` → reflex
    - `RE/TPHR*EBGS` → reflection
-> The one exception to this rule is `TKEUBGS` → diction as I want to be able to write "dictionary" as `TKEUBGS/KWRAER`. Seeing "dicks" show up before writing `KWRAER` seems silly.
+   - > The one exception to this rule is `TKEUBGS` → diction; I like being able to write "dictionary" as `TKEUBGS/KWRAER`. Seeing "dicks" show up before writing `KWRAER` seems silly.
  - For conflicts with words ending "i" vs "y", use `EU` and `KWREU` respectively
    - `#TE/REU` → Terri
    - `#TER/KWREU` → Terry
@@ -534,8 +534,9 @@ If two homophones must be resolved using asterisk, there are a few aspects of ea
 It's no secret that writing out syllabically can be quite slow. Here are a few techniques you can find in the dictionary that will help you write a bit shorter.
 
 ##### Dropping unstressed vowels
-I have kind of already illustrated this technique in [Situations that benefit from dropping unstressed vowels](#Situations-that-benefit-from-dropping unstressed-vowels). Figuring out stress can be a bit of a challenge within a word and I unfortunately do not have any tips at this moment, apart from showing a few examples.
+I have kind of already illustrated this technique in [Situations that benefit from dropping unstressed vowels](#situations-that-benefit-from-dropping-unstressed-vowels). Figuring out stress can be a bit of a challenge within a word and I unfortunately do not have any tips at this moment, apart from showing a few examples.
  - `PHEPL/RAOEUZ` → memorize ("o" is dropped)
+ - `T*EPL/RAEUR/KWREU` → temporary ("o" is dropped)
  - `TPOFRPB/TPHAT` → fortunate ("u" is dropped)
  - `KPHAPBD` → command ("o" is dropped and remaining word is fit into one stroke)
  - `KPHAOUPB/KAEUT` → communicate (both the "o" and the "i" are dropped)
@@ -543,6 +544,7 @@ I have kind of already illustrated this technique in [Situations that benefit fr
  - `STKPAOER` → disappear ("i" and first "a" are both dropped, `STK` serving as "ds" using an inversion)
  - `RUFR` → rougher ("e" is dropped, `-FR` representing the "fer" sound)
  - `TKEUFRPBT` → different (both "e"'s are dropped, remaining consonants fit into single stroke)
+ - `EBGS/PERPLT` → experiment ("i" is dropped)
 
 ##### Using shorter prefixes and suffixes
 Most prefixes and suffixes are simple to determine. For example, `PHE/TKPWA` is the mega- prefix. However, you can save a stroke by using `PH*EG` instead. Use the lookup tool to find shorter prefixes if they exist
@@ -555,7 +557,7 @@ A few examples are listed below:
  - `RE/TROE` → retro-
    - `RERT` can instead be used
 
-Suffixes can also be shortened similarly like I have shown in [Situations that benefit from dropping unstressed vowels](#Situations-that-benefit-from-dropping unstressed-vowels).
+Suffixes can also be shortened similarly like I have shown in [Situations that benefit from dropping unstressed vowels](#situations-that-benefit-from-dropping unstressed-vowels).
 
 A few other special suffixes are worth mentioning, however.
 
@@ -600,6 +602,27 @@ Ending consonants on the right hand can be combined with ending strokes to fit m
 
 ##### Folding suffix keys
 Folding suffix keys can come with unintended conflicts (for example, `SPEUGT` for "spitting" vs "spigot") but it is an easy way to reduce how many strokes you use. That said, hitting `-G`, `-S`, `-D`, or `-Z` separately is already quite fast. Folding these keys often requires more finger contortions. Do not feel obliged to fold suffix keys, despite the dictionary containing these entries.
+
+##### Examples of short entries that I might use
+The following words are a few examples of some of using two or more techniques above to form short entries. They should demonstrate how you can write shorter without having to memorize a bunch of briefs or suffix strokes.
+ - `T*EPL/RAERL` → temporarily
+   - Dropping the unstressed "o", using the "AER" compound cluster, and folding a `-L` to represent "-ly"
+   - Written-out form: `TEPL/POR/KWRAEUR/KWREU/HREU`
+ - `KA*LG/HRAEUGT` → calculating
+   - Dropping the unstressed "u" and folding the `-G` suffix key
+   - Written-out form: `KAL/KAOU/HRAEUT/-G`
+ - `TAEURLG` → tailoring
+   - Dropping the unstressed "o" and folding the `-G` suffix key
+   - Written-out form: `TAEU/HROR/-G` or `TAEUL/O*R/-G`
+ - `KOR/KWRARPBD` → coriander
+   - Using `KWR` to represent the "i" and folding in `-R` to represent the "er"
+   - Written-out form: `KOR/KWREU/KWRAPB/TKER`
+ - `AL/TERPB/TEUFL` → alternatively
+   - Dropping the unstressed second "a" and folding a `-L` to represent "-ly"
+   - Written-out form: `AL/TER/TPHA/TEUF/HREU`
+ - `ERTD` → editor
+  - Dropping the unstressed "i" and folding in `-R` to represent the "or"
+  - Written-out form: `ED/KWREUT/O*R`
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
