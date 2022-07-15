@@ -313,6 +313,11 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `STAOU/PEPB/TKUS` → stupendous
    - `TOR/KWRUS` → torus
    - `RAOEUT/KHUS` → righteous
+ - `AU` is used for the "aw" vowel when not spelled with "O"
+   - `PWOT` → bot
+   - `PWAUT` → bought
+   - `POPL` → pom
+   - `PAUPL` → palm
 
 #### Orthography
 
