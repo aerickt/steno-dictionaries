@@ -446,16 +446,8 @@ The following are some other examples of words where `-R` should be kept in the 
  - `TOR/KWRUS` → torus
  - `TPHROR/KWREUFT` → florist
 
-An alternative to this would be to split the word before the "R", but treat the previous vowel as a short vowel.
-For example:
- - `TPHRO/REUFT` → florist
- - `EBGS/PE/REU/-PLT` → experiment
-
-However, this method is incomplete among entries and may lead to other conflicts and is therefore not recommended.
-
-> For a while this was my preferred method but it proved to be flawed. However, I had already added many entries of this nature to my dictionary which is why they may turn up when using the lookup tool.
-
-This method is, however, used to resolve a few conflicts; see [Conflict resolution](#Conflict-resolution).
+> NOTE: keeping the `-R` in the stroke with the vowel only applies to words where the "R" actually changes the pronunciation of the vowel. For example, the second "R" in "periphera" doesn't change the vowel significantly so it is acceptable to split it as `PE/REU/TP*E/RA`. That said, `PE/REU/TP*ER/KWRA` is also defined as it is somewhat ambiguous.
+> In these ambiguous cases, words tend to be defined more towards the former which is what I recommend you learn. Identifying when not to keep `-R` in the vowel stroke can be beneficial later on when you decide to write shorter. In this example, dropping the second "E" can save a stroke with a shorter outline: `PE/REUF/RA`. Being accustomed to `PE/REU/TP*ER/KWRA` makes it less clear that the "E" can be dropped since it places emphasis on that vowel by use of the `-R`.
 
 ##### Situations that benefit from dropping unstressed vowels
 
