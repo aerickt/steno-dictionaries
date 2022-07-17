@@ -764,6 +764,7 @@ Examples:
  - `PHAO*ERT` → metre
  - `*ORG` → organise
  - `HRA*EUBLG` → labelling
+ - `TPHA*EURB` → neighbour
 
 ## commands.json
 This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
