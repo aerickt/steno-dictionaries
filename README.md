@@ -1,7 +1,7 @@
 # Steno Dictionaries
 My personal steno dictionaries.
  - [lapwing-base.json](#lapwing-basejson)
- - [lapwing-uk-additions.json](#lapwing-ukadditions)
+ - [lapwing-uk-additions.json](#lapwing-uk-additionsjson)
  - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
  - [plover-uk.json](#plover-ukjson)
@@ -676,18 +676,18 @@ By default `lapwing-base.json` mainly only contains American spellings of words.
 
 ### Dictionary contents
 
- - [Switching with `#TPH`](switching-with-#tph)
+ - [Switching with `#TPH`](switching-with-tph)
  - [ae spellings](#ae-spellings)
  - [ise spellings](#ise-spellings)
  - [ll spellings](#ll-spellings)
  - [oe spellings](#oe-spellings)
- - [ou spellings](ou-spellings)
- - [re spellings](re-spellings)
- - [Miscellaneous briefs](miscellaneous-briefs)
+ - [ou spellings](#ou-spellings)
+ - [re spellings](#re-spellings)
+ - [Miscellaneous briefs](#miscellaneous-briefs)
 
 ### Switching with `#TPH`
 
-Writing `#TPH` after any translation switch the previous word into its British variant (if it exists in the dictionary).
+Writing `#TPH` after any translation will switch the previous word into its British variant (if it exists in the dictionary).
 
 Unfortunately, there is currently a limitation that requires all suffix keys (`-G`, `-S`,`-D` and `-Z`) to either be folded into the last stroke or written after the `#TPH` chord.
 
@@ -698,7 +698,7 @@ Instead write it as either of the following:
  - `ABG/SE/SOR/KWRAOEUZ/#TPH/-G`
  - `ABG/SES/KWROR/KWRAOEUGZ/#TPH`
 
-Any of the following techniques listed below are not guaranteed to work on every single word due to conflicts and the fact that briefs might not allow for it. By default, briefs will still go to American spellings.
+Using `#TPH` is the recommended method that will always work when switching to British spellings. There are a few shorter models listed below, but they are not guaranteed to always work.
 
 ### ae spellings
 
@@ -719,13 +719,11 @@ Examples:
 
 ### ll spellings
 
-The rule discussed in [conflict resolution](#conflict-resolution) is utilized where asterisk is used on the with the double "L".
+The rule discussed in [conflict resolution](#conflict-resolution) is utilized where asterisk is used on the stroke with the double "L".
 
 Examples:
  - `RAOE/TPAO*ULG` → refuelling
  - `RE/SR*EL/*ER` → reveller
-
-> Warning: this is somewhat incomplete at the moment.
 
 > NOTE: because of this rule, single l spellings such as "instal" or "fulfil" are not possible using any method other than `#TPH`
 
@@ -749,7 +747,7 @@ Examples:
 
 ### re spellings
 
-The stroke with `ER` is asterisked. There is no "-re" suffix currently.
+The stroke with `ER` is asterisked. There is no "-re" suffix currently and so any outlines normally written with `*ER` does not fall under this method.
 
 Examples:
  - `KA/HREU/PW*ER` → calibre
