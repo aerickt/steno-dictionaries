@@ -1,65 +1,12 @@
 # Steno Dictionaries
 My personal steno dictionaries.
+ - [lapwing-base.json](#lapwing-basejson)
  - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
- - [lapwing-base.json](#lapwing-basejson)
  - [plover-uk.json](#plover-ukjson)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
  - [uni-number-reversals.json](#uni-number-reversalsjson)
-
-## commands.json
-This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
-
-### Dictionary contents
-
- - [Movement keys](#Movement-keys)
- - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
-
-#### Movement keys
-
-By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
-
-By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
-
-To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
-
-#### Commands and keyboard shortcuts
-
-Many of the commands from main.json have stayed the same.
- - `KPA` → capitalize the next word
- - `KPA*` → capitalize the next word and supress the next space
- - `HRO*ER` → uncapitalize the next word
- - `TK-LS` → supress the next space
-
-Retroactive commands have also been added.
- - `KA*PD` → capitalize the last word
- - `HRO*ERD` → uncapitalize the last word
- - `TK-FPS` → remove the last space
-
-Common keyboard keys have also carried over from main.json.
- - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
- - `#R-R` → `Shift+Enter`
- - `PW-FP` → backspace one character
- - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
- - `TKHRE` → delete one character
- - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
- - `TA*B` → `Tab`
- - `#TAB` → `Shift+Tab`
-
-For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
-
-## movement.modal
-This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
-
-After the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dictionary) has been installed from the plugins manager, ensure Plover has been restarted and the plugin is enabled (configure → plugins). Next add the dictionary above whichever dictionary contains the default movement strokes.
-
-Using this dictionary for movement keys is exactly the same as those in [commands.json](#Movement-keys), however every successive movement stroke after the first does not need to contain the `STPH` cluster.
-
-Examples:
- - `STPH-G/-G/-G/-G` → arrow key to the right 4 times
- - `STPH*R/*R/*R` → select 3 characters to the left
- - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
 ## lapwing-base.json
 
@@ -128,7 +75,7 @@ Suffixes, however, do need to be slightly more unique as they have to be differe
 
 Download this dictionary by right clicking [here](https://github.com/aerickt/steno-dictionaries/raw/main/lapwing-base.json) and pressing "save link". Ensure that the file is saved as json and not just a text file. Afterwards, it can be added to Plover's dictionary stack and `main.json` can be removed or disabled.
 
-> Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first. If it is still unclear to you, feel free to reach out to me, either by opening a GitHub issue on this repo, or contacting me on Discord (I am aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq).
+> Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first. If it is still unclear to you, feel free to reach out to me, either by opening a GitHub issue on this repo, or contacting me on Discord (aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq).
 
 When it comes to looking up entries, the best strategy would be to look at the longest definition as this corresponds to the fully written-out outline.
 
@@ -720,6 +667,59 @@ The following words are a few examples of some of using two or more techniques a
   - Dropping the unstressed "i" and folding in `-R` to represent the "or"
   - Written-out form: `ED/KWREUT/O*R`
 
+## commands.json
+This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
+
+### Dictionary contents
+
+ - [Movement keys](#Movement-keys)
+ - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
+
+#### Movement keys
+
+By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
+
+By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
+
+To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
+
+#### Commands and keyboard shortcuts
+
+Many of the commands from main.json have stayed the same.
+ - `KPA` → capitalize the next word
+ - `KPA*` → capitalize the next word and supress the next space
+ - `HRO*ER` → uncapitalize the next word
+ - `TK-LS` → supress the next space
+
+Retroactive commands have also been added.
+ - `KA*PD` → capitalize the last word
+ - `HRO*ERD` → uncapitalize the last word
+ - `TK-FPS` → remove the last space
+
+Common keyboard keys have also carried over from main.json.
+ - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
+ - `#R-R` → `Shift+Enter`
+ - `PW-FP` → backspace one character
+ - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
+ - `TKHRE` → delete one character
+ - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
+ - `TA*B` → `Tab`
+ - `#TAB` → `Shift+Tab`
+
+For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
+
+## movement.modal
+This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
+
+After the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dictionary) has been installed from the plugins manager, ensure Plover has been restarted and the plugin is enabled (configure → plugins). Next add the dictionary above whichever dictionary contains the default movement strokes.
+
+Using this dictionary for movement keys is exactly the same as those in [commands.json](#Movement-keys), however every successive movement stroke after the first does not need to contain the `STPH` cluster.
+
+Examples:
+ - `STPH-G/-G/-G/-G` → arrow key to the right 4 times
+ - `STPH*R/*R/*R` → select 3 characters to the left
+ - `STPH-BG/-BG/-BG` → move to the right by 3 words
+
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes with the help of the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands). Both can be installed from the plugins manager.
 
@@ -761,6 +761,3 @@ This dictionary deyou fines number reversals with `U` instead of `EU` which woul
 Examples:
  - `#AOU` → 05
  - `#STPU` → 321
-
-## plover-uk.json
-Soon™
