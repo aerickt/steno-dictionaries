@@ -1,6 +1,7 @@
 # Steno Dictionaries
 My personal steno dictionaries.
  - [lapwing-base.json](#lapwing-basejson)
+ - [lapwing-uk-additions.json](#lapwing-ukadditions)
  - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
  - [plover-uk.json](#plover-ukjson)
@@ -666,6 +667,105 @@ The following words are a few examples of some of using two or more techniques a
  - `ERTD` → editor
   - Dropping the unstressed "i" and folding in `-R` to represent the "or"
   - Written-out form: `ED/KWREUT/O*R`
+
+## lapwing-uk-additions.json
+
+By default `lapwing-base.json` mainly only contains American spellings of words. This dictionary allows for both American and British spellings without having to switch dictionaries.
+
+> I have made this dictionary mainly with Canadians and Australians in mind. If you primarily write British spellings, then this dictionary might not be ideal foryou.
+
+### Dictionary contents
+
+ - [Switching with `#TPH`](switching-with-#tph)
+ - [ae spellings](#ae-spellings)
+ - [ise spellings](#ise-spellings)
+ - [ll spellings](#ll-spellings)
+ - [oe spellings](#oe-spellings)
+ - [ou spellings](ou-spellings)
+ - [re spellings](re-spellings)
+ - [Miscellaneous briefs](miscellaneous-briefs)
+
+### Switching with `#TPH`
+
+Writing `#TPH` after any translation switch the previous word into its British variant (if it exists in the dictionary).
+
+Unfortunately, there is currently a limitation that requires all suffix keys (`-G`, `-S`,`-D` and `-Z`) to either be folded into the last stroke or written after the `#TPH` chord.
+
+For example, the following attempt to write "accessorising" will not work:
+ - `ABG/SE/SOR/KWRAOEUZ/-G/#TPH`
+
+Instead write it as either of the following:
+ - `ABG/SE/SOR/KWRAOEUZ/#TPH/-G`
+ - `ABG/SES/KWROR/KWRAOEUGZ/#TPH`
+
+Any of the following techniques listed below are not guaranteed to work on every single word due to conflicts and the fact that briefs might not allow for it. By default, briefs will still go to American spellings.
+
+### ae spellings
+
+Regardless of pronunciation, words that are spelled with "ae" can be written with `AE`
+
+Examples:
+ - `EPB/SAOEU/KHROE/PAE/TKEU/KWRA` → encyclopaedia
+ - `AET/KWROLG` → aetiology
+
+### ise spellings
+
+Words spelled with "ise" use `AOEUS` and `AOEUF` when folding in ending sounds.
+
+Examples:
+ - `PHAG/PHE/TAOEUS` → magnetise
+ - `STAEUBL/KWRAOEUFR` → stabiliser
+ - `AOUT/HRAOEUFG` → utilising
+
+### ll spellings
+
+The rule discussed in [conflict resolution](#conflict-resolution) is utilized where asterisk is used on the with the double "L".
+
+Examples:
+ - `RAOE/TPAO*ULG` → refuelling
+ - `RE/SR*EL/*ER` → reveller
+
+> Warning: this is somewhat incomplete at the moment.
+
+> NOTE: because of this rule, single l spellings such as "instal" or "fulfil" are not possible using any method other than `#TPH`
+
+### oe spellings
+
+Words spelled with "oe" are written with `OE`
+
+Examples:
+ - `OES/TROE/SKWREPB` → oestrogen
+ - `HOEPL/KWROE/PA*T` → homoeopath
+ - `AOE/TKOE/PHA` → edoema
+
+### ou spellings
+
+Any spellings with "ou" instead of "o" can be written using `OU`.
+
+Examples:
+ - `TPHAEU/PWOUR` → neighbour
+ - `KAPB/TKOUR` → candour
+ - `KOL/O*UR` → colour
+
+### re spellings
+
+The stroke with `ER` is asterisked. There is no "-re" suffix currently.
+
+Examples:
+ - `KA/HREU/PW*ER` → calibre
+ - `PHAOEU/T*ER` → mitre
+ - `HREU/T*ER` → litre
+
+### Miscellaneous briefs
+
+~~Asterisk extravaganza!~~
+
+Just asterisk whenever possible.
+
+Examples:
+ - `PHAO*ERT` → metre
+ - `*ORG` → organise
+ - `HRA*EUBLG` → labelling
 
 ## commands.json
 This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
