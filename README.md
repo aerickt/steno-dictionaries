@@ -2,7 +2,7 @@
 My personal steno dictionaries.
  - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
- - [plover-base.json](#plover-basejson)
+ - [lapwing-base.json](#lapwing-basejson)
  - [plover-uk.json](#plover-ukjson)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
@@ -61,9 +61,9 @@ Examples:
  - `STPH*R/*R/*R` → select 3 characters to the left
  - `STPH-BG/-BG/-BG` → move to the right by 3 words
 
-## plover-base.json
+## lapwing-base.json
 
-This dictionary is intended to replace Plover's `main.json` that comes by default. It has over 100,000 entries and should be sufficient for most everyday writing. It roughly follows Plover theory with a few additions and changes outlined in this page.
+This dictionary is a derivative of Plover's `main.json` that is intended to act as a replacement. It has over 111k entries and is sufficient for most everyday writing. Lapwing differs from stock Plover theory in a few ways. I have listed core principles and changes on this page.
 
 > I manually built this dictionary over the course of 6 months on and off. Please let me know if you spot any errors or misleading entries to correct!
 
@@ -104,7 +104,7 @@ Before studying this page, it is necessary to know the main missing sounds and c
 
 When it comes to writing out, main.json sometimes prefers using prefixes and suffixes, sometimes splits with syllables, and is also sometimes right hand greedy. Furthermore, most write-out entries drop unstressed vowels.
 
-This dictionary eliminates the ambiguity by having a consistent and predictable method of writing out syllabically (with some exceptions) without having to determine stress within a word.
+Lapwing eliminates the ambiguity by having a consistent and predictable method of writing out syllabically (with some exceptions) without having to determine stress within a word.
 
 ##### Free of misstrokes
 
@@ -120,13 +120,13 @@ In this dictionary, write-outs adhere to splitting rules a lot more closely. Wri
 
 ##### More consistent prefixes and suffixes
 
-Prefixes in this dictionary will generally be working in the background, so to speak. They are not entries one will have to memorize, but rather come as a result of the syllabic splitting method. For example, "conserve" would be written out as `KOPB/SEFRB` but it is not necessary to know that `KOPB` is the "con-" prefix.
+Prefixes in Lapwing will generally be working in the background, so to speak. They are not entries one will have to memorize, but rather come as a result of the syllabic splitting method. For example, "conserve" would be written out as `KOPB/SEFRB` but it is not necessary to know that `KOPB` is the "con-" prefix.
 
 Suffixes, however, do need to be slightly more unique as they have to be differentiated from normal words. Most common suffixes, however, are fairly regular and form "families" of outlines that are similar to one another. See [suffixes](#suffixes) for examples.
 
 #### Using this dictionary
 
-Download this dictionary by right clicking [here](https://github.com/aerickt/steno-dictionaries/raw/main/plover-base.json) and pressing "save link". Ensure that the file is saved as json and not just a text file. Afterwards, it can be added to Plover's dictionary stack and `main.json` can be removed or disabled.
+Download this dictionary by right clicking [here](https://github.com/aerickt/steno-dictionaries/raw/main/lapwing-base.json) and pressing "save link". Ensure that the file is saved as json and not just a text file. Afterwards, it can be added to Plover's dictionary stack and `main.json` can be removed or disabled.
 
 > Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first. If it is still unclear to you, feel free to reach out to me, either by opening a GitHub issue on this repo, or contacting me on Discord (I am aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq).
 
@@ -183,7 +183,7 @@ Unfortunately, due to how Plover handles the number key entries using the number
 
 #### Movement keys, keyboard shortcuts, commands
 
-See [commands.json](#commandsjson) as plover-base.json contains this dictionary by default.
+See [commands.json](#commandsjson). Lapwing contains everything from this dictionary by default.
 
 #### Punctuation
 
@@ -213,9 +213,9 @@ For symbols beyond these where you might require different spacing and capitaliz
 
 #### Right hand number pad
 
-> The conventional number system does not work in plover-base.json. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
+> The conventional number system does not work in lapwing-base.json. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
 
-plover-base.json has this system by default. See [rh-numpad.json](rh-numpadjson).
+lapwing-base.json has this system by default. See [rh-numpad.json](rh-numpadjson).
 
 #### Fingerspelling
 
@@ -452,7 +452,6 @@ The following are some other examples of words where `-R` should be kept in the 
  - `TPHROR/KWREUFT` → florist
 
 > NOTE: keeping the `-R` in the stroke with the vowel only applies to words where the "R" actually changes the pronunciation of the vowel. For example, the second "R" in "periphera" doesn't change the vowel significantly so it is acceptable to split it as `PE/REU/TP*E/RA`. That said, `PE/REU/TP*ER/KWRA` is also defined as it is somewhat ambiguous.
-> In these ambiguous cases, words tend to be defined more towards the former which is what I recommend you learn. Identifying when not to keep `-R` in the vowel stroke can be beneficial later on when you decide to write shorter. In this example, dropping the second "E" can save a stroke with a shorter outline: `PE/REUF/RA`. Being accustomed to `PE/REU/TP*ER/KWRA` makes it less clear that the "E" can be dropped since it places emphasis on that vowel by use of the `-R`.
 
 ##### Situations that benefit from dropping unstressed vowels
 
