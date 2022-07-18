@@ -76,7 +76,7 @@ Suffixes, however, do need to be slightly more unique as they have to be differe
 
 Download this dictionary by right clicking [here](https://github.com/aerickt/steno-dictionaries/raw/main/lapwing-base.json) and pressing "save link". Ensure that the file is saved as json and not just a text file. Afterwards, it can be added to Plover's dictionary stack and `main.json` can be removed or disabled.
 
-> Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first. If it is still unclear to you, feel free to reach out to me, either by opening a GitHub issue on this repo, or contacting me on Discord (aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq).
+> Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first. If an entry still seems to be wrong, feel free to either comment on the (Lapwing Suggestions)[#https://github.com/aerickt/steno-dictionaries/issues/1] thread or contact me on Discord (aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq). New vocab additions are also welcome.
 
 When it comes to looking up entries, the best strategy would be to look at the longest definition as this corresponds to the fully written-out outline.
 
