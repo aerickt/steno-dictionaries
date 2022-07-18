@@ -19,24 +19,24 @@ I've written a bit about my motivations in a quick summary of this project over 
 
 ### Dictionary contents
 
- - [Who should use this dictionary?](#Who-should-use-this-dictionary?)
+ - [Who should use this dictionary?](#ho-should-use-this-dictionary)
  - [Main changes and advantages](#main-changes-and-advantages)
  - [Using this dictionary](#Using-this-dictionary)
- - [Compound words](#Compound-words)
- - [Proper nouns](#Proper-nouns)
+ - [Compound words](#compound-words)
+ - [Proper nouns](#proper-nouns)
  - [Movement keys, keyboard shortcuts, commands](#movement-keys-keyboard-shortcuts-commands)
- - [Punctuation](#Punctuation)
- - [Right hand number pad](#Right-hand-number-pad)
- - [Fingerspelling](#Fingerspelling)
- - [Phonetics](#Phonetics)
- - [Orthography](#Orthography)
- - [Syllabic splitting](#Syllabic-splitting)
- - [Exceptions to syllable breaks](#Exceptions-to-syllable-breaks)
- - [Using prefixes and suffixes](#Using-prefixes-and-suffixes)
- - [Prefixes](#Prefixes)
- - [Suffixes](#Suffixes)
- - [Conflict resolution](#Conflict-resolution)
- - [Beyond writing out](#Beyond-writing-out)
+ - [Punctuation](#punctuation)
+ - [Right hand number pad](#right-hand-number-pad)
+ - [Fingerspelling](#fingerspelling)
+ - [Phonetics](#phonetics)
+ - [Orthography](#orthography)
+ - [Syllabic splitting](#syllabic-splitting)
+ - [Exceptions to syllable breaks](#exceptions-to-syllable-breaks)
+ - [Using prefixes and suffixes](#using-prefixes-and-suffixes)
+ - [Prefixes](#prefixes)
+ - [Suffixes](#suffixes)
+ - [Conflict resolution](#conflict-resolution)
+ - [Beyond writing out](#beyond-writing-out)
 
 #### Who should use this dictionary?
 
@@ -262,9 +262,8 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
    - `TOR/KWRUS` → torus
    - `RAOEUT/KHUS` → righteous
  - `AU` is used for the "aw" vowel when not spelled with "O"
-   - `PWOT` → bot
    - `PWAUT` → bought
-   - `POPL` → pom
+   - `PWRAUD` → broad
    - `PAUPL` → palm
 
 #### Orthography
