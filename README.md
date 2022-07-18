@@ -123,7 +123,7 @@ Proper nouns are always written with the number key on the first stroke. Everyth
  - `#PAOE/TER` → Peter
  - `#AP/-L` → Apple
  - `#AUS/TRAEUL/KWRA` → Australia
- - `HART/PHAPB` → Hartman
+ - `#HART/PHAPB` → Hartman
 
 > I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
 
@@ -163,7 +163,7 @@ For symbols beyond these where you might require different spacing and capitaliz
 
 > The conventional number system does not work in lapwing-base.json. You will have to delete all entries containing the glue operator and a number (e.g. `{&8}`) if you want to use the conventional number system.
 
-lapwing-base.json has this system by default. See [rh-numpad.json](rh-numpadjson).
+lapwing-base.json has this system by default. See [rh-numpad.json](#rh-numpadjson).
 
 #### Fingerspelling
 
