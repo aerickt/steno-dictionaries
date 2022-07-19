@@ -19,7 +19,7 @@ I've written a bit about my motivations in a quick summary of this project over 
 
 ### Dictionary contents
 
- - [Who should use this dictionary?](#ho-should-use-this-dictionary)
+ - [Who should use this dictionary?](#who-should-use-this-dictionary)
  - [Main changes and advantages](#main-changes-and-advantages)
  - [Using this dictionary](#Using-this-dictionary)
  - [Compound words](#compound-words)
