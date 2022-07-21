@@ -224,7 +224,7 @@ The main principles of Plover theory have been left unchanged and Learn Plover! 
  - `TP*EU` is used for sounds spelled with "ph" that are pronounced as "F"
    - `TP*EU/SEUBGS` → physics
    - `TP*EU/HRO/SO/TP*EU` → philosophy
- - `EU` is used for long I when it is spelled with an "I" or a "Y"
+ - `EU` is used for long E when it is spelled with an "I" or a "Y"
    - `AR/PE/SKWREU/KWROE` → arpegg**i**o
    - `KUFRB/KWREU` → curvy
    - `PEU/KWRA/TPHOE` → piano
