@@ -2,9 +2,9 @@
 My personal steno dictionaries.
  - [lapwing-base.json](#lapwing-basejson)
  - [lapwing-uk-additions.json](#lapwing-uk-additionsjson)
+ - [ip.py](#ippy)
  - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
- - [plover-uk.json](#plover-ukjson)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
  - [uni-number-reversals.json](#uni-number-reversalsjson)
@@ -805,6 +805,14 @@ Common keyboard keys have also carried over from main.json.
  - `#TAB` → `Shift+Tab`
 
 For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
+
+## ip.py
+
+Write `#AOEUP` to output the local IP address of the machine Plover is running on. Useful on a headless [Stenogotchi](https://github.com/Anodynous/stenogotchi) that doesn't have a screen.
+
+Requires [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary) as well as the `netiface` python package (must be installed from the command-line).
+
+It uses `netiface` because that was the most reliable way I could get it to work.
 
 ## movement.modal
 This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
