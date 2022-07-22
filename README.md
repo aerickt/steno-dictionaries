@@ -390,7 +390,7 @@ Words with "ng" such as "mango" would not be able to be defined accurately if co
 
 When it comes to vowels that are combined with a final `-R`, it may be necessary to use suffix strokes and/or the `KWR` linker in order to preserve the phonetics of the vowel. For example, the word "carry" would have to be written as `KAEUR/KWREU` as the R changes the sound of the vowel and thus should be kept in the first stroke.
 
-If the R was treated as a consonant it was instead split as "ca|rry", the outline could only be `KAEU/REU` or `KA/REU`  which are not completely accurate to the pronunciatoin. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
+If the R was treated as a consonant it was instead split as "ca|rry", the outline could only be `KAEU/REU` or `KA/REU`  which are not completely accurate to the pronunciation. Thus, if an R changes the sound of a vowel in a word, it is recommended to keep it with the vowel to preserve its sound and instead use the `KWR` linker to complete the next stroke.
 
 The following are some other examples of words where `-R` should be kept in the initial stroke:
  - `#HRAEUR/KWREU` → Larry
