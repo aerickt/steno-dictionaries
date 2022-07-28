@@ -293,6 +293,9 @@ Orthography has also largely been preserved with a few exceptions.
      - `AOU/TPO*R/KWRA` → euphoria
      - `AOUS` → use
      - `UR/KWREUPB` → urine
+ - Words beginning with capital "J" can use `#STKPW` as an alternative to `#SKWR`
+   - `#STKPW/TPHEUS` → Janice
+   - `#STKPW/PHAEU/KA` → Jamaica
 
 #### Syllabic splitting
 
