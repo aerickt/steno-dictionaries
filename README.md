@@ -532,6 +532,7 @@ The following inexhaustive list contains common suffix strokes that should be su
  - `O*R` → -or
  - `*ER` → -er
  - `-PLT` → -ment
+ - `-PBS` → -ness
  - `-BL` → -able
  - `-BLT` → -ability
  - `-L` → -le
