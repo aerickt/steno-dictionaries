@@ -29,6 +29,8 @@
 "TA*B": "{^}{#Tab}{^}",
 "KPA": "{}{-|}",
 "KPA*": "{^}{-|}",
+"KPA*L": "{<}",
+"KA*PS": "{MODE:CAPS}",
 "KA*PD": "{*-|}",
 "PW*FP": "{#Control(BackSpace)}{^}",
 "PW-FP": "{#BackSpace}{^}",
@@ -39,5 +41,7 @@
 "PHROLG": "{PLOVER:TOGGLE}",
 "PHR*UP": "{PLOVER:LOOKUP}",
 "HRO*ER": "{>}",
-"HRO*ERD": "{*>}"
+"HRO*ERD": "{*>}",
+"R*EFT": "{MODE:RESET}",
+"*UPD": "{*<}"
 }
