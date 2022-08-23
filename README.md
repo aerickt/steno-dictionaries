@@ -1,13 +1,62 @@
 # Steno Dictionaries
 My personal steno dictionaries.
+ - [commands.json](#commandsjson)
+ - [ip.py](#ippy)
  - [lapwing-base.json](#lapwing-basejson)
  - [lapwing-uk-additions.json](#lapwing-uk-additionsjson)
- - [ip.py](#ippy)
- - [commands.json](#commandsjson)
  - [movement.modal](#movementmodal)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
  - [uni-number-reversals.json](#uni-number-reversalsjson)
+
+## commands.json
+This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
+
+### Dictionary contents
+
+ - [Movement keys](#Movement-keys)
+ - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
+
+#### Movement keys
+
+By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
+
+By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
+
+To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
+
+#### Commands and keyboard shortcuts
+
+Many of the commands from main.json have stayed the same.
+ - `KPA` → capitalize the next word
+ - `KPA*` → capitalize the next word and supress the next space
+ - `HRO*ER` → uncapitalize the next word
+ - `TK-LS` → supress the next space
+
+Retroactive commands have also been added.
+ - `KA*PD` → capitalize the last word
+ - `HRO*ERD` → uncapitalize the last word
+ - `TK-FPS` → remove the last space
+
+Common keyboard keys have also carried over from main.json.
+ - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
+ - `#R-R` → `Shift+Enter`
+ - `PW-FP` → backspace one character
+ - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
+ - `TKHRE` → delete one character
+ - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
+ - `TA*B` → `Tab`
+ - `#TAB` → `Shift+Tab`
+
+For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
+
+## ip.py
+
+Write `#AOEUP` to output the local IP address of the machine Plover is running on. Useful on a headless [Stenogotchi](https://github.com/Anodynous/stenogotchi) that doesn't have a screen.
+
+Requires [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary) as well as the `netiface` python package (must be installed from the command-line).
+
+It uses `netiface` because that was the most reliable way I could get it to work.
 
 ## lapwing-base.json
 
@@ -769,54 +818,6 @@ Examples:
  - `HRA*EUBLG` → labelling
  - `TPHA*EURB` → neighbour
 
-## commands.json
-This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
-
-### Dictionary contents
-
- - [Movement keys](#Movement-keys)
- - [Commands and keyboard shortcuts](#Commands-and-keyboard-shortcuts)
-
-#### Movement keys
-
-By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys. `-FR` chorded together would be home, and `-LG` would be end. Pageup and pagedown resemble arrows pointing up and down respectively `-RPG` and `-FBL`.
-
-By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
-
-To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
-
-#### Commands and keyboard shortcuts
-
-Many of the commands from main.json have stayed the same.
- - `KPA` → capitalize the next word
- - `KPA*` → capitalize the next word and supress the next space
- - `HRO*ER` → uncapitalize the next word
- - `TK-LS` → supress the next space
-
-Retroactive commands have also been added.
- - `KA*PD` → capitalize the last word
- - `HRO*ERD` → uncapitalize the last word
- - `TK-FPS` → remove the last space
-
-Common keyboard keys have also carried over from main.json.
- - `R-R` → enter/return (capitalization of next word depends on previous punctuation)
- - `#R-R` → `Shift+Enter`
- - `PW-FP` → backspace one character
- - `PW*FP` → backspace one word (`Ctrl+Backspace`; change to `Alt+Backspace` on macOS)
- - `TKHRE` → delete one character
- - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
- - `TA*B` → `Tab`
- - `#TAB` → `Shift+Tab`
-
-For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
-
-## ip.py
-
-Write `#AOEUP` to output the local IP address of the machine Plover is running on. Useful on a headless [Stenogotchi](https://github.com/Anodynous/stenogotchi) that doesn't have a screen.
-
-Requires [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary) as well as the `netiface` python package (must be installed from the command-line).
-
-It uses `netiface` because that was the most reliable way I could get it to work.
 
 ## movement.modal
 This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
