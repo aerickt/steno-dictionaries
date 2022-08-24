@@ -883,7 +883,7 @@ My Vietnamese steno theory utilizing the English layout.
 
 It is an orthographic system with chords for the different letter combinations and tones.
 
-In addition to the table below listing all of the chords, there is also a (Quizlet folder)[https://quizlet.com/aerickt/folders/vietnamese-steno-theory/sets] for flash card sets of these chords. I recommend using the "write" option (under "learn") and answering the definition. Disabling your dictionary can allow you to input the steno chord for each term.
+In addition to the table below listing all of the chords, there is also a [Quizlet folder](https://quizlet.com/aerickt/folders/vietnamese-steno-theory/sets) for flash card sets containing these chords. I recommend using the "write" option (under "learn") and answering the definition. Disabling your dictionaries can allow you to input the steno chord for each term.
 
 I am unsure of the the usability of this system, however 150 WPM is theoretically possible with a stroke speed of 3 strokes per second. I am currently at one and a half strokes per second after a little under 2 weeks of learning this system (70 WPM or so).
 
