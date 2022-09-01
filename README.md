@@ -71,7 +71,7 @@ I've written a bit about my motivations in a quick summary of this project over 
 
  - [Who should use this dictionary?](#who-should-use-this-dictionary)
  - [Main changes and advantages](#main-changes-and-advantages)
- - [Using this dictionary](#Using-this-dictionary)
+ - [Using this dictionary](#using-this-dictionary)
  - [Compound words](#compound-words)
  - [Proper nouns](#proper-nouns)
  - [Movement keys, keyboard shortcuts, commands](#movement-keys-keyboard-shortcuts-commands)
@@ -81,7 +81,7 @@ I've written a bit about my motivations in a quick summary of this project over 
  - [Phonetics](#phonetics)
  - [Orthography](#orthography)
  - [Syllabic splitting](#syllabic-splitting)
- - [Exceptions to syllable breaks](#exceptions-to-syllable-breaks)
+ - [Exceptions to syllabic splitting](#exceptions-to-syllabic-splitting)
  - [Using prefixes and suffixes](#using-prefixes-and-suffixes)
  - [Prefixes](#prefixes)
  - [Suffixes](#suffixes)
@@ -125,6 +125,8 @@ Suffixes, however, do need to be slightly more unique as they have to be differe
 #### Using this dictionary
 
 Download this dictionary by right clicking [here](https://github.com/aerickt/steno-dictionaries/raw/main/lapwing-base.json) and pressing "save link". Ensure that the file is saved as json and not just a text file. Afterwards, it can be added to Plover's dictionary stack and `main.json` can be removed or disabled.
+
+You will also want to install the plover-stitching plugin (see [fingerspelling](#fingerspelling)) and the plover-last-translation plugin. The latter of which allows you to repeat the last translation (multistroke outlines included) just by pressing the number key.
 
 > Since this page is the only place to learn the theory that comes with this dictionary, I recommend keeping it bookmarked and coming back regularly. If you find a quirk in the lookup tool that doesn't sit right with you, consult this page first. If an entry still seems to be wrong, feel free to either comment on the (Lapwing Suggestions)[https://github.com/aerickt/steno-dictionaries/issues/1] thread or contact me on Discord (aerick#3063) through the [Plover Discord Server](https://discord.gg/NAzMz7C3wq). New vocab additions are also welcome.
 
