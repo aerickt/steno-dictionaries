@@ -353,8 +353,7 @@ Orthography has also largely been preserved with a few exceptions.
    - `WAO*ER` → we're
    - `HAOEL` → heel
    - `HAO*EL` → he'll
-   - For the most part, contractions are just written phonetically, but asterisked variants do exists for all of them as well
-     - For example, `AOEUL` works for "I'll" `AO*EUL` does as well
+   - For the most part, contractions are just written phonetically, but asterisked variants do exists for most of them as well
 
 #### Syllabic splitting
 
