@@ -348,6 +348,13 @@ Orthography has also largely been preserved with a few exceptions.
  - Words beginning with capital "J" can use `#STKPW` as an alternative to `#SKWR`
    - `#STKPW/TPHEUS` → Janice
    - `#STKPW/PHAEU/KA` → Jamaica
+ - Common contractions use asterisk when there's a conflict
+   - `WAOER` → weir
+   - `WAO*ER` → we're
+   - `HAOEL` → heel
+   - `HAO*EL` → he'll
+   - For the most part, contractions are just written phonetically, but asterisked variants do exists for all of them as well
+     - For example, `AOEUL` works for "I'll" `AO*EUL` does as well
 
 #### Syllabic splitting
 
