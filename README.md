@@ -885,6 +885,12 @@ Examples:
 
 My Vietnamese steno theory utilizing the English layout.
 
+This is my second attempt at a Vietnamese theory which is an improved version of my [old one](https://github.com/aerickt/plover_viet_old) with some inspiration from [user202729's plover_vi](https://github.com/user202729/plover_vi).
+
+This system is easier to learn than my old system due to having less awkward chords and not utilizing a new layout which adds weeks to the learning process.
+
+Although user202729's system has a faster potential speed with 2 word phrasing (which my system lacks) I have not been able to get it working with the latest version of Plover which is why I created this system.
+
 ![80 WPM Vietnamese steno test](https://cdn.discordapp.com/attachments/1010616084988178502/1011698964338311198/MonkeyType_Viet.gif)
 
 ### Basics
