@@ -887,7 +887,7 @@ My Vietnamese steno theory utilizing the English layout.
 
 This is my second attempt at a Vietnamese theory which is an improved version of my [old one](https://github.com/aerickt/plover_viet_old) with some inspiration from [user202729's plover_vi](https://github.com/user202729/plover_vi).
 
-This system is easier to learn than my old system due to having less awkward chords and not utilizing a new layout which adds weeks to the learning process.
+This system is easier to learn than my old system due to having fewer awkward chords and using the standard English layout. This removes the need to learn a another layout, saving weeks in the learning process if you are already familiar with English steno.
 
 Although user202729's system has a faster potential speed with 2 word phrasing (which my system lacks) I have not been able to get it working with the latest version of Plover which is why I created this system.
 
