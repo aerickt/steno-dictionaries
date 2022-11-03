@@ -133,4 +133,4 @@ Although user202729's system has a faster potential speed with 2 word phrasing (
 
 ![80 WPM Vietnamese steno test](https://cdn.discordapp.com/attachments/1010616084988178502/1011698964338311198/MonkeyType_Viet.gif)
 
-For details see the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/viet)
+For details see the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/Vietnamese-Steno)
