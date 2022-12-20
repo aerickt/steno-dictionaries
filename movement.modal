@@ -24,7 +24,9 @@
         "STPH-B": "{#Down}{^}",
         "STPH-BG": "{#Control_L(Right)}{^}",
         "STPH-LG": "{#End}{^}",
-        "STPH-G": "{#Right}{^}"
+        "STPH-G": "{#Right}{^}",
+        "STPH-FPL": "{#Control(Home)}{^}",
+        "STPH-RBG": "{#Control(End)}"
     },
 
     "dict": {
@@ -47,6 +49,8 @@
         "-B": "{#Down}{^}",
         "-BG": "{#Control_L(Right)}{^}",
         "-LG": "{#End}{^}",
-        "-G": "{#Right}{^}"
+        "-G": "{#Right}{^}",
+        "-FPL": "{#Control(Home)}{^}",
+        "-RBG": "{#Control(End)}"
     }
 }
