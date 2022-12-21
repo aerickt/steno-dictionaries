@@ -45,5 +45,19 @@
 "R*EFT": "{MODE:RESET}",
 "*UPD": "{*<}",
 "STPH-FPL": "{#Control(Home)}{^}",
-"STPH-RBG": "{#Control(End)}"
+"STPH-RBG": "{#Control(End)}",
+"TPWHREFPB": "{#F11}",
+"TPWRAOE": "{#F3}",
+"TPWAOE": "{#F3}",
+"TPWAOEUF": "{#F5}",
+"TPWAOEUPB": "{#F9}",
+"TPWAEUT": "{#F8}",
+"TPWO": "{#F2}",
+"TPWOUR": "{#F4}",
+"TPWEUBGS": "{#F6}",
+"TPWEFPB": "{#F7}",
+"TPWEFL": "{#F12}",
+"TPWEPB": "{#F10}",
+"TPWUPB": "{#F1}",
+"TPHREFPB": "{#F11}"
 }
