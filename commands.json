@@ -47,6 +47,7 @@
 "KPA": "{}{-|}",
 "KPA*": "{^}{-|}",
 "KPA*L": "{<}",
+"KPA*D": "{*-|}",
 "KA*PS": "{MODE:CAPS}",
 "KA*PD": "{*-|}",
 "PW*FP": "{#Control(BackSpace)}{^}",
