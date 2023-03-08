@@ -3447,6 +3447,8 @@
 "TRA/SREL/*ER/234": "traveller",
 "TRA/SRELG/234": "travelling",
 "TRA/SRELD/234": "travelled",
+"TRA/PH*ELD": "tramelled",
+"TRA/PHELD/234": "trammelled",
 "TRAO*EULG": "trialling",
 "TRAO*EULD": "trialled",
 "TRAOEU/KWRA*LG": "trialling",
