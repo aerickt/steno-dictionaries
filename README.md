@@ -4,6 +4,7 @@ My personal steno dictionaries.
  - [ip.py](#ippy)
  - [lapwing-base.json](#lapwing-basejson)
  - [lapwing-uk-additions.json](#lapwing-uk-additionsjson)
+ - [LaTeX.json](#LaTeXjson)
  - [movement.modal](#movementmodal)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
@@ -66,6 +67,10 @@ This dictionary is for Lapwing theory, a free alternative to Plover theory and i
 ## lapwing-uk-additions.json
 
 A dictionary for UK spellings for use with Lapwing theory. See the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page#uk-spellings) for details.
+
+## LaTeX.json
+
+My dictionary I use for writing LaTeX with steno. See the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/LaTeX) for details
 
 ## movement.modal
 This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
