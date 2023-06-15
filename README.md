@@ -62,11 +62,15 @@ It uses `netiface` because that was the most reliable way I could get it to work
 
 ## lapwing-base.json
 
-This dictionary is for Lapwing theory, a free alternative to Plover theory and its `main.json`. For details, see the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page).
+This dictionary is for Lapwing theory, a free alternative to Plover theory and its `main.json`.
+
+Looking to learn Lapwing theory? Check out the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki).
+
+Looking for the reference page? Check out the [Steno dictionaries wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page).
 
 ## lapwing-uk-additions.json
 
-A dictionary for UK spellings for use with Lapwing theory. See the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page#uk-spellings) for details.
+A dictionary for UK spellings for use with Lapwing theory. See the [Steno dictionaries wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page#uk-spellings) for details.
 
 ## LaTeX.json
 
