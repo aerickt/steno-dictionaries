@@ -1,4 +1,4 @@
-# Steno Dictionaries
+ # Steno Dictionaries
 My personal steno dictionaries.
  - [commands.json](#commandsjson)
  - [ip.py](#ippy)
@@ -8,6 +8,7 @@ My personal steno dictionaries.
  - [movement.modal](#movementmodal)
  - [raw.py](#rawpy)
  - [rh-numpad.json](#rh-numpadjson)
+ - [semi-modal-movement.json](#semi-modal-movementjson)
  - [uni-number-reversals.json](#uni-number-reversalsjson)
  - [viet.json](#vietjson)
 
@@ -26,6 +27,8 @@ By pressing down `STPH` on the left hand, the `-RPBG` cluster becomes arrow keys
 By pressing `STPH*` instead, the shift modifier is used together with the movement keys in order to select text.
 
 To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
+
+For more details see the [Lapwing wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-26:-Editing-Text).
 
 #### Commands and keyboard shortcuts
 
@@ -75,6 +78,9 @@ A dictionary for UK spellings for use with Lapwing theory. See the [Steno dictio
 My dictionary I use for writing LaTeX with steno. See the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/LaTeX) for details
 
 ## movement.modal
+
+See also: [semi-modal-movement.json](#semi-modal-movementjson)
+
 This is a modal dictionary that is an extension to the [movement keys in my commands.json dictionary](#Movement-keys).
 
 After the [modal dictionary plugin](https://github.com/Kaoffie/plover_modal_dictionary) has been installed from the plugins manager, ensure Plover has been restarted and the plugin is enabled (configure → plugins). Next add the dictionary above whichever dictionary contains the default movement strokes.
@@ -119,6 +125,18 @@ Examples:
  - `#P-G/#P-R/#P-6R/#P-R/#P-7B/#P-8` → 3 1 4 1 5 9
  - `#EB` → 20
  - `#UPB`→ 500
+
+## semi-modal-movement.json
+
+See also: [movement.modal](#movementmodal)
+
+This dictionary contains movement strokes without the starting chord. The idea is to keep this dictionary at the top of your stack, but only enable it when you need to move the text cursor. You can use a dictionary entry like the following to achieve this:
+
+```
+"STPH": "{plover:toggle_dict:!semi-modal-movement.json}"
+```
+
+Make sure you have the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands) installed. You can do this by going to the plugins manager, installing it, and restarting Plover.
 
 ## uni-number-reversals.json
 
