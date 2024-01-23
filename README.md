@@ -1,4 +1,7 @@
  # Steno Dictionaries
+
+[![paypal](https://img.shields.io/badge/-Buy%20me%20a%20coffee%20%3AD-informational?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=VNMUULBPTQGMC)
+
 My personal steno dictionaries.
  - [commands.json](#commandsjson)
  - [ip.py](#ippy)
