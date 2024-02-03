@@ -6,11 +6,11 @@ My personal steno dictionaries.
  - [commands.json](#commandsjson)
  - [ip.py](#ippy)
  - [lapwing-base.json](#lapwing-basejson)
+ - [lapwing-numbers.json](#lapwing-numbersjson)
  - [lapwing-uk-additions.json](#lapwing-uk-additionsjson)
  - [LaTeX.json](#LaTeXjson)
  - [movement.modal](#movementmodal)
  - [raw.py](#rawpy)
- - [rh-numpad.json](#rh-numpadjson)
  - [semi-modal-movement.json](#semi-modal-movementjson)
  - [uni-number-reversals.json](#uni-number-reversalsjson)
  - [viet.json](#vietjson)
@@ -72,6 +72,12 @@ This dictionary is for Lapwing theory, a free alternative to Plover theory and i
 
 Looking to learn Lapwing theory? Check out the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki).
 
+## lapwing-numbers.json
+
+A right hand numberpad system. Lapwing not required; can be used with other theories.
+
+See the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-17:-Fingerspelling-and-Numbers#numbers) for more details.
+
 ## lapwing-uk-additions.json
 
 A dictionary for UK spellings for use with Lapwing theory. See the [Steno dictionaries wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page#uk-spellings) for details.
@@ -114,20 +120,6 @@ Examples:
  - `#RA*U/AOEUPL/TKO*G/TPAOEUPB/THAUG/SRE/PHUFP/#RA*U` → `AOEUPL/TKO*G/TPAOEUPB/THAUG/SRE/PHUFP`
 
 Thanks to @sammdot who made this dictionary in the first place :D.
-
-## rh-numpad.json
-
-> I highly recommend mapping the top `S-` key to the number key to make it easier to stroke. This also opens up the possibility for more briefs and decreases hesitation when deciding which finger to use for the number key.
-
-With this dictionary, pressing the number key will turn `-FRPBLG` into a standard keypad with a chorded middle row. The bottom three keys are 1, 2, and 3 (from left to right) while the top three keys are 7, 8, 9 and chording two keys in a column will get 4, 5, and 6 (from left to right). If the `E` key is used in the stroke, 0 will be appended to whatever digit is being chorded. The `U` key will append a 00 on the digit, and `EU` will append a 000 on the digit.
-
-When holding down left hand `P` with this number pad, numbers will be treated like regular translations and will not glue to one another.
-
-Examples:
- - `#-G/#-R/-FR/#-R/#-PB/#-L` → 314159
- - `#P-G/#P-R/#P-6R/#P-R/#P-7B/#P-8` → 3 1 4 1 5 9
- - `#EB` → 20
- - `#UPB`→ 500
 
 ## semi-modal-movement.json
 
