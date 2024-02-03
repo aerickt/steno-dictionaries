@@ -80,7 +80,7 @@ See the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-begi
 
 ## lapwing-uk-additions.json
 
-A dictionary for UK spellings for use with Lapwing theory. See the [Steno dictionaries wiki](https://github.com/aerickt/steno-dictionaries/wiki/Lapwing-Theory-Reference-Page#uk-spellings) for details.
+A dictionary for UK spellings for use with Lapwing theory. See the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-20:-UK-Spellings) for details.
 
 ## LaTeX.json
 
