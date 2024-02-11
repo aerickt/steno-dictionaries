@@ -3,19 +3,33 @@
 [![paypal](https://img.shields.io/badge/-Buy%20me%20a%20coffee%20%3AD-informational?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=VNMUULBPTQGMC)
 
 My personal steno dictionaries.
- - [commands.json](#commandsjson)
  - [ip.py](#ippy)
  - [lapwing-base.json](#lapwing-basejson)
+ - [lapwing-commands.json](#lapwing-commandsjson)
+ - [lapwing-movement.modal](#lapwing-movementmodal)
  - [lapwing-numbers.json](#lapwing-numbersjson)
  - [lapwing-uk-additions.json](#lapwing-uk-additionsjson)
  - [LaTeX.json](#LaTeXjson)
- - [movement.modal](#movementmodal)
  - [raw.py](#rawpy)
  - [semi-modal-movement.json](#semi-modal-movementjson)
  - [uni-number-reversals.json](#uni-number-reversalsjson)
  - [viet.json](#vietjson)
 
-## commands.json
+## ip.py
+
+Write `#AOEUP` to output the local IP address of the machine Plover is running on. Useful on a headless [Stenogotchi](https://github.com/Anodynous/stenogotchi) that doesn't have a screen.
+
+Requires [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary) as well as the `netiface` python package (must be installed from the command-line).
+
+It uses `netiface` because that was the most reliable way I could get it to work.
+
+## lapwing-base.json
+
+This dictionary is for Lapwing theory, a free alternative to Plover theory and its `main.json`.
+
+Looking to learn Lapwing theory? Check out the [Lapwing for Beginners Wiki](https://lapwing.aerick.ca).
+
+## lapwing-commands.json
 This dictionary contains all main movement, keyboard shortcuts, and Plover commands that I use.
 
 ### Dictionary contents
@@ -31,7 +45,7 @@ By pressing `STPH*` instead, the shift modifier is used together with the moveme
 
 To move word by word (equivalent to pressing `Ctrl+Shift` and left/right), `-RB` and `-BG` are used. On macOS, `Alt+Shift` is used instead so that will have to be changed.
 
-For more details see the [Lapwing wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-26:-Editing-Text).
+For more details see [Lapwing for Beginners](https://lapwing.aerick.ca/Chapter-26.html).
 
 #### Commands and keyboard shortcuts
 
@@ -56,37 +70,11 @@ Common keyboard keys have also carried over from main.json.
  - `TA*B` → `Tab`
  - `#TAB` → `Shift+Tab`
 
+For more details, see [Lapwing for Beginners](https://lapwing.aerick.ca/Chapter-19.html#commands).
+
 For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
 
-## ip.py
-
-Write `#AOEUP` to output the local IP address of the machine Plover is running on. Useful on a headless [Stenogotchi](https://github.com/Anodynous/stenogotchi) that doesn't have a screen.
-
-Requires [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary) as well as the `netiface` python package (must be installed from the command-line).
-
-It uses `netiface` because that was the most reliable way I could get it to work.
-
-## lapwing-base.json
-
-This dictionary is for Lapwing theory, a free alternative to Plover theory and its `main.json`.
-
-Looking to learn Lapwing theory? Check out the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki).
-
-## lapwing-numbers.json
-
-A right hand numberpad system. Lapwing not required; can be used with other theories.
-
-See the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-17:-Fingerspelling-and-Numbers#numbers) for more details.
-
-## lapwing-uk-additions.json
-
-A dictionary for UK spellings for use with Lapwing theory. See the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-20:-UK-Spellings) for details.
-
-## LaTeX.json
-
-My dictionary I use for writing LaTeX with steno. See the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/LaTeX) for details
-
-## movement.modal
+## lapwing-movement.modal
 
 See also: [semi-modal-movement.json](#semi-modal-movementjson)
 
@@ -100,6 +88,20 @@ Examples:
  - `STPH-G/-G/-G/-G` → arrow key to the right 4 times
  - `STPH*R/*R/*R` → select 3 characters to the left
  - `STPH-BG/-BG/-BG` → move to the right by 3 words
+
+## lapwing-numbers.json
+
+A right hand numberpad system. Lapwing not required; can be used with other theories.
+
+See the [Lapwing for Beginners Wiki](https://github.com/aerickt/lapwing-for-beginners/wiki/Chapter-17:-Fingerspelling-and-Numbers#numbers) for more details.
+
+## lapwing-uk-additions.json
+
+A dictionary for UK spellings for use with Lapwing theory. See [Lapwing for Beginners](https://lapwing.aerick.ca/Chapter-20.html) for details.
+
+## LaTeX.json
+
+My dictionary I use for writing LaTeX with steno. See the [wiki](https://github.com/aerickt/steno-dictionaries/wiki/LaTeX) for details
 
 ## raw.py
 This python dictionary (requiring the [plover-python-dictionary plugin](https://github.com/benoit-pierre/plover_python_dictionary)) outputs the raw steno strokes joined by slashes (`/`) with the [plover-stitching plugin](https://github.com/morinted/plover_stitching). You will also need the [plover-dict-commands plugin](https://github.com/KoiOates/plover_dict_commands) for enabling this dictionary with steno strokes. All plugins can be installed from the plugins manager.
