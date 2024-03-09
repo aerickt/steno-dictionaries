@@ -52,10 +52,12 @@ THERE_SUFFIXES = {
     "G": True, "GD": True,                                    # Go
     "PZ": True, "PDZ": True,                                  # Happen
     "T": True, "TD": True, "TS": True, "TSDZ": True,          # Have (to)
-    "LZ": True, "TZD": True,                                  # Live
+    "LZ": True, "LZD": True,                                  # Live
     "PL": True, "PLT": True, "PLD": True, "PLTD": True,       # May (have)
     "PBLGS": True, "PBLGTS": True,                            # Must (have)
+    "PBLGSZ": True, "PBLGTSDZ": True,                         # Just
     "RPG": True, "RPGD": True, "RPGT": True, "RPGTD": True,   # Need (to)
+    "RLG": True, "RLGD": True,                                # Really
     "PLS": True, "PLSZ": True, "PLTS": True, "PLTSDZ": True,  # Seem (to)
     "Z": True, "DZ": True, "TZ": True, "TDZ": True,           # Use (to)
 }
@@ -65,6 +67,12 @@ NON_PHRASE_STROKES = {
     "STHRET": True,      # "stiletto"
     "STHREUPLT": True,   # "stimulate"
     "STPHREFPLT": True,  # "investment in"
+
+    "SKPUR": True,       # "and you're" -- rather than "and you run"
+    "SKPUL": True,       # "and you'll" -- rather than "and you look"
+    "SKPEUT": True,      # "and it"     -- rather than "and I have"
+
+    "SKP*": True,        # {&&}
 }
 
 STARTERS = {
@@ -94,6 +102,13 @@ SIMPLE_STARTERS = {
     "SWHA": (" what", None),
     "SWHR": (" where", None),
     "SWHO": (" who", None),
+    "SWHAO": (" why", None),
+
+    "SPWH": (" but", None),
+    "STPR": (" for", None),
+
+    # Remove the entry below if you don't want "and" phrases.
+    "SKP": (" and", None),
 }
 
 SIMPLE_PRONOUNS = {
@@ -103,6 +118,7 @@ SIMPLE_PRONOUNS = {
     "*U": ("they", "3pp", None),
     "EU": ("I", "1ps", None),
     "*EU": ("we", "1pp", None),
+    "*": ("it", "3ps", None),
 }
 
 SIMPLE_STRUCTURES = {
@@ -124,6 +140,8 @@ MIDDLES = {
 
 # `!` represents the starter
 # `*` represents the middle
+#
+# (format, use-middle-verb-form, updated-verb-form)
 STRUCTURE_EXCEPTIONS = {
     "": ("!", False, None),
 
@@ -159,32 +177,16 @@ STRUCTURE_EXCEPTIONS = {
     # "*EUF": ({"present": {None: " haven't ! been", "3ps": " hasn't ! been"}, "past": " hadn't ! been"}, False, "present-participle"),
     # "EUF": ({"present": {None: " have ! been", "3ps": " has ! been"}, "past": " had ! been"}, False, "present-participle"),
 
+    "EU": ("! still", False, None),
+    "EUF": ("! never", False, None),
+    "UF": ("! just", False, None),
+
     # Special cases for empty starters.
     # - infinitive forms.
     "STWRU": ("to", False, "root"),
     "STWR*U": ("not to", False, "root"),
     "STKPWHRU": ("to", False, "root"),
     "STKPWHR*U": ("not to", False, "root"),
-
-    "EU": ("! still", False, None),
-    "EUF": ("! never", False, None),
-    "UF": ("! just", False, None),
-
-    # - single word structures
-    "STWRUF": ("just", False, None),
-    "STWR*UF": ("just", False, None),
-    "STKPWHRUF": ("just", False, None),
-    "STKPWHR*UF": ("just", False, None),
-
-    "STWREU": ("still", False, None),
-    "STWR*EU": ("still", False, None),
-    "STKPWHREU": ("still", False, None),
-    "STKPWHR*EU": ("still", False, None),
-
-    "STWREUF": ("never", False, None),
-    "STWR*EUF": ("even", False, None),
-    "STKPWHREUF": ("never", False, None),
-    "STKPWHR*EUF": ("even", False, None),
 }
 
 ALWAYS = {None: "* !", "b3ps-root": "* always", "b3pp-root": "* always"}
@@ -209,7 +211,7 @@ STRUCTURES = {
     "U": ({"present": ALWAYS, "past": ALWAYS}, True, None),
     "*UF": ("! just*", True, None),
     "UF": ("!* just", True, None),
-}
+} 
 
 ENDERS = {
     "": ("present", ""),
@@ -231,13 +233,13 @@ ENDERS = {
     "RPBGD": ("past", {None: " became", "root": " become", "present-participle": " becoming", "past-participle": " become"}),
     "RPBGTD": ("past", {None: " became a", "root": " become a", "present-participle": " becoming a", "past-participle": " become a"}),
 
-    # BL - To believe
+    # BL - To believe (that)
     "BL": ("present", {None: " believe", "3ps": " believes", "present-participle": " believing", "past-participle": " believed"}),
     "BLT": ("present", {None: " believe that", "3ps": " believes that", "present-participle": " believing that", "past-participle": " believed that"}),
     "BLD": ("past", {None: " believed", "root": " believe", "present-participle": " believing", "past-participle": " believed"}),
     "BLTD": ("past", {None: " believed that", "root": " believe that", "present-participle": " believing that", "past-participle": " believed that"}),
 
-    # BLG - To call
+    # RBLG - To call
     "RBLG": ("present", {None: " call", "3ps": " calls", "present-participle": " calling", "past-participle": " called"}),
     "RBLGD": ("past", {None: " called", "root": " call", "present-participle": " calling", "past-participle": " called"}),
 
@@ -250,11 +252,19 @@ ENDERS = {
     "RZ": ("present", {None: " care", "3ps": " cares", "present-participle": " caring", "past-participle": " cared"}),
     "RDZ": ("past", {None: " cared", "root": " care", "present-participle": " caring", "past-participle": " cared"}),
 
+    # PBGZ - To change
+    "PBGZ": ("present", {None: " change", "3ps": " changes", "present-participle": " changing", "past-participle": " changed"}),
+    "PBGDZ": ("past", {None: " changed", "root": " change", "present-participle": " changing", "past-participle": " changed"}),
+
     # BG - To come (to)
     "BG": ("present", {None: " come", "3ps": " comes", "present-participle": " coming", "past-participle": " come"}),
     "BGT": ("present", {None: " come to", "3ps": " comes to", "present-participle": " coming to", "past-participle": " come to"}),
     "BGD": ("past", {None: " came", "root": " come", "present-participle": " coming", "past-participle": " come"}),
     "BGTD": ("past", {None: " came to", "root": " come to", "present-participle": " coming to", "past-participle": " come to"}),
+
+    # RBGZ - To consider
+    "RBGZ": ("present", {None: " consider", "3ps": " considers", "present-participle": " considering", "past-participle": " considered"}),
+    "RBGDZ": ("past", {None: " considered", "root": " consider", "present-participle": " considering", "past-participle": " considered"}),
 
     # RP - To do (it)
     "RP": ("present", {None: " do", "3ps": " does", "present-participle": " doing", "past-participle": " done"}),
@@ -330,6 +340,10 @@ ENDERS = {
     "PLGD": ("past", {None: " imagined", "root": " imagine", "present-participle": " imagining", "past-participle": " imagined"}),
     "PLGTD": ("past", {None: " imagined that", "root": " imagine that", "present-participle": " imagining that", "past-participle": " imagined that"}),
 
+    # PBLGSZ - Just
+    "PBLGSZ": ("present", " just"),
+    "PBLGTSDZ": ("past", " just"),
+
     # PBGS - To keep
     "PBGS": ("present", {None: " keep", "3ps": " keeps", "present-participle": " keeping", "past-participle": " kept"}),
     "PBGSZ": ("past", {None: " kept", "root": " keep", "present-participle": " keeping", "past-participle": " kept"}),
@@ -344,17 +358,17 @@ ENDERS = {
     "RPBS": ("present", {None: " learn", "3ps": " learns", "present-participle": " learning", "past-participle": " learned"}),
     "RPBTS": ("present", {None: " learn to", "3ps": " learns to", "present-participle": " learning to", "past-participle": " learned to"}),
     "RPBSZ": ("past", {None: " learned", "root": " learn", "present-participle": " learning", "past-participle": " learned"}),
-    "RPBTSDZ": ("past", {None: " learned to", "root": "learn to", "present-participle": " learning to", "past-participle": " learned to"}),
+    "RPBTSDZ": ("past", {None: " learned to", "root": " learn to", "present-participle": " learning to", "past-participle": " learned to"}),
 
     # LGZ - To leave
     "LGZ": ("present", {None: " leave", "3ps": " leaves", "present-participle": " leaving", "past-participle": " left"}),
     "LGDZ": ("past", {None: " left", "root": " leave", "present-participle": " leaving", "past-participle": " left"}),
 
-    # LT - To let
+    # LS - To let
     "LS": ("present", {None: " let", "3ps": " lets", "present-participle": " letting", "past-participle": " let"}),
     "LSZ": ("past", {None: " let", "present-participle": " letting", "past-participle": " let"}),
 
-    # BLG - To like
+    # BLG - To like (to)
     "BLG": ("present", {None: " like", "3ps": " likes", "present-participle": " liking", "past-participle": " liked"}),
     "BLGT": ("present", {None: " like to", "3ps": " likes to", "present-participle": " liking to", "past-participle": " liked to"}),
     "BLGD": ("past", {None: " liked", "root": " like", "present-participle": " liking", "past-participle": " liked"}),
@@ -374,11 +388,11 @@ ENDERS = {
     "LGD": ("past", {None: " loved", "root": " love", "present-participle": " loving", "past-participle": " loved"}),
     "LGTD": ("past", {None: " loved to", "root": " love to", "present-participle": " loving to", "past-participle": " loved to"}),
 
-    # RPBL - To make (the)
+    # RPBL - To make (a)
     "RPBL": ("present", {None: " make", "3ps": " makes", "present-participle": " making", "past-participle": " made"}),
-    "RPBLT": ("present", {None: " make the", "3ps": " makes the", "present-participle": " making the", "past-participle": " made the"}),
+    "RPBLT": ("present", {None: " make a", "3ps": " makes a", "present-participle": " making a", "past-participle": " made a"}),
     "RPBLD": ("past", {None: " made", "root": " make", "present-participle": " making", "past-participle": " made"}),
-    "RPBLTD": ("past", {None: " made the", "root": " make the", "present-participle": " making the", "past-participle": " made the"}),
+    "RPBLTD": ("past", {None: " made a", "root": " make a", "present-participle": " making a", "past-participle": " made a"}),
 
     # PL - Auxiliary verb may (be)
     # These do not combine naturally with middle/structures.
@@ -393,6 +407,10 @@ ENDERS = {
     "PBLD": ("past", {None: " meant", "root": " mean", "present-participle": " meaning", "past-participle": " meant"}),
     "PBLTD": ("past", {None: " meant to", "root": " mean to", "present-participle": " meaning to", "past-participle": " meant to"}),
 
+    # PBLS - To mind
+    "PBLS": ("present", {None: " mind", "3ps": " minds", "present-participle": " minding", "past-participle": " minded"}),
+    "PBLSZ": ("past", {None: " minded", "root": " mind", "present-participle": " minding", "past-participle": " minded"}),
+
     # PLZ - To move
     "PLZ": ("present", {None: " move", "3ps": " moves", "present-participle": " moving", "past-participle": " moved"}),
     "PLDZ": ("past", {None: " moved", "root": " move", "present-participle": " moving", "past-participle": " moved"}),
@@ -406,17 +424,21 @@ ENDERS = {
     "RPG": ("present", {None: " need", "3ps": " needs", "present-participle": " needing", "past-participle": " needed"}),
     "RPGT": ("present", {None: " need to", "3ps": " needs to", "present-participle": " needing to", "past-participle": " needed to"}),
     "RPGD": ("past", {None: " needed", "root": " need", "present-participle": " needing", "past-participle": " needed"}),
-    "RPGTD": ("past", {None: " needed to", "root": " need to", "present-participle": " needing", "past-participle": " needed to"}),
+    "RPGTD": ("past", {None: " needed to", "root": " need to", "present-participle": " needing to", "past-participle": " needed to"}),
 
     # PS: To put (it)
     "PS": ("present", {None: " put", "3ps": " puts", "present-participle": " putting", "past-participle": " put"}),
     "PTS": ("present", {None: " put it", "3ps": " puts it", "present-participle": " putting it", "past-participle": " put it"}),
     "PSZ": ("past", {None: " put", "root": " put", "present-participle": " putting", "past-participle": " put"}),
-    "PTSDZ": ("past", {None: " put", "root": " put it", "present-participle": " putting it", "past-participle": " put it"}),
+    "PTSDZ": ("past", {None: " put it", "root": " put it", "present-participle": " putting it", "past-participle": " put it"}),
 
     # RS - To read
     "RS": ("present", {None: " read", "3ps": " reads", "present-participle": " reading", "past-participle": " read"}),
     "RSZ": ("past", {None: " read", "root": " read", "present-participle": " reading", "past-participle": " read"}),
+
+    # RLG - really
+    "RLG": ("present", " really"),
+    "RLGD": ("past", " really"),
 
     # RL - To recall
     "RL": ("present", {None: " recall", "3ps": " recalls", "present-participle": " recalling", "past-participle": " recalled"}),
@@ -434,7 +456,7 @@ ENDERS = {
     "RPLD": ("past", {None: " remembered", "root": " remember", "present-participle": " remembering", "past-participle": " remembered"}),
     "RPLTD": ("past", {None: " remembered that", "root": " remember that", "present-participle": " remembering that", "past-participle": " remembered that"}),
 
-    # P: To remain
+    # RPLS: To remain
     "RPLS": ("present", {None: " remain", "3ps": " remains", "present-participle": " remaining", "past-participle": " remained"}),
     "RPLSZ": ("past", {None: " remained", "root": " remain", "present-participle": " remaining", "past-participle": " remained"}),
 
@@ -452,6 +474,10 @@ ENDERS = {
     "S": ("present", {None: " see", "3ps": " sees", "present-participle": " seeing", "past-participle": " seen"}),
     "SZ": ("past", {None: " saw", "root": " see", "present-participle": " seeing", "past-participle": " seen"}),
 
+    # BLS - To set
+    "BLS": ("present", {None: " set", "3ps": " sets", "present-participle": " setting", "past-participle": " set"}),
+    "BLSZ": ("past", {None: " set", "root": " set", "present-participle": " setting", "past-participle": " set"}),
+
     # PLS - To seem (to)
     "PLS": ("present", {None: " seem", "3ps": " seems", "present-participle": " seeming", "past-participle": " seemed"}),
     "PLTS": ("present", {None: " seem to", "3ps": " seems to", "present-participle": " seeming to", "past-participle": " seemed to"}),
@@ -464,16 +490,16 @@ ENDERS = {
     "RBLD": ("past", " should"),
 
     # RBZ - To show
-    "RBZ": ("present", {None: " show", "3ps": " shows", "present-participle": " showing", "past-participle": " showed"}),
-    "RBDZ": ("past", {None: " showed", "root": " show", "present-participle": " showing", "past-participle": " showed"}),
+    "RBZ": ("present", {None: " show", "3ps": " shows", "present-participle": " showing", "past-participle": " shown"}),
+    "RBDZ": ("past", {None: " showed", "root": " show", "present-participle": " showing", "past-participle": " shown"}),
 
-    # RT - To take
+    # RBT - To take
     "RBT": ("present", {None: " take", "3ps": " takes", "present-participle": " taking", "past-participle": " taken"}),
     "RBTD": ("past", {None: " took", "root": " take", "present-participle": " taking", "past-participle": " taken"}),
 
-    # BLGT - To talk
-    "BLGT": ("present", {None: " talk", "3ps": " talks", "present-participle": " talking", "past-participle": " talked"}),
-    "BLGTD": ("past", {None: " talked", "root": " talk", "present-participle": " talking", "past-participle": " talked"}),
+    # BLGT - To talk -- conflict with like to.
+    # "BLGT": ("present", {None: " talk", "3ps": " talks", "present-participle": " talking", "past-participle": " talked"}),
+    # "BLGTD": ("past", {None: " talked", "root": " talk", "present-participle": " talking", "past-participle": " talked"}),
 
     # RLT - To tell
     "RLT": ("present", {None: " tell", "3ps": " tells", "present-participle": " telling", "past-participle": " told"}),
@@ -491,7 +517,7 @@ ENDERS = {
     "RTD": ("past", {None: " tried", "root": " try", "present-participle": " trying", "past-participle": " tried"}),
     "RTSDZ": ("past", {None: " tried to", "root": " try to", "present-participle": " trying to", "past-participle": " tried to"}),
 
-    # PBG - To understand (the)
+    # RPB - To understand (the)
     "RPB": ("present", {None: " understand", "3ps": " understands", "present-participle": " understanding", "past-participle": " understood"}),
     "RPBT": ("present", {None: " understand the", "3ps": " understands the", "present-participle": " understanding the", "past-participle": " understood the"}),
     "RPBD": ("past", {None: " understood", "root": " understand", "present-participle": " understanding", "past-participle": " understood"}),
@@ -772,7 +798,7 @@ def reverse_lookup(text):
             continue
 
         if word in text:
-            remainder = text.replace(word, '!', 1)
+            remainder = re.sub("\\b%s\\b" % word, '!', text, 1)
             strokes = REVERSE_STARTERS[word]
             for stroke in strokes:
                 reverse_middle_match(result, text, remainder, stroke, strokes[stroke])
@@ -782,3 +808,4 @@ def reverse_lookup(text):
         reverse_middle_match(result, text, text, stroke, "full")
 
     return result
+
