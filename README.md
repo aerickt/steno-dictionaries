@@ -143,6 +143,16 @@ Examples:
  - `#AOU` → 05
  - `#STPU` → 321
 
+## extract-pronouns.json
+
+By running the following:
+
+``` bash
+node extract-pronouns.js
+```
+
+Two files will be generated based on lapwing-base.json, one file will contain all of the non-prefixed proper pronouns and the other will contain the remaining words. This allows you to better mix and match the components of the Lapwing dictionary. For example, it means you can use the prefixed-proper-nouns and jeff-numbers at the same time without conflits.
+
 ## viet.json
 
 My Vietnamese steno theory utilizing the English layout.
