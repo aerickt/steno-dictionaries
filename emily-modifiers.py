@@ -189,6 +189,10 @@ def lookup(chord):
     # may need to reorder?
     modKeys = modifiers
     mods = []
+
+    if len(modKeys) == 0:
+        raise KeyError
+
     if "R" in modKeys:
         mods.append("shift")
     if "B" in modKeys:
