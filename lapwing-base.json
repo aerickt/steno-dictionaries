@@ -1,5 +1,8 @@
 {
 "#": "=repeat_last_translation",
+"#STKPWHRABG": "Jack",
+"#STKPWHROE": "Joe",
+"#STKPWHRED": "Jed",
 "#SH": "{^}.sh",
 "#SH*": "{^}.sh",
 "#KP*PL": "{^}.xml",
@@ -83996,6 +83999,7 @@
 "HED/-Z": "heads",
 "HEDZ": "heads",
 "HU": "uh",
+"HU/STKPWA*": "huzzah",
 "HU/PHUPB/TKPWUS": "humungous",
 "HU/PHUS": "hummus",
 "HU/HRA/PWA/HRAO": "hullabaloo",
