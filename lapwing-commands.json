@@ -136,6 +136,7 @@
 "PHROFG": "{PLOVER:CONFIGURE}",
 "PHROLG": "{PLOVER:TOGGLE}",
 "PHR*UP": "{PLOVER:LOOKUP}",
+"PHRUP": "{PLOVER:LOOKUP}",
 "HRO*ER": "{:case:lower_first_char}",
 "HRO*ERD": "{:retro_case:lower_first_char}",
 "R*EFT": "{MODE:RESET}",
