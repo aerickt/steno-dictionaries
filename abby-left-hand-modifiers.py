@@ -79,15 +79,15 @@ keys = {
     "STKP": "f12",
     # numpad keys: asterisk + non-numpad key
     "AO*": "kp_0",
-    "HAO*": "kp_1",
-    "PAO*": "kp_2",
-    "PHAO*": "kp_3",
-    "TAO*": "kp_4",
-    "THAO*": "kp_5",
-    "TPAO*": "kp_6",
-    "TPHAO*": "kp_7",
+    "RAO*": "kp_1",
+    "WAO*": "kp_2",
+    "WRAO*": "kp_3",
+    "KAO*": "kp_4",
+    "KRAO*": "kp_5",
+    "KWAO*": "kp_6",
+    "KWRAO*": "kp_7",
     "SAO*": "kp_8",
-    "SHAO*": "kp_9",
+    "SRAO*": "kp_9",
     "PR*": "kp_decimal",  # PeRiod + asterisk
     "PHR*": "kp_add",  # PLus + asterisk
     "PHR": "kp_add",  # PHR isn't used by anything else
