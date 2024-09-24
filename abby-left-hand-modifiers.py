@@ -141,22 +141,21 @@ def lookup(outline):
     # KeyError if first stroke is not one of the modifiers
     if str1 not in modifiers:
         raise KeyError
-    if len(outline) == 1:
-        # above prefixes should do nothing
-        return "{#}"
 
     mods = modifiers.index(str1)  # get index of modifier keys
     # length should be 2
-    assert len(outline) == 2
-    str2 = outline[1]
-    # do nothing if second stroke is SKPH
-    if str2 == "SKPH":
-        return "{#}"
-    if str2 not in keys:
-        raise KeyError
-    assert str2 in keys
-    # get key to press from second stroke
-    key = keys.get(str2)
+    if len(outline) == 2:
+        str2 = outline[1]
+        # do nothing if second stroke is SKPH
+        if str2 == "SKPH":
+            return "{#}"
+        if str2 not in keys:
+            raise KeyError
+        assert str2 in keys
+        # get key to press from second stroke
+        key = keys.get(str2)
+    else:
+        key = ""
 
     # add modifiers
     # 8 = super
@@ -174,5 +173,9 @@ def lookup(outline):
 
     # add syntax
     key = "{#" + key + "}"
+
+    # remove unnecessary parentheses
+    key = key.replace("()", "")
+
     # done!
     return key
