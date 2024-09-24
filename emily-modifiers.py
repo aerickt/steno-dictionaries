@@ -35,7 +35,7 @@ spelling = {
         "SR"    : "v",
         "W"     : "w",
         "KP"    : "x",
-        "KWR"   : "y",
+        "KWH"   : "y",
         "STKPW" : "z",
         "STKPWHR" : "z", # magnum
         }

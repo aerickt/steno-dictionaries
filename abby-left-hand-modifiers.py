@@ -50,7 +50,7 @@ keys = {
     "SR": "v",
     "W": "w",
     "KP": "x",
-    "KWR": "y",
+    "KWH": "y",
     "STK": "z",  # simpler stroke for Z
     "STKPW": "z",
     # numbers: AO + binary
