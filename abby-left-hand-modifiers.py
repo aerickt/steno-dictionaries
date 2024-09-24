@@ -10,7 +10,7 @@ modifiers = [
     "SKHR",  # ctrl shift
     "STHRA",  # alt shift
     "STKHRA",  # ctrl alt shift
-    "KPWR",  # super
+    "KPW",  # super
     "KPWHR",  # ctrl super
     "TKPWHRA",  # alt super
     "TKPWHRAO",  # ctrl alt super
