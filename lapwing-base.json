@@ -2,7 +2,7 @@
 "#": "=repeat_last_translation",
 "#SH": "{^}.sh",
 "#SH*": "{^}.sh",
-"#SR*ERGS": "Date: 2024-09-29\t Plugin version: 1.3.3\t",
+"#SR*ERGS": "Date: 2024-09-29\t Plugin version: 1.3.4\t",
 "#KP*PL": "{^}.xml",
 "#KP-PL": "{^}.xml",
 "#KR": "{^}.c",
