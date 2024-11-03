@@ -92,6 +92,7 @@
 "SKWR-R": "{:case:lower_first_char}",
 "SKWR-RD": "{:retro_case:lower_first_char}",
 "SP": "{^^}",
+"SPW": "{#BackSpace}{^}",
 "SP-LS": "{*!}",
 "SP-S": "{^^}",
 "S-P": "{^ ^}",
