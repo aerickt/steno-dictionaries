@@ -144,18 +144,16 @@ def lookup(outline):
 
     mods = modifiers.index(str1)  # get index of modifier keys
     # length should be 2
-    if len(outline) == 2:
-        str2 = outline[1]
-        # do nothing if second stroke is SKPH
-        if str2 == "SKPH":
-            return "{#}"
-        if str2 not in keys:
-            raise KeyError
-        assert str2 in keys
-        # get key to press from second stroke
-        key = keys.get(str2)
-    else:
-        key = ""
+    assert len(outline) == 2
+    str2 = outline[1]
+    # do nothing if second stroke is SKPH
+    if str2 == "SKPH":
+        return "{#}"
+    if str2 not in keys:
+        raise KeyError
+    assert str2 in keys
+    # get key to press from second stroke
+    key = keys.get(str2)
 
     # add modifiers
     # 8 = super
