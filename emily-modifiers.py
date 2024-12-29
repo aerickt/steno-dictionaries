@@ -168,7 +168,7 @@ def lookup(chord):
                 # add the 'F' if F number
                 if function:
                     character = "F" + str(count)
-                    if count > 12:
+                    if count > 15:
                         raise KeyError
                 else:
                     if count > 9:
