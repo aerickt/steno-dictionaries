@@ -68,9 +68,9 @@ Common keyboard keys have also carried over from main.json.
  - `TKHRE` → delete one character
  - `TKHR*E` → delete one word (`Ctrl+Delete`; change to `Alt+Delete` on macOS)
  - `TA*B` → `Tab`
- - `#TAB` → `Shift+Tab`
+ - `#TA*B` → `Shift+Tab`
 
-For more details, see [Lapwing for Beginners](https://lapwing.aerick.ca/Chapter-19.html#commands).
+For more details, see [Lapwing for Beginners](https://lapwing.aerick.ca/Chapter-20.html#commands).
 
 For writing every single keyboard shortcut possible, I recommend [Emily's modifiers dictionary](https://github.com/EPLHREU/emily-modifiers).
 
