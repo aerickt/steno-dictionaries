@@ -143,6 +143,9 @@ def lookup(outline):
         raise KeyError
 
     mods = modifiers.index(str1)  # get index of modifier keys
+    if len(outline) == 1:
+        return "{#}"
+
     # length should be 2
     assert len(outline) == 2
     str2 = outline[1]
